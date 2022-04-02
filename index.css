@@ -117,6 +117,10 @@ header .header .menu a {
     font-family: m-b;
 }
 
+.pt-150 {
+    padding-top: 150px;
+}
+
 .ul-right {
     text-align: right;
     list-style-position: inside;
@@ -326,6 +330,10 @@ header .header .menu a {
     height: 600px !important;
 }
 
+.h_450 {
+    height: 450px !important;
+}
+
 .h_100 {
     height: 120px !important;
 }
@@ -395,4 +403,91 @@ header .header .menu a {
     letter-spacing: 3px;
     margin-left: 15px;
     padding-left: 10px;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#back-to-top {
+    display: none;
+}
+
+.stair {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 200px;
+    right: 20px;
+    z-index: 10;
+    color: white;
+    text-align: right;
+}
+
+.stair span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.stair span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.mezzanine {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.mezzanine span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.mezzanine span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.rooftop {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.rooftop span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.rooftop span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#go-back {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.house-item {
+    position: fixed;
+    bottom: 0px;
+    left: 500px;
+    font-size: 5rem;
+    font-weight: 900;
+    color: gray;
+    text-transform: uppercase;
 }
