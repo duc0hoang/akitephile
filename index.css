@@ -3,6 +3,9 @@
 *::after {
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 p {
     margin-bottom: 0;
 }
@@ -85,6 +88,15 @@ header .header .menu a {
     left: 0;
 }
 
+.border-bottom-40-3rem::before {
+    content: "";
+    width: 40%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+}
+
 .next {
     cursor: pointer;
     padding-bottom: 10px;
@@ -153,12 +165,12 @@ header .header .menu a {
 }
 
 .bot {
-    transform: translateY(300%) !important;
+    transform: translateY(-300%) !important;
 }
 
 #bot {
     transform: translateY(0);
-    transition: all 0.5s;
+    transition: all 7s;
 }
 
 .left.move {
@@ -301,11 +313,86 @@ header .header .menu a {
 }
 
 .ul-right li,
-.col-5 .top {
+.col-5 .house-info {
     color: #adadac;
 }
 
 .ul-right li:hover,
-.col-5 .top:hover {
+.col-5 .house-info:hover {
     color: black;
+}
+
+.h_600 {
+    height: 600px !important;
+}
+
+.h_100 {
+    height: 120px !important;
+}
+
+.img-1 img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.img-8 a {
+    flex: 0 0 11.5%;
+    max-width: 11.5% !important;
+}
+
+.img-8 img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.h-66 {
+    height: 66% !important;
+}
+
+.h-33 {
+    height: 33% !important;
+}
+
+.h_500 {
+    height: 500px !important;
+}
+
+.h_1000 {
+    height: 850px !important;
+}
+
+#mid-carousel .carousel-control-next,
+#mid-carousel .carousel-control-prev {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+}
+
+#left-carousel img,
+#right-carousel img {
+    filter: grayscale(100%);
+    transform: translateX(-25%);
+}
+
+.level {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.level span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.level span:last-child {
+    border-left: 1px solid white;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    padding-left: 10px;
 }
