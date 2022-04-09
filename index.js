@@ -51,6 +51,8 @@ function readMoreOrLess() {
 
 $(document).ready(function () {
     $("#back-to-top").load("back-to-top.html");
+    $("#binhthoi-house-info").load("binhthoi-house-info.html");
+    $("#haushaus-house-info").load("haushaus-house-info.html");
     $("#header").load("header.html");
     $("#go-back").load("go-back.html");
     $("#body").removeClass("d-none")

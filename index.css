@@ -490,4 +490,13 @@ header .header .menu a {
     font-weight: 900;
     color: gray;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.house-item span {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
 }
