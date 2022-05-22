@@ -2,38 +2,67 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Haus house</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+	<meta name="title" content="AkitePhile">
+	<meta http-equiv="content-language" content="vi" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
-    <div id="header"></div>
+<body id="body" class="d-none">
+    <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
+		<div class="container-fluid header">
+			<a href="/">
+				<img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+			</a>
+			<ul class="menu">
+				<a href="/">HOME</a>
+				<a href="/project.html">PROJECT</a>
+				<a href="/team.html">TEAM</a>
+				<a href="/contact.html">CONTACT</a>
+				<li>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fa fa-bars"></i>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+							<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
 
     <div class="container-customer pt-150">
         <div class="row">
-            <div class="col-2 d-flex align-items-end justify-content-end">
+            <div class="col-2 left move d-flex align-items-end justify-content-end">
                 <ul class="ul-right">
                     <li>Concept</li>
                     <li>Drawing</li>
                     <li>Construction Diary</li>
                 </ul>
             </div>
-            <div class="col-5 border-bottom-40">
+            <div class="col-5 border-bottom-40 left move">
                 <h1 class="h1">Haushaus</h1>
             </div>
-            <div class="col-5 border-bottom-40"></div>
+            <div class="col-5 border-bottom-40-3rem right move"></div>
             <div class="col-2"></div>
-            <div class="col-5">
-                <div class="row ">
+            <div class="col-5 left move" style="z-index: 200; background-color:white">
+                <div class="row mt-5">
                     <div class="col-12 p-0 pt-2 img-1 pb-2">
                         <a href="./haushaus-start.html?avtive=0">
                             <img src="./image/Project/Haus House/SKETCH.jpg" alt="">
@@ -85,10 +114,14 @@
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01322-Edit.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-8 p-0 h_450 img-1 pl-2 pt-2">
+                    <div class="col-8 p-0 h_450 img-1 pl-2 pt-2 position-relative">
                         <a href="./haushaus-common.html?avtive=1">
                             <img src="./image/Project/Haus House/Kitchen.jpg" alt="">
                         </a>
+                        <div class="common">
+                            <span>sinh hoạt chung</span>
+                            <span>common area</span>
+                        </div>
                     </div>
                     <div class="col-12 p-0 pt-2 img-1">
                         <a href="./haushaus-common.html?avtive=2">
@@ -121,10 +154,14 @@
                             <img src="./image/Project/Haus House/Kitchen 2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-12 p-0 pt-2 img-1">
+                    <div class="col-12 p-0 pt-2 img-1 position-relative">
                         <a href="./haushaus-living.html?avtive=0">
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01542-Edit.jpg" alt="">
                         </a>
+                        <div class="mezzanine">
+                            <span>phòng khách</span>
+                            <span>living room</span>
+                        </div>
                     </div>
                     <div class="col-8 p-0 h_450 img-1 pt-2">
                         <a href="./haushaus-living.html?avtive=1">
@@ -162,10 +199,14 @@
                             <img src="./image/Project/Haus House/THI CONG/H'S HOUSE COMPLETE 003.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-12 p-0 pt-2 img-1">
+                    <div class="col-12 p-0 pt-2 img-1 position-relative">
                         <a href="./haushaus-entertainment.html?avtive=0">
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01397-Edit.jpg" alt="">
                         </a>
+                        <div class="common">
+                            <span>phòng giải trí</span>
+                            <span>entertainment room</span>
+                        </div>
                     </div>
                     <div class="col-6 p-0 pt-2 img-1">
                         <a href="./haushaus-entertainment.html?avtive=1">
@@ -203,10 +244,14 @@
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01801.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-6 p-0 pt-2 img-1 pr-1">
+                    <div class="col-6 p-0 pt-2 img-1 pr-1 position-relative">
                         <a href="./haushaus-toilet.html?avtive=0">
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01870-Edit.jpg" alt="">
                         </a>
+                        <div class="common">
+                            <span>vệ sinh & thang</span>
+                            <span>toilet & staircase</span>
+                        </div>
                     </div>
                     <div class="col-6 p-0 pt-2 img-1 pl-1">
                         <a href="./haushaus-toilet.html?avtive=1">
@@ -254,15 +299,23 @@
                                 class="h-33 w-100">
                         </a>
                     </div>
-                    <div class="col-7 h_600 p-0 pt-2 img-1 pl-2">
+                    <div class="col-7 h_600 p-0 pt-2 img-1 pl-2 position-relative">
                         <a href="./haushaus-kid.html?avtive=2">
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01694-HDR-Edit.jpg" alt="">
                         </a>
+                        <div class="mezzanine">
+                            <span>phòng ngủ trẻ</span>
+                            <span>kidroom</span>
+                        </div>
                     </div>
-                    <div class="col-12 p-0 pt-2 img-1">
+                    <div class="col-12 p-0 pt-2 img-1 position-relative">
                         <a href="./haushaus-bed.html?avtive=0">
                             <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01615-Edit-Edit.jpg" alt="">
                         </a>
+                        <div class="common">
+                            <span>phòng ngủ</span>
+                            <span>bedroom</span>
+                        </div>
                     </div>
                     <div class="col-6 p-0 pt-2 img-1 pr-1">
                         <a href="./haushaus-bed.html?avtive=1">
@@ -302,25 +355,34 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-5 pt-5 pl-5 right move" style="z-index: 200; background-color:white">
                 <p class="house-info">Location: Hieu Liem, Vinh Cuu, Dong Nai, Vietnam</p>
                 <p class="house-info">Project Area: 1200 sqm</p>
                 <p class="house-info">Year: 2018-2020</p>
-                <p style="text-align: justify">
+                <div style="text-align: justify">
                     Nhà không chỉ là nơi để ở, nó còn là nơi để thư giãn, kết nối gia đình và là nguồn cảm hứng sáng tạo
                     làm việc. Và không quên gợi nhắc cho những người sống trong đó những ký ức tuổi thơ khó quên bằng
                     hình ảnh mái nhà, tượng trưng cho những cánh diều chao lượn trên đồng cỏ bạt ngàn gió và nắng.
-                </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="back-to-top"></div>
+    <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./jquery.js"></script>
-    <script src="./bootstrap.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
 </body>
 
 </html>

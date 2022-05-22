@@ -6,16 +6,45 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+	<meta name="title" content="AkitePhile">
+	<meta http-equiv="content-language" content="vi" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="./bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="./index.css">
 </head>
 
 <body id="body" class="d-none">
-	<div id="header"></div>
+	<header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
+		<div class="container-fluid header">
+			<a href="/">
+				<img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+			</a>
+			<ul class="menu">
+				<a href="/">HOME</a>
+				<a href="/project.html">PROJECT</a>
+				<a href="/team.html">TEAM</a>
+				<a href="/contact.html">CONTACT</a>
+				<li>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fa fa-bars"></i>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+							<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
 
 	<nav class="navbar" style=" margin-left: 6%; margin-right: 6%; height: 900px">
 		<div class="content left move" style="width:50%;height: 100%">
@@ -42,53 +71,50 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<a href="./binhthoi.html">
-							<img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS00108-Edit-2.jpg" class="d-block w-100"
-								alt="Binh Thoi">
+							<img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS00108-Edit-2.jpg" alt="Binh Thoi">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase"> bình thới house</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./haushaus.html">
 							<img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg"
-								class="d-block w-100" alt="Haus House">
+								alt="Haus House">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase">haus house</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./hausneo.html">
-							<img src="./image/Project/HAUSNEO/thực tế (1).jpg" class="d-block w-100" alt="Haus House">
+							<img src="./image/Project/HAUSNEO/thực tế (1).jpg" alt="Haus House">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase">hausneo house</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./landmark.html">
-							<img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" class="d-block w-100"
-								alt="Landmark Apartment">
+							<img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="Landmark Apartment">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase">Landmark Apartment</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./nhatrang.html">
-							<img src="./image/Project/Nha Trang House/NT-1.jpg" class="d-block w-100"
-								alt="Nha Trang House">
+							<img src="./image/Project/Nha Trang House/NT-1.jpg" alt="Nha Trang House">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase">Nha Trang House</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./theart.html">
-							<img src="./image/Project/The Art/001.jpg" class="d-block w-100" alt="The Art">
+							<img src="./image/Project/The Art/001.jpg" alt="The Art">
 						</a>
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption d-none d-md-block ">
 							<h5 class="text-uppercase"> The Art</h5>
 						</div>
 					</div>
@@ -106,8 +132,15 @@
 	</nav>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="./jquery.js"></script>
-	<script src="./bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<script src="./index.js"></script>
 </body>
 

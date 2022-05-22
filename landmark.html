@@ -2,103 +2,167 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Landmark Apartment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+	<meta name="title" content="AkitePhile">
+	<meta http-equiv="content-language" content="vi" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
-    <div id="header"></div>
+<body id="body" class="d-none">
+    <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
+        <div class="container-fluid header">
+            <a href="/">
+                <img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+            </a>
+            <ul class="menu">
+                <a href="/">HOME</a>
+                <a href="/project.html">PROJECT</a>
+                <a href="/team.html">TEAM</a>
+                <a href="/contact.html">CONTACT</a>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                            <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <div class="container-customer pt-150">
         <div class="row">
-            <div class="col-2 d-flex align-items-end justify-content-end">
+            <div class="col-2 left move d-flex align-items-end justify-content-end">
                 <ul class="ul-right">
                     <li>Concept</li>
                     <li>Drawing</li>
                     <li>Construction Diary</li>
                 </ul>
             </div>
-            <div class="col-5 border-bottom-40">
+            <div class="col-5 border-bottom-40 left move">
                 <h1 class="h1">Landmark</h1>
                 <h1 class="h1">Apartment</h1>
             </div>
-            <div class="col-5 border-bottom-40"></div>
+            <div class="col-5 border-bottom-40-3rem right move"></div>
             <div class="col-2"></div>
-            <div class="col-5">
-                <div class="row ">
-                    <div class="col-12">
-                        <img src="./image/Project/Landmark Apartment/LM-phong khach 01.jpg" alt="">
+            <div class="col-5 left move" style="z-index: 200; background-color:white">
+                <div class="row mt-5">
+                    <div class="col-12 p-0 pt-2 img-1 pb-2">
+                        <a href="./landmark-start.html?avtive=0">
+                            <img src="./image/Project/Landmark Apartment/LM-phong khach 01.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-12 img-8">
-                        <img src="./image/Project/Landmark Apartment/LM-phong khach 02.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-bếp.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-relax 01.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-master 01.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-master 02.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-master 03.jpg" alt="">
-                        <img src="./image/Project/Landmark Apartment/LM-kid.jpg" alt="">
+                    <div class="col-12 img-8 p-0 w-100 pt-2 h_100">
+                        <a href="./landmark-start.html?avtive=1">
+                            <img src="./image/Project/Landmark Apartment/LM-phong khach 02.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=2">
+                            <img src="./image/Project/Landmark Apartment/LM-bếp.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=3">
+                            <img src="./image/Project/Landmark Apartment/LM-relax 01.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=4">
+                            <img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=5">
+                            <img src="./image/Project/Landmark Apartment/LM-master 01.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=6">
+                            <img src="./image/Project/Landmark Apartment/LM-master 02.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=7">
+                            <img src="./image/Project/Landmark Apartment/LM-master 03.jpg" alt="">
+                        </a>
+                        <a href="./landmark-start.html?avtive=8">
+                            <img src="./image/Project/Landmark Apartment/LM-kid.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-5">
-                <p class="top">Location: Landmark 81, HoChiMinh, Vietnam</p>
-                <p class="top">Project Area: 110 sqm</p>
-                <p class="top">Year: 2017-2017</p>
-                <p style="text-align: justify">
-                <h6>HÀNH TRÌNH LỬA TÌM VỀ VỚI CÂY</h6>
-                <br>
-                Chủ nhà sinh năm Đinh Mão thuộc mạng Hỏa. Song không cứ gì bởi cái mệnh trong ngũ hành mà lấy lửa để
-                làm ý tưởng cho ngôi nhà của anh. Bản thân trong con người có lửa thì dù là mệnh Thủy vẫn có thể lấy
-                lửa làm gốc. Lửa cho công việc có hay không thì chưa biết nhưng lửa cho gia đình qua cách nói chuyện
-                có thể thấy rõ. Gia đình motif truyền thống, hướng nội, luôn hướng tới duy trì bữa cơm ấm cúng dù
-                công việc bận rộn bên ngoài. Trong nhà luôn có lửa để giữ sự đầm ấm cho tất cả các thành viên đó là
-                điều dễ dàng nhận thấy sau một lần tiếp xúc. Để căn hộ sẽ là nơi giữ gìn ngọn lửa âm ỉ cháy qua
-                ngày, là nơi dẫu có ai đi xa cũng muốn quay về, thì ắt hẳn lửa phải đi tìm về chính cội nguồn của
-                mình là hoa lá cỏ cây.
-                <br>
-                <br>
+            <div class="col-5 pt-5 pl-5 right move" style="z-index: 200; background-color:white">
+                <p class="house-info">Location: Landmark 81, HoChiMinh, Vietnam</p>
+                <p class="house-info">Project Area: 110 sqm</p>
+                <p class="house-info">Year: 2017-2017</p>
+                <div style="text-align: justify">
+                    <br />
+                    <h6>HÀNH TRÌNH LỬA TÌM VỀ VỚI CÂY</h6>
+                    <br />
+                    Chủ nhà sinh năm Đinh Mão thuộc mạng Hỏa. Song không cứ gì bởi cái mệnh trong ngũ hành mà lấy lửa để
+                    làm ý tưởng cho ngôi nhà của anh. Bản thân trong con người có lửa thì dù là mệnh Thủy vẫn có thể lấy
+                    lửa làm gốc. Lửa cho công việc có hay không thì chưa biết nhưng lửa cho gia đình qua cách nói chuyện
+                    có thể thấy rõ. Gia đình motif truyền thống, hướng nội, luôn hướng tới duy trì bữa cơm ấm cúng dù
+                    công việc bận rộn bên ngoài. Trong nhà luôn có lửa để giữ sự đầm ấm cho tất cả các thành viên đó là
+                    điều dễ dàng nhận thấy sau một lần tiếp xúc. Để căn hộ sẽ là nơi giữ gìn ngọn lửa âm ỉ cháy qua
+                    ngày, là nơi dẫu có ai đi xa cũng muốn quay về, thì ắt hẳn lửa phải đi tìm về chính cội nguồn của
+                    mình là hoa lá cỏ cây.
+                    <br />
+                    <br />
 
-                Mộc sinh Hỏa bởi lẻ củi đốt cho ra lửa, quy luật ngũ hành này được khá nhiều người biết
-                <span id="dots">...</span><span id="more">
-                    tới. Song
-                    cũng chính cái quy luật khắc nghiệt đó làm cây sống không được bền lâu. Ví như Thủy sinh Mộc thì cây
-                    cũng tự khắc hút hết nước để vun vén sự sống cho mình, khi Mộc sinh Hỏa lửa cháy cũng làm cây nên
-                    một đống tro tàn. Cái quy luật tương sinh tương khắc vốn dĩ làm vạn vật vô thường không mấy khi mà
-                    bền vững được. Để trường tồn ắt hẳn loài cây đó phải sinh ra từ đất lửa. Xương rồng- một loài cây sa
-                    mạc, chịu cái nóng, khô hạn và nắng cháy mà vẫn đứng yên. Không cộc cằn như những cây cổ thụ, xương
-                    rồng vẫn giữ cho mình cái màu xanh cỏ dại, để dịu lại ngọn lửa của gia đình. Loài cây chỉ làm cho
-                    ngọn lửa ấm cúng đó âm ỉ mãi theo thời gian chứ không cháy bùng lên rồi chợt tắt.
-                    <br>
-                    <br>
-                    Chính vì thế bố trí xương rồng nằm giữa những không gian cốt lõi sẽ được xem xét làm ý tưởng chính
-                    cho thiết kế căn hộ. Một sự bố trí độc đáo nhưng lại dễ hơn những loại cây khác bởi lẽ xương rồng
-                    vốn dĩ rất ít tốn công chăm sóc. Hơi phô trương chút xíu thì Xương rồng được bọc trong lồng kính để
-                    an toàn cũng nhưng cây thì không nên đưa vào lửa cháy trực tiếp mà chỉ nên lấy lửa từ mặt trời phía
-                    xa. Từ đó cây nhờ lửa mà sống, lửa nhờ cây mà cháy qua ngày.
-                    <br>
-                    <br>
-                    Sàn trần bê tông được sử dụng thô mộc như cái sự cằn cỗi nơi mà xương rồng sinh ra tạo nên sự nhất
-                    quán trong thiết kế. Màu gỗ sậm không những làm căn hộ sang trọng mà không gian còn trở nên ấm cúng
-                    hơn đồng thời cũng vừa hay hành Mộc tương sinh với mạng Hỏa của chủ nhà.
-                    <br>
-                    <br>
-                    Tất cả những thành phần vừa nêu trên với một cơ may nào đó sẽ tạo ra một không gian đẹp hoặc không
-                    đẹp. Nhưng một điều chắc chắn rằng khi sở hữu những yếu tố như vậy, với tính cách một chủ nhà như
-                    vậy không gian căn hộ không chỉ đơn thuần là "nhà" mà còn hơn thế nữa đó hứa hẹn sẽ là một "mái ấm".
-                </span>
-                </p>
+                    Mộc sinh Hỏa bởi lẻ củi đốt cho ra lửa, quy luật ngũ hành này được khá nhiều người biết
+                    <span id="dots">...</span>
+                    <span id="more">
+                        tới. Song
+                        cũng chính cái quy luật khắc nghiệt đó làm cây sống không được bền lâu. Ví như Thủy sinh Mộc thì
+                        cây
+                        cũng tự khắc hút hết nước để vun vén sự sống cho mình, khi Mộc sinh Hỏa lửa cháy cũng làm cây
+                        nên
+                        một đống tro tàn. Cái quy luật tương sinh tương khắc vốn dĩ làm vạn vật vô thường không mấy khi
+                        mà
+                        bền vững được. Để trường tồn ắt hẳn loài cây đó phải sinh ra từ đất lửa. Xương rồng- một loài
+                        cây sa
+                        mạc, chịu cái nóng, khô hạn và nắng cháy mà vẫn đứng yên. Không cộc cằn như những cây cổ thụ,
+                        xương
+                        rồng vẫn giữ cho mình cái màu xanh cỏ dại, để dịu lại ngọn lửa của gia đình. Loài cây chỉ làm
+                        cho
+                        ngọn lửa ấm cúng đó âm ỉ mãi theo thời gian chứ không cháy bùng lên rồi chợt tắt.
+                        <br />
+                        <br />
+                        Chính vì thế bố trí xương rồng nằm giữa những không gian cốt lõi sẽ được xem xét làm ý tưởng
+                        chính
+                        cho thiết kế căn hộ. Một sự bố trí độc đáo nhưng lại dễ hơn những loại cây khác bởi lẽ xương
+                        rồng
+                        vốn dĩ rất ít tốn công chăm sóc. Hơi phô trương chút xíu thì Xương rồng được bọc trong lồng kính
+                        để
+                        an toàn cũng nhưng cây thì không nên đưa vào lửa cháy trực tiếp mà chỉ nên lấy lửa từ mặt trời
+                        phía
+                        xa. Từ đó cây nhờ lửa mà sống, lửa nhờ cây mà cháy qua ngày.
+                        <br />
+                        <br />
+                        Sàn trần bê tông được sử dụng thô mộc như cái sự cằn cỗi nơi mà xương rồng sinh ra tạo nên sự
+                        nhất
+                        quán trong thiết kế. Màu gỗ sậm không những làm căn hộ sang trọng mà không gian còn trở nên ấm
+                        cúng
+                        hơn đồng thời cũng vừa hay hành Mộc tương sinh với mạng Hỏa của chủ nhà.
+                        <br />
+                        <br />
+                        Tất cả những thành phần vừa nêu trên với một cơ may nào đó sẽ tạo ra một không gian đẹp hoặc
+                        không
+                        đẹp. Nhưng một điều chắc chắn rằng khi sở hữu những yếu tố như vậy, với tính cách một chủ nhà
+                        như
+                        vậy không gian căn hộ không chỉ đơn thuần là "nhà" mà còn hơn thế nữa đó hứa hẹn sẽ là một "mái
+                        ấm".
+                    </span>
+                </div>
                 <div class="text-center mt-2">
-                    <button onclick="myFunction()" id="myBtn" class="btn btn-outline-secondary font-italic">
+                    <button onclick="readMoreOrLess()" id="myBtn" class="btn btn-outline-secondary font-italic">
                         Read more
                     </button>
                 </div>
@@ -106,11 +170,20 @@
         </div>
     </div>
 
-    <div id="back-to-top"></div>
+    <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./jquery.js"></script>
-    <script src="./bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
 

@@ -3,9 +3,11 @@
 *::after {
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 }
+
 p {
     margin-bottom: 0;
 }
@@ -178,21 +180,21 @@ header .header .menu a {
 }
 
 .left.move {
-    transform: translateX(-200%) !important;
+    transform: translateX(-300%) !important;
 }
 
 .left {
     transform: translateX(0);
-    transition: all 1s;
+    transition: all 1.2s;
 }
 
 .right.move {
-    transform: translateX(200%) !important;
+    transform: translateX(300%) !important;
 }
 
 .right {
     transform: translateX(0);
-    transition: all 1s;
+    transition: all 1.2s;
 }
 
 .dropdown-item {
@@ -200,7 +202,7 @@ header .header .menu a {
 }
 
 .text-home {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .number {
@@ -244,6 +246,14 @@ header .header .menu a {
 
 .carousel-item img {
     height: 100vh;
+
+    display: block !important;
+    margin: auto;
+}
+
+#home-carousel .carousel-item img {
+    width: auto;
+    max-width: 100%;
 }
 
 .carousel-control-next,
@@ -252,6 +262,7 @@ header .header .menu a {
     border: none;
     width: 50px;
     opacity: 0.2;
+    filter: invert(50%);
 }
 
 .carousel-control-next:focus,
@@ -279,8 +290,17 @@ header .header .menu a {
     font-size: 25px;
     z-index: 10;
     margin: auto;
+    margin-left: 0;
     padding: 0 10px;
     font-weight: 100;
+}
+
+.carousel-caption {
+    left: 0 !important;
+}
+
+.carousel-indicators {
+    bottom: 25px;
 }
 
 .carousel-indicators li {
@@ -302,6 +322,7 @@ header .header .menu a {
     font-weight: 900;
     font-size: 52px;
 }
+
 .col-8-5 {
     flex: 0 0 69.1% !important;
     max-width: 69.1% !important;
@@ -374,7 +395,7 @@ header .header .menu a {
 #mid-carousel .carousel-control-prev {
     background-color: transparent;
     border: none;
-    width: 50%;
+    width: 10%;
 }
 
 #left-carousel img,
@@ -411,7 +432,7 @@ header .header .menu a {
     right: 20px;
 }
 
-#back-to-top {
+#btn-back-to-top {
     display: none;
 }
 
@@ -432,6 +453,26 @@ header .header .menu a {
 }
 
 .stair span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.common {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.common span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.common span:last-child {
     font-weight: 400;
     letter-spacing: 5px;
 }
@@ -488,10 +529,11 @@ header .header .menu a {
     left: 500px;
     font-size: 5rem;
     font-weight: 900;
-    color: gray;
+    color: #ff9900;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    z-index: 1000;
 }
 
 .house-item span {
@@ -499,4 +541,20 @@ header .header .menu a {
     font-size: 16px;
     font-weight: normal;
     text-transform: none;
+}
+
+.h1.left {
+    transition: all .8s !important;
+}
+
+.fa-facebook:before {
+    font-size: 30px;
+}
+
+.fa-globe {
+    font-size: 30px;
+}
+
+#mid-carousel img{
+    max-width: 100%;
 }

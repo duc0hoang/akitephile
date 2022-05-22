@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Haus house</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./image/logo/full logo-yellow-smile.png" type="image/x-icon">
-
+	<link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+	<meta name="title" content="AkitePhile">
+	<meta http-equiv="content-language" content="vi" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
+<body id="body" class="d-none">
     <div class="row h_1000 position-relative">
         <div class="col-2 p-0 h-100">
             <div id="right-carousel" class="carousel slide h-100" data-ride="carousel" data-touch="false"
@@ -103,8 +107,12 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev p-0" type="button" onclick="prev()">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
                 </button>
                 <button class="carousel-control-next p-0" type="button" onclick="next()">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
                 </button>
             </div>
         </div>
@@ -154,13 +162,35 @@
         <div id="bot" class="position-absolute h-100 w-100 bg-white "></div>
     </div>
 
-    <div id="haushaus-house-info"></div>
-    <div id="go-back"></div>
+    <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
+        <div class="container-fluid header">
+            <a href="/">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
+            </a>
+        </div>
+    </header>
+    <div class="house-item">
+    <p>haushaus</p>
+    <p>house</p>
+    <span>Location: Hieu Liem, Vinh Cuu, Dong Nai, Vietnam. Project Area: 1200 sqm.</span>
+</div>
+    <button type="button"
+        style="border: none; background-color: transparent; position: fixed; top:20px; left:18%; z-index: 500; outline: none"
+        onclick="history.back()">
+        <img src="./image/z3311928124762_724554e680a180e0edbad0063745c2f0.jpg" alt="" style="width:40px; height: 40px;">
+    </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./jquery.js"></script>
-    <script src="./bootstrap.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
 </body>
 
 </html>

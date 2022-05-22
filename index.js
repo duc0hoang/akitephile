@@ -50,11 +50,6 @@ function readMoreOrLess() {
 }
 
 $(document).ready(function () {
-    $("#back-to-top").load("back-to-top.html");
-    $("#binhthoi-house-info").load("binhthoi-house-info.html");
-    $("#haushaus-house-info").load("haushaus-house-info.html");
-    $("#header").load("header.html");
-    $("#go-back").load("go-back.html");
     $("#body").removeClass("d-none")
     setTimeout(function () {
         $("#top").removeClass("top")
@@ -107,15 +102,15 @@ function goToHausneo() {
 function goToLandmark() {
     window.location = "/landmark.html";
 }
-function goToBinhThoi() {
-    window.location = "/binhthoi.html";
+function goToTheArt() {
+    window.location = "/theart.html";
 }
-function goToBinhThoi() {
-    window.location = "/binhthoi.html";
+function goToNhaTrang() {
+    window.location = "/nhatrang.html";
 }
 
 //Get the button
-let mybutton = document.getElementById("back-to-top");
+let mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -137,4 +132,23 @@ mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
     window.scroll({ top: 0, behavior: "smooth" })
+}
+
+function submit() {
+    var firstname = $("#firstname")[0].value
+    var lastname = $("#lastname")[0].value
+    var message = $("#message")[0].value
+    var body = ` ${message}
+ Sign: ${firstname} ${lastname} `
+    console.log(body)
+    var subject = $("#subject")[0].value
+    Email.send({
+        SecureToken: "77d12216-72b5-41ce-9cdb-a54dff241589",
+        To: 'akitephile.studio@gmail.com', //akitephile.studio@gmail.com
+        From: "duc0hoang@gmail.com",
+        Subject: subject,
+        Body: body
+    }).then(
+        message => alert("Email was send success!")
+    );
 }
