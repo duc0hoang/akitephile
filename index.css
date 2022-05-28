@@ -501,3 +501,16 @@ header .header .menu a {
     font-weight: normal;
     text-transform: none;
 }
+
+
+/* --ConTact */
+
+
+.ct-h1{
+    font-size: 6rem;
+    font-weight: 900;
+    font-family: m-b;
+}
+.ct-p{
+    font-weight: bold;
+}
