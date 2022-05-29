@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
-	<meta name="title" content="AkitePhile">
-	<meta http-equiv="content-language" content="vi" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,36 +22,50 @@
 
 <body id="body" class="d-none">
     <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
-        <div class="container-fluid header">
-            <a href="/">
-                <img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
-            </a>
-            <ul class="menu">
-                <a href="/">HOME</a>
-                <a href="/project.html">PROJECT</a>
-                <a href="/team.html">TEAM</a>
-                <a href="/contact.html">CONTACT</a>
-                <li>
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
-                            <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+		<div class="container-fluid header">
+			<a href="/">
+				<img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
+			</a>
+			<ul class="menu d-none d-lg-flex">
+				<a href="/">HOME</a>
+				<a href="/project.html">PROJECT</a>
+				<a href="/team.html">TEAM</a>
+				<a href="/contact.html">CONTACT</a>
+				<li>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fa fa-bars"></i>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+							<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					aria-expanded="false">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="/">HOME</a>
+					<a class="dropdown-item" href="/project.html">PROJECT</a>
+					<a class="dropdown-item" href="/team.html">TEAM</a>
+					<a class="dropdown-item" href="/contact.html">CONTACT</a>
+					<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+					<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+				</div>
+			</div>
+		</div>
+	</header>
 
     <h1 style="margin-left: 6%" class="h1 pt-150 left move">Project</h1>
 
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
-        <div class="col-2"></div>
-        <div class="col-4 h-100 d-flex align-items-end left move">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
+        <div class="col-lg-2"></div>
+        <div class="col-12 col-lg-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
                 <div class="col-2 year border-bottom-black">
                     <p>2021</p>
@@ -89,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-2"></div>
         <div class="col-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
@@ -130,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-2"></div>
         <div class="col-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
@@ -165,7 +179,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-2"></div>
         <div class="col-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
@@ -201,7 +215,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-2"></div>
         <div class="col-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
@@ -229,7 +243,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2" style="margin: 0 6%; height: 500px;">
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-2"></div>
         <div class="col-4 h-100 d-flex align-items-end left move">
             <div class="row h-60 w-100 project-info">
@@ -254,6 +268,202 @@
                     <div class="col-7 h-100 pl-0 m-0">
                         <img src="./image/Project/Nha Trang House/NT-1.jpg" alt="" class="h-100 w-100">
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px;">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2021</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>Binh Thoi house</h3>
+                    <h3>in District 11</h3>
+                    <a class="border-bottom-black next pl-2" href="./binhthoi.html">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pr-0 cursor-pointer" onclick="goToBinhThoi()"
+            style="z-index: 200; background-color:white;height: 510px;">
+            <div class="row h-100">
+                <div class="col-12 h-100 p-0 w-100">
+                    <img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS09551.jpg" alt="" class="h-100 w-100 pr-2">
+                </div>
+                <div class="col-12 h-100 p-0 m-0 pr-2 pt-2">
+                    <div class="row h-100 w-100 m-0">
+                        <div class="col-12 h-60 p-0">
+                            <img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS09622.jpg" alt=""
+                                class="h-100 w-100 pb-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS09907.jpg" alt=""
+                                class="h-100 w-100 pr-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS09657-Edit.jpg" alt=""
+                                class="h-100 w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px; transform: translateY(900px);">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2020</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>Haushaus</h3>
+                    <h3>in Dong Nai</h3>
+                    <a class="border-bottom-black next pl-2" href="./haushaus.html">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pr-0 cursor-pointer" onclick="goToHaushaus()"
+            style="z-index: 200; background-color:white;height: 510px;">
+            <div class="row h-100">
+                <div class="col-12 h-100 p-0 w-100">
+                    <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg" alt=""
+                        class="h-100 w-100 pr-2">
+                </div>
+                <div class="col-12 h-100 p-0 m-0 pr-2 pt-2">
+                    <div class="row h-100 w-100 m-0">
+                        <div class="col-12 h-60 p-0">
+                            <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01542-Edit.jpg" alt=""
+                                class="h-100 w-100 pb-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01848-Edit.jpg" alt=""
+                                class="h-100 w-100 pr-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01743-Edit.jpg" alt=""
+                                class="h-100 w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px; transform: translateY(1800px);">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2020</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>Hausneo</h3>
+                    <h3>Apartment</h3>
+                    <h3>in District 9</h3>
+                    <a class="border-bottom-black next pl-2" href="./hausneo.html">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pr-0 cursor-pointer" onclick="goToHausneo()"
+            style="z-index: 200; background-color:white; height: 510px;">
+            <div class="row h-100">
+                <div class="col-12 p-0 w-100 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế (6).jpg" alt="" class="h-100 w-100">
+                </div>
+                <div class="col-12 h-100 p-0 m-0">
+                    <div class="row h-100 w-100 m-0">
+                        <div class="col-6 p-0 pr-1">
+                            <img src="./image/Project/HAUSNEO/thực tế (2).jpg" alt="" class=" w-100 pb-2">
+                        </div>
+                        <div class="col-6 p-0 pl-1">
+                            <img src="./image/Project/HAUSNEO/thực tế (7).jpg" alt="" class=" w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px; transform: translateY(2300px);">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2017</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>Landmark 81</h3>
+                    <h3>Apartment</h3>
+                    <h3>in Binh Thanh</h3>
+                    <a class="border-bottom-black next pl-2">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pr-0 cursor-pointer" onclick="goToLandmark()"
+            style="z-index: 200; background-color:white; height: 510px;">
+            <div class="row h-100">
+                <div class="col-12 p-0 m-0">
+                    <img src="./image/Project/Landmark Apartment/LM-master 01.jpg" alt="" class="w-100 pb-2">
+                </div>
+                <div class="col-12 p-0 m-0">
+                    <img src="./image/Project/Landmark Apartment/LM-kid.jpg" alt="" class="w-100 pb-2">
+                </div>
+                <div class="col-12 p-0 m-0">
+                    <img src="./image/Project/Landmark Apartment/LM-phong khach 01.jpg" alt="" class="w-100 ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px;transform: translateY(3100px);">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2017</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>The Art</h3>
+                    <h3>Apartment</h3>
+                    <h3>in District 9</h3>
+                    <a class="border-bottom-black next pl-2" href="./theart.html">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 h-100 pr-0 cursor-pointer right move" onclick="goToTheArt()"
+            style="z-index: 200; background-color:white; height: 510px;">
+            <div class="row">
+                <div class="col-12  p-0 w-100">
+                    <img src="./image/Project/The Art/001.jpg" alt="" class=" w-100 pb-2">
+                </div>
+                <div class="col-12  p-0 m-0">
+                    <img src="./image/Project/The Art/Picture1.jpg" alt="" class=" w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%; height: 500px;transform: translateY(3600px);">
+        <div class="col-12">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2017</p>
+                </div>
+                <div class="col-10 p-0 position-relative pl-2 pb-5">
+                    <p>Residential</p>
+                    <h3>Nha Trang house</h3>
+                    <h3>in Khanh Hoa</h3>
+                    <a class="border-bottom-black next pl-2" href="./nhatrang.html">See project ></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pr-0 cursor-pointer " onclick="goToNhaTrang()"
+            style="z-index: 200; background-color:white; height: 510px;">
+            <div class="row">
+                <div class="col-12 p-0 w-100">
+                    <img src="./image/Project/Nha Trang House/NT-3.jpg" alt="" class="w-100 pb-2">
+                </div>
+                <div class="col-12 p-0 m-0">
+                    <img src="./image/Project/Nha Trang House/NT-1.jpg" alt="" class="w-100">
                 </div>
             </div>
         </div>

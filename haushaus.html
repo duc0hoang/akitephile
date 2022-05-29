@@ -6,14 +6,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
-	<meta name="title" content="AkitePhile">
-	<meta http-equiv="content-language" content="vi" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,32 +22,46 @@
 
 <body id="body" class="d-none">
     <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
-		<div class="container-fluid header">
-			<a href="/">
-				<img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
-			</a>
-			<ul class="menu">
-				<a href="/">HOME</a>
-				<a href="/project.html">PROJECT</a>
-				<a href="/team.html">TEAM</a>
-				<a href="/contact.html">CONTACT</a>
-				<li>
-					<div class="dropdown">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-							aria-expanded="false">
-							<i class="fa fa-bars"></i>
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
-							<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</header>
+        <div class="container-fluid header">
+            <a href="/">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
+            </a>
+            <ul class="menu d-none d-lg-flex">
+                <a href="/">HOME</a>
+                <a href="/project.html">PROJECT</a>
+                <a href="/team.html">TEAM</a>
+                <a href="/contact.html">CONTACT</a>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                            <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/">HOME</a>
+                    <a class="dropdown-item" href="/project.html">PROJECT</a>
+                    <a class="dropdown-item" href="/team.html">TEAM</a>
+                    <a class="dropdown-item" href="/contact.html">CONTACT</a>
+                    <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                    <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="container-customer pt-150">
+    <div class="container-customer pt-150 d-none d-lg-block">
         <div class="row">
             <div class="col-2 left move d-flex align-items-end justify-content-end">
                 <ul class="ul-right">
@@ -367,6 +381,263 @@
             </div>
         </div>
     </div>
+    <!-- Phone -->
+    <div class="container-customer pt-150 d-block d-lg-none" style="z-index: 10;">
+        <div class="row">
+            <div class="col-12 border-bottom-40 p-0">
+                <h1 class="h1 ">Haushaus</h1>
+            </div>
+            <div class="col-12 p-0">
+                <p class="house-info">Location: Hieu Liem, Vinh Cuu, Dong Nai, Vietnam</p>
+                <p class="house-info">Project Area: 1200 sqm</p>
+                <p class="house-info">Year: 2018-2020</p>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/SKETCH.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01152-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/THI CONG/H'S HOUSE COMPLETE 000.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/THI CONG/H'S HOUSE COMPLETE 002.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01467-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01482-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01492.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01477.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01446.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01152-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01322-Edit.jpg" alt="">
+            </div>
+            <div style="text-align: justify">
+                Nhà không chỉ là nơi để ở, nó còn là nơi để thư giãn, kết nối gia đình và là nguồn cảm hứng sáng tạo
+                làm việc. Và không quên gợi nhắc cho những người sống trong đó những ký ức tuổi thơ khó quên bằng
+                hình ảnh mái nhà, tượng trưng cho những cánh diều chao lượn trên đồng cỏ bạt ngàn gió và nắng.
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/Haus House/Kitchen.jpg" alt="">
+                </div>
+                <div class="common">
+                    <span>sinh hoạt chung</span>
+                    <span>common area</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 w">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01762-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01352-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01774-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01728-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01783-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01790-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01795-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01762-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/Kitchen 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 pt-2 img-1 position-relative">
+                <a href="./haushaus-living.html?avtive=0">
+                    <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01542-Edit.jpg" alt="">
+                </a>
+                <div class="mezzanine">
+                    <span>phòng khách</span>
+                    <span>living room</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01522.jpg" alt="">
+            </div>
+
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01563-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01563-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01552.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01542-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01534-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01519.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01522.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01497-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/THI CONG/H'S HOUSE COMPLETE 003.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01397-Edit.jpg" alt="">
+                <div class="common">
+                    <span>phòng giải trí</span>
+                    <span>entertainment room</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01383-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01143-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01378.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01397-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01383-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01358.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01143-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01146-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01131-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01801.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01870-Edit.jpg" alt="">
+                <div class="common">
+                    <span>vệ sinh & thang</span>
+                    <span>toilet & staircase</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01853-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01714.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01870-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01853-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01858-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01762-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01719-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01714.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01718-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01710.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01694-HDR-Edit.jpg" alt="">
+                <div class="mezzanine">
+                    <span>phòng ngủ trẻ</span>
+                    <span>kidroom</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01679-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01689-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01615-Edit-Edit.jpg" alt="">
+                <div class="common">
+                    <span>phòng ngủ</span>
+                    <span>bedroom</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01825-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01848-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01834-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01848-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01825-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01818-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01806-Edit-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01809.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01806-Edit.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01646-HDR-Edit.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
     <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
@@ -382,7 +653,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-	<script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

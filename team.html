@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
-	<meta name="title" content="AkitePhile">
-	<meta http-equiv="content-language" content="vi" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -24,9 +24,9 @@
     <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
         <div class="container-fluid header">
             <a href="/">
-                <img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
             </a>
-            <ul class="menu">
+            <ul class="menu d-none d-lg-flex">
                 <a href="/">HOME</a>
                 <a href="/project.html">PROJECT</a>
                 <a href="/team.html">TEAM</a>
@@ -44,13 +44,27 @@
                     </div>
                 </li>
             </ul>
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/">HOME</a>
+                    <a class="dropdown-item" href="/project.html">PROJECT</a>
+                    <a class="dropdown-item" href="/team.html">TEAM</a>
+                    <a class="dropdown-item" href="/contact.html">CONTACT</a>
+                    <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                    <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                </div>
+            </div>
         </div>
     </header>
 
     <h1 style="margin-left: 6%" class="h1 pt-150 left move">Team</h1>
     <h1 style="margin-left: 6%" class="h1 left move">founder</h1>
 
-    <div class="row" style="margin: 0 6%;">
+    <div class="row d-none d-lg-flex" style="margin: 0 6%;">
         <div class="col-3"></div>
         <div class="col-3 p-5 left move" style="z-index: 200; background-color:white;">
             <img src="./image/39227304_2179614702273465_6884709224027258880_o.jpg" alt="" class="w-100">
@@ -68,7 +82,8 @@
                 <p class="phone">+84 98 409 4209</p>
             </div>
         </div>
-        <div class="col-3 d-flex flex-column justify-content-end right move" style="z-index: 200; background-color:white;">
+        <div class="col-3 d-flex flex-column justify-content-end right move"
+            style="z-index: 200; background-color:white;">
             <div class="vn hide">
                 <ul style="list-style-type: disclosure-closed;">
                     <li>Kiến trúc sư sáng tạo cho Kume Desing Asia</li>
@@ -86,7 +101,7 @@
 
         </div>
     </div>
-    <div class="row" style="margin: 0 6%;">
+    <div class="row d-none d-lg-flex" style="margin: 0 6%;">
         <div class="col-3"></div>
         <div class="col-3 p-5 left move" style="z-index: 200; background-color:white;">
             <img src="./image/45189834_2114735621890886_8545241587519586304_o.jpg" alt="" class="w-100">
@@ -104,7 +119,8 @@
                 <p class="phone">+84 972 040 448</p>
             </div>
         </div>
-        <div class="col-3 d-flex flex-column justify-content-end right move" style="z-index: 200; background-color:white;">
+        <div class="col-3 d-flex flex-column justify-content-end right move"
+            style="z-index: 200; background-color:white;">
             <div class="vn hide">
                 <ul style="list-style-type: disclosure-closed;">
                     <li>Kiến trúc sư nội thất cấp cao tại công ty MH architect</li>
@@ -124,7 +140,7 @@
 
         </div>
     </div>
-    <div class="row" style="margin: 0 6%;">
+    <div class="row d-none d-lg-flex" style="margin: 0 6%;">
         <div class="col-3"></div>
         <div class="col-3 p-5 left move" style="z-index: 200; background-color:white;">
             <img src="./image/26233323_1796244730439559_1689858580528708562_o.jpg" alt="" class="w-100">
@@ -142,7 +158,8 @@
                 <p class="phone">+84 97 943 0955</p>
             </div>
         </div>
-        <div class="col-3 d-flex flex-column justify-content-end right move" style="z-index: 200; background-color:white;">
+        <div class="col-3 d-flex flex-column justify-content-end right move"
+            style="z-index: 200; background-color:white;">
             <div class="vn hide">
                 <ul style="list-style-type: disclosure-closed;">
                     <li>Quản lý dự án cho dự án King Crown Infinity Thủ Đức</li>
@@ -158,6 +175,108 @@
                 </ul>
             </div>
 
+        </div>
+    </div>
+
+    <div class="row d-lg-none" style="margin: 0 6%;">
+        <div class=" col-12">
+            <img src="./image/39227304_2179614702273465_6884709224027258880_o.jpg" alt="" class="w-100 p-3">
+        </div>
+        <div class="col-12 d-flex pb-3">
+            <h1 class="number">01</h1>
+            <div class="vn hide">
+                <p class="phone">Kiến trúc sư</p>
+                <p class="name">LƯU QUỐC THỊNH</p>
+                <p class="phone">+84 98 409 4209</p>
+            </div>
+            <div class="en hide">
+                <p class="phone">Creative Architect</p>
+                <p class="name">LƯU QUỐC THỊNH</p>
+                <p class="phone">+84 98 409 4209</p>
+            </div>
+        </div>
+        <div class="col-12 d-flex flex-column justify-content-end">
+            <div class="vn hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Kiến trúc sư sáng tạo cho Kume Desing Asia</li>
+                    <li> 2,5 năm công tác ở Nhật </li>
+                    <li>8 năm kinh nghiệm trong tập đoàn Kume Sekkei - Nhật Bản </li>
+                </ul>
+            </div>
+            <div class="en hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Creative Architect at Kume Design Asia</li>
+                    <li>2.5 years experience working in Japan </li>
+                    <li>8 years working in Kume Sekkei Group </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12">
+            <img src="./image/45189834_2114735621890886_8545241587519586304_o.jpg" alt="" class="w-100 p-3">
+        </div>
+        <div class="col-12 d-flex pb-3">
+            <h1 class="number">02</h1>
+            <div class="vn hide">
+                <p class="phone">Kiến trúc sư thiết kế nội thất & Điều phối</p>
+                <p class="name">NGUYỄN HỒNG NGỌC</p>
+                <p class="phone">+84 972 040 448</p>
+            </div>
+            <div class="en hide">
+                <p class="phone">Architect Interior Designer & Cordination</p>
+                <p class="name">NGUYỄN HỒNG NGỌC</p>
+                <p class="phone">+84 972 040 448</p>
+            </div>
+        </div>
+        <div class="col-12 d-flex flex-column justify-content-end">
+            <div class="vn hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Kiến trúc sư nội thất cấp cao tại công ty MH architect</li>
+                    <li>1 năm công tác ở Nhật</li>
+                    <li>5 năm làm việc cho tập đoàn Kume Sekkei - Nhật Bản</li>
+                    <li>1 năm giám sát công trường</li>
+                </ul>
+            </div>
+            <div class="en hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Senior Architect Interior Design at MH arch</li>
+                    <li>1 year experience working in Japan</li>
+                    <li>5 years working in Kume Sekkei Group</li>
+                    <li>1 year supervisor at construction site </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-12 p-0 img-1 pb-2">
+            <img src="./image/26233323_1796244730439559_1689858580528708562_o.jpg" alt="" class="w-100 p-3">
+        </div>
+        <div class="col-12 d-flex pb-3">
+            <h1 class="number">03</h1>
+            <div class="vn hide">
+                <p class="phone">Kỹ sư kết cấu & Quản lý dự án</p>
+                <p class="name">NGUYỄN TRUNG HUY</p>
+                <p class="phone">+84 97 943 0955</p>
+            </div>
+            <div class="en hide">
+                <p class="phone">Structure Engineer & Project Management</p>
+                <p class="name">NGUYỄN TRUNG HUY</p>
+                <p class="phone">+84 97 943 0955</p>
+            </div>
+        </div>
+        <div class="col-12 d-flex flex-column justify-content-end">
+            <div class="vn hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Quản lý dự án cho dự án King Crown Infinity Thủ Đức</li>
+                    <li>7 năm kinh nghiệm làm cho công ty Thornton Nomasetti - Mỹ - nhóm trưởng phụ trách kết cấu các
+                        công trình cao tầng</li>
+                </ul>
+            </div>
+            <div class="en hide">
+                <ul style="list-style-type: disclosure-closed;">
+                    <li>Project management for King Crown Infinity</li>
+                    <li>7 years experience working in Thornton Tomasetti - leader structure engineer for highrise
+                        building</li>
+                </ul>
+            </div>
         </div>
     </div>
     <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">

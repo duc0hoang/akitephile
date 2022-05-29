@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
-	<meta name="title" content="AkitePhile">
-	<meta http-equiv="content-language" content="vi" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -24,9 +24,9 @@
     <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
         <div class="container-fluid header">
             <a href="/">
-                <img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
             </a>
-            <ul class="menu">
+            <ul class="menu d-none d-lg-flex">
                 <a href="/">HOME</a>
                 <a href="/project.html">PROJECT</a>
                 <a href="/team.html">TEAM</a>
@@ -44,10 +44,24 @@
                     </div>
                 </li>
             </ul>
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/">HOME</a>
+                    <a class="dropdown-item" href="/project.html">PROJECT</a>
+                    <a class="dropdown-item" href="/team.html">TEAM</a>
+                    <a class="dropdown-item" href="/contact.html">CONTACT</a>
+                    <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                    <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container-customer pt-150">
+    <div class="container-customer pt-150 d-none d-lg-block">
         <div class="row">
             <div class="col-2 left move d-flex align-items-end justify-content-end">
                 <ul class="ul-right">
@@ -104,6 +118,48 @@
         </div>
     </div>
 
+
+    <!-- Phone -->
+    <div class="container-customer d-block d-lg-none pt-150">
+        <div class="row">
+            <div class="col-12 border-bottom-40 p-0">
+                <h1 class="h1 ">Hausneo</h1>
+            </div>
+            <div class="col-12 p-0">
+                <p class="house-info">Location: Hausneo Apartment, District 9, HCMC, VN</p>
+                <p class="house-info">Project Area: 65 sqm</p>
+                <p class="house-info">Year: 2019-2019</p>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (6).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (1).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (8).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (5).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (7).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (9).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (2).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (4).jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/HAUSNEO/thực tế (3).jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
     <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>

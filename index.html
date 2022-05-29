@@ -23,9 +23,9 @@
 	<header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
 		<div class="container-fluid header">
 			<a href="/">
-				<img src="./image/logo/full logo.png" alt="logo" style="width:200px; height: 65px;">
+				<img src="./image/logo.jpg" alt="logo" style="width:200px; height: 65px;">
 			</a>
-			<ul class="menu">
+			<ul class="menu d-none d-lg-flex">
 				<a href="/">HOME</a>
 				<a href="/project.html">PROJECT</a>
 				<a href="/team.html">TEAM</a>
@@ -43,10 +43,24 @@
 					</div>
 				</li>
 			</ul>
+			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					aria-expanded="false">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="/">HOME</a>
+					<a class="dropdown-item" href="/project.html">PROJECT</a>
+					<a class="dropdown-item" href="/team.html">TEAM</a>
+					<a class="dropdown-item" href="/contact.html">CONTACT</a>
+					<p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+					<p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+				</div>
+			</div>
 		</div>
 	</header>
 
-	<nav class="navbar" style=" margin-left: 6%; margin-right: 6%; height: 900px">
+	<nav class="navbar d-none d-lg-block" style=" margin-left: 6%; margin-right: 6%; height: 900px">
 		<div class="content left move" style="width:50%;height: 100%">
 			<div id="logo">
 				<a id="fun" href="/project.html">
@@ -66,14 +80,13 @@
 					<li data-target="#home-carousel" data-slide-to="2"></li>
 					<li data-target="#home-carousel" data-slide-to="3"></li>
 					<li data-target="#home-carousel" data-slide-to="4"></li>
-					<li data-target="#home-carousel" data-slide-to="5"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<a href="./binhthoi.html">
 							<img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS00108-Edit-2.jpg" alt="Binh Thoi">
 						</a>
-						<div class="carousel-caption d-none d-md-block ">
+						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase"> bình thới house</h5>
 						</div>
 					</div>
@@ -82,7 +95,7 @@
 							<img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg"
 								alt="Haus House">
 						</a>
-						<div class="carousel-caption d-none d-md-block ">
+						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase">haus house</h5>
 						</div>
 					</div>
@@ -90,7 +103,7 @@
 						<a href="./hausneo.html">
 							<img src="./image/Project/HAUSNEO/thực tế (1).jpg" alt="Haus House">
 						</a>
-						<div class="carousel-caption d-none d-md-block ">
+						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase">hausneo house</h5>
 						</div>
 					</div>
@@ -98,23 +111,15 @@
 						<a href="./landmark.html">
 							<img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="Landmark Apartment">
 						</a>
-						<div class="carousel-caption d-none d-md-block ">
+						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase">Landmark Apartment</h5>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<a href="./nhatrang.html">
-							<img src="./image/Project/Nha Trang House/NT-1.jpg" alt="Nha Trang House">
-						</a>
-						<div class="carousel-caption d-none d-md-block ">
-							<h5 class="text-uppercase">Nha Trang House</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<a href="./theart.html">
 							<img src="./image/Project/The Art/001.jpg" alt="The Art">
 						</a>
-						<div class="carousel-caption d-none d-md-block ">
+						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase"> The Art</h5>
 						</div>
 					</div>
@@ -124,6 +129,82 @@
 					<span class="sr-only">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-target="#home-carousel" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<nav class="navbar d-block d-lg-none" style=" margin-left: 6%; margin-right: 6%; margin-top: 150px;">
+		<div class="content mb-5" style="width:100%;height: 100%;">
+			<div id="logo">
+				<a id="fun" href="/project.html">
+					<img src="./image/logo/full logo-yellow-smile.png" alt="logo" style="width:100%; height: auto;">
+				</a>
+				<img id="sad" src="./image/logo/full logo-yellow.png" alt="logo" style="width:100%; height: auto;">
+			</div>
+			<p class="text-center mt-5 text-home">Tài sản sẽ có giá trị hơn tiêu sản</p>
+			<p class="text-center text-home"> Nhưng có một thứ còn quý hơn cả tài sản, đó chính là những di sản</p>
+			<p class="text-center mt-5 font-italic text-home">-Akitephile-</p>
+		</div>
+		<div class="" style="width:100%;height: 510px">
+			<div id="mobile-carousel" class="carousel slide" data-ride="carousel" data-touch="false"
+				data-interval="false">
+				<ol class="carousel-indicators">
+					<li data-target="#mobile-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mobile-carousel" data-slide-to="1"></li>
+					<li data-target="#mobile-carousel" data-slide-to="2"></li>
+					<li data-target="#mobile-carousel" data-slide-to="3"></li>
+					<li data-target="#mobile-carousel" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="./binhthoi.html">
+							<img src="./image/Project/BINH THOI/Dũng Huỳnh/DHS00108-Edit-2.jpg" alt="Binh Thoi">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase"> bình thới house</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="./haushaus.html">
+							<img src="./image/Project/Haus House/2105_Villa Dong Nai/DHS01175-Edit.jpg"
+								alt="Haus House">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase">haus house</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="./hausneo.html">
+							<img src="./image/Project/HAUSNEO/thực tế (1).jpg" alt="Haus House">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase">hausneo house</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="./landmark.html">
+							<img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="Landmark Apartment">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase">Landmark Apartment</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="./theart.html">
+							<img src="./image/Project/The Art/001.jpg" alt="The Art">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase"> The Art</h5>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-target="#mobile-carousel" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-target="#mobile-carousel" data-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</button>

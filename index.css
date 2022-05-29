@@ -27,16 +27,6 @@ p {
     src: url(./image/font-montserrat/Montserrat-Medium.otf) format("truetype");
 }
 
-.navbar .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.navbar .content p {
-    font-family: m-l;
-}
-
 header .header {
     display: flex;
     justify-content: space-between;
@@ -68,6 +58,106 @@ header .header .menu a {
     text-decoration: none;
     color: black;
 }
+
+#fun {
+    display: none;
+}
+
+#logo:hover #fun {
+    display: block !important;
+}
+
+#logo:hover #sad {
+    display: none !important;
+}
+
+.carousel-item img {
+    height: 100vh;
+
+    display: block !important;
+    margin: auto;
+}
+
+#home-carousel .carousel-item img {
+    width: auto;
+    max-width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    opacity: 0.2;
+    filter: invert(50%);
+}
+
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+    opacity: 0.2;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    opacity: 1 !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-caption h5 {
+    background-color: #ff9900;
+    color: white;
+    width: fit-content;
+    height: 35px;
+    line-height: 35px;
+    font-size: 25px;
+    z-index: 10;
+    margin: auto;
+    margin-left: 0;
+    padding: 0 10px;
+    font-weight: 100;
+}
+
+.carousel-caption {
+    left: 0 !important;
+}
+
+.carousel-indicators {
+    bottom: 25px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.dropdown-menu.show {
+    border: none;
+}
+
+
+
+
+.navbar .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar .content p {
+    font-family: m-l;
+}
+
+
 
 .h-60 {
     height: 60% !important;
@@ -225,17 +315,9 @@ header .header .menu a {
     margin: 10px 0;
 }
 
-#fun {
-    display: none;
-}
 
-#logo:hover #fun {
-    display: block !important;
-}
 
-#logo:hover #sad {
-    display: none !important;
-}
+
 
 .navbar .right {
     position: absolute;
@@ -244,74 +326,7 @@ header .header .menu a {
     z-index: 10;
 }
 
-.carousel-item img {
-    height: 100vh;
 
-    display: block !important;
-    margin: auto;
-}
-
-#home-carousel .carousel-item img {
-    width: auto;
-    max-width: 100%;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: transparent;
-    border: none;
-    width: 50px;
-    opacity: 0.2;
-    filter: invert(50%);
-}
-
-.carousel-control-next:focus,
-.carousel-control-prev:focus {
-    opacity: 0.2;
-}
-
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-    opacity: 1 !important;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.carousel-caption h5 {
-    background-color: #ff9900;
-    color: white;
-    width: fit-content;
-    height: 35px;
-    line-height: 35px;
-    font-size: 25px;
-    z-index: 10;
-    margin: auto;
-    margin-left: 0;
-    padding: 0 10px;
-    font-weight: 100;
-}
-
-.carousel-caption {
-    left: 0 !important;
-}
-
-.carousel-indicators {
-    bottom: 25px;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-}
-
-.carousel-indicators .active {
-    background-color: black;
-}
 
 .project-info p,
 .project-info a {
@@ -430,9 +445,7 @@ header .header .menu a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-
-#btn-back-to-top {
+    z-index: 1000000;
     display: none;
 }
 
@@ -529,7 +542,7 @@ header .header .menu a {
     left: 500px;
     font-size: 5rem;
     font-weight: 900;
-    color: #ff9900;
+    color: gray;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -555,6 +568,67 @@ header .header .menu a {
     font-size: 30px;
 }
 
-#mid-carousel img{
+#mid-carousel img {
     max-width: 100%;
+}
+
+#mobile-carousel,
+
+#mobile-carousel .carousel-inner {
+    height: 100%;
+}
+
+#mobile-carousel .carousel-item img {
+    height: 510px;
+}
+
+#mobile-carousel .carousel-item a {
+    text-align: center;
+}
+
+#mobile-carousel .carousel-caption {
+    bottom: 50px;
+    width: 100%;
+}
+
+#mobile-carousel .carousel-caption h5 {
+    margin: 0 auto;
+}
+
+.fb {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.fb:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.right-carousel,.mid-carousel,.left-carousel img{
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .h-100.d-flex {
+        height: auto !important;
+    }
+
+    .project-info a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .project-info {
+        margin-bottom: 20px;
+    }
+
+    .top {
+        transform: translateY(0) !important;
+    }
+
+    .left.move {
+        transform: none !important;
+    }
 }
