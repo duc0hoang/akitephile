@@ -80,7 +80,8 @@ header .header .menu a {
 
 #home-carousel .carousel-item img {
     width: auto;
-    max-width: 100%;
+    max-width: 631px;
+    object-fit: cover;
 }
 
 .carousel-control-next,
@@ -207,6 +208,8 @@ header .header .menu a {
     font-size: 6rem;
     font-weight: 900;
     font-family: m-b;
+    line-height: 5.5rem;
+
 }
 
 .pt-150 {
@@ -352,6 +355,11 @@ header .header .menu a {
     cursor: pointer;
 }
 
+.col-6.h-100.pr-0.cursor-pointer.right img,
+.col-5.left img{
+    object-fit: cover ;
+}
+
 .ul-right li,
 .col-5 .house-info {
     color: #adadac;
@@ -416,7 +424,8 @@ header .header .menu a {
 #left-carousel img,
 #right-carousel img {
     filter: grayscale(100%);
-    transform: translateX(-25%);
+    transform: translateX(-42%);
+    object-fit: cover;
 }
 
 .level {
@@ -542,6 +551,7 @@ header .header .menu a {
     left: 500px;
     font-size: 5rem;
     font-weight: 900;
+    line-height: 5rem;
     color: gray;
     text-transform: uppercase;
     display: flex;
@@ -550,10 +560,12 @@ header .header .menu a {
 }
 
 .house-item span {
-    color: black;
+    color: gray;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bolder;
     text-transform: none;
+    line-height: 32px;
+    opacity: 0.5;
 }
 
 .h1.left {
@@ -580,6 +592,8 @@ header .header .menu a {
 
 #mobile-carousel .carousel-item img {
     height: 510px;
+    width: 334px; 
+    object-fit: cover;
 }
 
 #mobile-carousel .carousel-item a {
