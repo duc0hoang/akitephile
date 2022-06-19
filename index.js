@@ -60,7 +60,6 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#bot").addClass("bot");
     }, 100);
-
     var searchParams = new URLSearchParams(window.location.search)
     var param = searchParams.get('active')
     if (!param) {
@@ -128,7 +127,7 @@ function scrollFunction() {
     }
 }
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+mybutton?.addEventListener("click", backToTop);
 
 function backToTop() {
     window.scroll({ top: 0, behavior: "smooth" })
@@ -152,3 +151,28 @@ function submit() {
         message => alert("Email was send success!")
     );
 }
+
+document.onkeydown = function (e) {
+    var key = e.key;
+    if (key === "ArrowUp" || key === "ArrowLeft") {
+        prev();
+    }
+    if (key === "ArrowDown" || key === "ArrowRight") {
+        next();
+    }
+    if (key === "Escape") {
+        var path = window.location.pathname;
+        if (path === '/') {
+            return;
+        }
+        if (path.includes('-')) {
+            history.back();
+            return;
+        }
+        if (path.includes('project') || path.includes('contact') || path.includes('team')) {
+            window.location.href = '/'
+            return;
+        }
+        window.location.href = '/project.html'
+    }
+};
