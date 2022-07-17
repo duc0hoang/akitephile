@@ -60,6 +60,9 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#bot").addClass("bot");
     }, 100);
+    setTimeout(function () {
+        $(".hotline-phone-ring-wrap").show();
+    }, 2000);
     var searchParams = new URLSearchParams(window.location.search)
     var param = searchParams.get('active')
     if (!param) {
@@ -89,8 +92,11 @@ $(document).ready(function () {
     }
 });
 
+function goToBasalt() {
+    window.location = "/thebasalt.html";
+}
 function goToBinhThoi() {
-    window.location = "/binhthoi.html";
+    window.location = "/thefalls.html";
 }
 function goToHaushaus() {
     window.location = "/haushaus.html";
