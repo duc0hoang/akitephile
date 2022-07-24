@@ -27,10 +27,10 @@
                 <img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
             </a>
             <ul class="menu d-none d-lg-flex">
-                <a href="/">HOME</a>
-                <a href="/project.html">PROJECT</a>
-                <a href="/team.html">TEAM</a>
-                <a href="/contact.html">CONTACT</a>
+                <a href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG CHỦ</span> </a>
+                <a href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ ÁN</span> </a>
+                <a href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH VIÊN</span></a>
+                <a href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN HỆ</span></a>
                 <li>
                     <div class="dropdown">
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -50,10 +50,10 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/">HOME</a>
-                    <a class="dropdown-item" href="/project.html">PROJECT</a>
-                    <a class="dropdown-item" href="/team.html">TEAM</a>
-                    <a class="dropdown-item" href="/contact.html">CONTACT</a>
+                    <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG CHỦ</span> </a>
+                    <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ ÁN</span> </a>
+                    <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH VIÊN</span></a>
+                    <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN HỆ</span></a>
                     <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
                     <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
                 </div>
@@ -111,87 +111,156 @@
                 </div>
             </div>
             <div class="col-5 pt-5 pl-5 right move" style="z-index: 200; background-color:white">
-                <p class="house-info">Location: Hausneo Apartment, District 9, HCMC, VN</p>
-                <p class="house-info">Project Area: 65 sqm</p>
-                <p class="house-info">Year: 2019-2019</p>
+                <div class="vn hide">
+                    <p class="house-info">Hạng mục: Thiết kế và thi công nội thất</p>
+                    <p class="house-info">Địa điểm: Chung cư Hausneo, quận 9, TP HCM, Việt Nam </p>
+                    <p class="house-info">Diện tích: 65 m2</p>
+                    <p class="house-info">Khách hàng: Kỳ Long- Hồng Ngọc</p>
+                    <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc</p>
+                    <p class="house-info">Năm: 2019-2019</p>
+                    <p class="house-info">Hình ảnh: Kỳ Long</p>
+                    <div style="text-align: justify">
+                        Trong một không gian nhỏ bé, một tổ ấm mới của đôi vợ chồng trẻ, việc đi tìm những giá trị sống
+                        mới như bắt đầu cho một gia đình mới là điều tối cần thiết. Song rào cản kinh tế là điều mà bất
+                        kỳ cặp đôi vợ chồng trẻ nào cũng phải đối mặt.
+                        <span id="dots">...</span><span id="them">
+                            <br>
+                            <br>
+                            Nắm bắt tâm lý đó La Neo ra đời. Thiết kế tinh giản đi rất nhiều để giúp không gian gọn gang
+                            hơn
+                            nhưng vẫn tiết kiệm được khá nhiều chi phí. Đổi lại từng chi tiết bố trí trong căn hộ được
+                            chăm
+                            chút tỉ mỉ. Tìm tòi và đưa ra những giải pháp mới lạ nhằm làm không gian thú vị hơn.
+                            <br>
+                            <br>
+                            Khi một gia đình mới chào đời, một lối sống mới được hình thành, một tương lai mới được vẽ
+                            ra.
+                            Không gian mới sẽ góp phần tạo lập nên một tương lai tràn đầy hạnh phúc. Như tên của chung
+                            cư-
+                            Hausneo, một ngôi nhà cách tân. Căn hộ cũng phát triển thiết kế theo đúng tinh thần đó- La
+                            Neo.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtnVn"
+                            class="btn btn-outline-secondary font-italic">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="en hide">
+                    <p class="house-info">Scope of work: Interior design, Interior construction.</p>
+                    <p class="house-info">Location: Hausneo Apartment, District 9, HCMC, VN Project </p>
+                    <p class="house-info">Area: 65 sqm </p>
+                    <p class="house-info">Clients: Ky Long- Hong Ngoc</p>
+                    <p class="house-info">Design team: Thinh Luu, Ruby Nguyen</p>
+                    <p class="house-info">Constructor: Akitephile</p>
+                    <p class="house-info">Year: 2019-2019</p>
+                    <p class="house-info">Photo: Ky Long</p>
+                    <div class="pt-4" style="text-align: justify">
+                        In a small space, a new home of a young couple, it is essential to find new life values such as
+                        starting a new family. But economic barriers are something that any young couple must face.
+                        <span id="dots">...</span><span id="more">
+                            <br>
+                            <br>
+                            Capturing that mentality, La Neo was introduced. The minimalist design greatly helps to make
+                            the
+                            space more compact and saves a lot of money. In otherwise, every detail of the layout in the
+                            apartment is meticulously take care of. Discover and come up with new solutions to make the
+                            space more interesting.
+                            <br>
+                            <br>
+                            When a new family is born, a new life is formed, a new future is drawn. The new space will
+                            contribute to creating a happy future. As the name of the apartment - Hausneo, an innovative
+                            house. The apartment also developed the design in the same spirit - La Neo.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtn" class="btn btn-outline-secondary font-italic">Read
+                            more</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Phone -->
-    <div class="container-customer d-block d-lg-none pt-150">
-        <div class="row">
-            <div class="col-12 border-bottom-40 p-0">
-                <h1 class="h1 ">Hausneo</h1>
-            </div>
-            <div class="col-12 p-0">
-                <p class="house-info">Location: Hausneo Apartment, District 9, HCMC, VN</p>
-                <p class="house-info">Project Area: 65 sqm</p>
-                <p class="house-info">Year: 2019-2019</p>
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _6_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _1_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _8_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _5_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _7_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _9_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _2_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _4_.jpg" alt="">
-            </div>
-            <div class="col-12 p-0 img-1 pb-2">
-                <img src="./image/Project/HAUSNEO/thực tế _3_.jpg" alt="">
+        <!-- Phone -->
+        <div class="container-customer d-block d-lg-none pt-150">
+            <div class="row">
+                <div class="col-12 border-bottom-40 p-0">
+                    <h1 class="h1 ">Hausneo</h1>
+                </div>
+                <div class="col-12 p-0">
+                    <p class="house-info">Location: Hausneo Apartment, District 9, HCMC, VN</p>
+                    <p class="house-info">Project Area: 65 sqm</p>
+                    <p class="house-info">Year: 2019-2019</p>
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _6_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _1_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _8_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _5_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _7_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _9_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _2_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _4_.jpg" alt="">
+                </div>
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/HAUSNEO/thực tế _3_.jpg" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="hotline-phone-ring-wrap" style="display:none">
-        <div class="hotline-phone-ring">
-            <div class="hotline-phone-ring-circle"></div>
-            <div class="hotline-phone-ring-circle-fill"></div>
-            <div class="hotline-phone-ring-img-circle">
-                <a href="tel:0972040448" class="pps-btn-img">
-                    <img src="https://isharevn.net/wp-content/uploads/2021/05/icon-call-nh.png" alt="Gọi điện thoại"
-                        width="50">
+        <div class="hotline-phone-ring-wrap" style="display:none">
+            <div class="float-icon-hotline">
+                <ul class="left-icon hotline">
+                    <li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
+                            href="https://zalo.me/0972040448"><i
+                                class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+                </ul>
+            </div>
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:0972040448" class="pps-btn-img">
+                        <img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
+                    </a>
+                </div>
+            </div>
+            <div class="hotline-bar">
+                <a href="tel:0972040448">
+                    <span class="text-hotline">0972 040 448</span>
                 </a>
             </div>
         </div>
-        <div class="hotline-bar">
-            <a href="tel:0972040448">
-                <span class="text-hotline">0972 040 448</span>
-            </a>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+        <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
 </body>
 
 </html>

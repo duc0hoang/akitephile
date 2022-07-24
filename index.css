@@ -686,7 +686,7 @@ header .header .menu a {
     position: absolute;
     background-color: transparent;
     border-radius: 100%;
-    border: 2px solid #e60808;
+    border: 2px solid #cccccc;
     -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
     animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
     transition: all .5s;
@@ -702,7 +702,7 @@ header .header .menu a {
     top: 25px;
     left: 25px;
     position: absolute;
-    background-color: rgba(230, 8, 8, 0.7);
+    background-color: #cccccc;
     border-radius: 100%;
     border: 2px solid transparent;
     -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
@@ -714,7 +714,7 @@ header .header .menu a {
 }
 
 .hotline-phone-ring-img-circle {
-    background-color: #e60808;
+    background-color: #cccccc;
     width: 33px;
     height: 33px;
     top: 37px;
@@ -750,7 +750,7 @@ header .header .menu a {
 
 .hotline-bar {
     position: absolute;
-    background: rgba(230, 8, 8, 0.75);
+    background: transparent;
     height: 40px;
     width: 180px;
     line-height: 40px;
@@ -763,13 +763,14 @@ header .header .menu a {
     z-index: 9;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px !important;
+    border : 1px dashed #000;
     /* width: 175px !important; */
     left: 33px;
     bottom: 37px;
 }
 
 .hotline-bar>a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
@@ -782,7 +783,7 @@ header .header .menu a {
 
 .hotline-bar>a:hover,
 .hotline-bar>a:active {
-    color: #fff;
+    color: #000;
 }
 
 @-webkit-keyframes phonering-alo-circle-anim {
@@ -856,3 +857,119 @@ header .header .menu a {
 }
 
 /* end phone */
+
+.float-icon-hotline {
+    display: block;
+    width: 40px;
+    position: fixed;
+    bottom: 85px;
+    left: 33px;
+    z-index: 999999;
+}
+	
+
+.float-icon-hotline ul {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.float-icon-hotline ul li {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.float-icon-hotline ul li a#messengerButton {
+    padding: 0px !important;
+    background: transparent !important;
+    border: 0px !important;
+}
+@media only screen and (min-width: 960px)
+{
+	.float-icon-hotline ul li .fa {
+		background-size: contain !important;
+	}
+}
+.float-icon-hotline ul li .fa-phone {
+    background-color: #ed1c24;
+}
+.float-icon-hotline ul li .fa {
+    background-color: #ed1c24;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.tada {
+    animation-name: tada;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.float-icon-hotline ul li span {
+    display: inline-block;
+    padding: 0;
+    background-color: #ff6a00;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 36px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 0;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: #ff6a00;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+ul.left-icon.hotline {
+    margin-left: 0px !important;
+}
+
+
+.float-icon-hotline ul li .fa-zalo {
+    background: url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;
+}
+.float-icon-hotline ul li .fa-zalo:hover {
+    background: #ef0303 url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;opacity:.5;
+}
+.float-icon-hotline ul li .fa-messenger {
+    background:  url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;
+}
+.float-icon-hotline ul li .fa-messenger:hover {
+    background: #168efb url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;opacity:.5;
+}

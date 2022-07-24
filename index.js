@@ -36,16 +36,22 @@ var changeLanguage = function (s) {
 function readMoreOrLess() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
+    var themText = document.getElementById("them");
     var btnText = document.getElementById("myBtn");
+    var btnVnText = document.getElementById("myBtnVn");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
+        btnVnText.innerHTML = "Xem thêm";
         moreText.style.display = "none";
+        themText.style.display = "none";
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
+        btnVnText.innerHTML = "Ẩn bớt";
         moreText.style.display = "inline";
+        themText.style.display = "inline";
     }
 }
 
@@ -95,7 +101,7 @@ $(document).ready(function () {
 function goToBasalt() {
     window.location = "/thebasalt.html";
 }
-function goToBinhThoi() {
+function goToFalls() {
     window.location = "/thefalls.html";
 }
 function goToHaushaus() {
