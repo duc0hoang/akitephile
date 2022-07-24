@@ -14,21 +14,21 @@ var changeLanguage = function (s) {
         console.log('ens');
         for (var i = 0; i < ens.length; i++) {
             var e = ens[i];
-            e.className = 'en';
+            e.classList.remove('hide');
         };
         for (var i = 0; i < vns.length; i++) {
             var e = vns[i];
-            e.className = 'vn hide';
+            e.classList.add('hide');
         };
     } else {
         console.log('vns');
         for (var i = 0; i < ens.length; i++) {
             var e = ens[i];
-            e.className = 'en hide';
+            e.classList.add('hide');
         };
         for (var i = 0; i < vns.length; i++) {
             var e = vns[i];
-            e.className = 'vn';
+            e.classList.remove('hide');
         };
     }
 }
@@ -88,12 +88,12 @@ $(document).ready(function () {
     if ('EN' === language) {
         for (var i = 0; i < ens.length; i++) {
             var e = ens[i];
-            e.className = "en";
+            e.classList.remove('hide');
         };
     } else {
         for (var i = 0; i < vns.length; i++) {
             var e = vns[i];
-            e.className = "vn";
+            e.classList.remove('hide');
         };
     }
 });

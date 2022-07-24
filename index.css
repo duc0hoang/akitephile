@@ -232,7 +232,7 @@ header .header .menu a {
     justify-content: space-between;
 }
 
-#more {
+#more, #them {
     display: none;
 }
 
@@ -963,9 +963,11 @@ ul.left-icon.hotline {
 
 .float-icon-hotline ul li .fa-zalo {
     background: url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;
+    filter: grayscale(100%);
 }
 .float-icon-hotline ul li .fa-zalo:hover {
     background: #ef0303 url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;opacity:.5;
+    filter: grayscale(100%);
 }
 .float-icon-hotline ul li .fa-messenger {
     background:  url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;
