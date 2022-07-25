@@ -975,3 +975,14 @@ ul.left-icon.hotline {
 .float-icon-hotline ul li .fa-messenger:hover {
     background: #168efb url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;opacity:.5;
 }
+
+.language {
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.youtube{
+    width: 710px;
+    height: 398px;
+}
