@@ -21,7 +21,8 @@
 </head>
 
 <body id="body" class="d-none">
-    <header class="top" id="top" style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100;">
+    <header class="top" id="top"
+        style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100; background-color:white">
         <div class="container-fluid header">
             <a href="/">
                 <img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
@@ -50,10 +51,14 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG CHỦ</span> </a>
-                    <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ ÁN</span> </a>
-                    <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH VIÊN</span></a>
-                    <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN HỆ</span></a>
+                    <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
+                            CHỦ</span> </a>
+                    <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span
+                            class="vn hide">DỰ ÁN</span> </a>
+                    <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span
+                            class="vn hide">THÀNH VIÊN</span></a>
+                    <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span
+                            class="vn hide">LIÊN HỆ</span></a>
                     <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
                     <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
                 </div>
@@ -262,28 +267,49 @@
     <div class="container-customer pt-150 d-block d-lg-none">
         <div class="row">
             <div class="col-12 border-bottom-40">
-                <h1 class="h1">Landmark</h1>
-                <h1 class="h1">Apartment</h1>
+                <h1 class="h1">The Home-mark</h1>
+                <h1 class="h1">Landmark 81</h1>
             </div>
-            <div class="col-12">
-                <p class="house-info">Location: Landmark 81, HoChiMinh, Vietnam</p>
-                <p class="house-info">Project Area: 110 sqm</p>
+            <div class="col-12 p-0 vn hide">
+                <p class="house-info">Hạng mục: Thiết kế nội thất</p>
+                <p class="house-info">Địa điểm: Landmark 81, TP HCM, Việt Nam</p>
+                <p class="house-info">Diện tích: 110 m2</p>
+                <p class="house-info">Khách hàng: anh Hậu</p>
+                <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc</p>
+                <p class="house-info">Năm: 2017-2017</p>
+            </div>
+            <div class="col-12 p-0 en hide">
+                <p class="house-info">Scope of work: Interior design</p>
+                <p class="house-info">Location: Landmark 81, HoChiMinh city, Vietnam </p>
+                <p class="house-info">Project Area: 110 sqm </p>
+                <p class="house-info">Client: Mr Hau</p>
+                <p class="house-info">Design team: Thinh Luu, Ruby Nguyen</p>
                 <p class="house-info">Year: 2017-2017</p>
-                <br />
-                <br />
-                <h6>HÀNH TRÌNH LỬA TÌM VỀ VỚI CÂY</h6>
-                <br />
-                <div style="text-align: justify">
-                    Chủ nhà sinh năm Đinh Mão thuộc mạng Hỏa. Song không cứ gì bởi cái mệnh trong ngũ hành mà lấy lửa để
-                    làm ý tưởng cho ngôi nhà của anh. Bản thân trong con người có lửa thì dù là mệnh Thủy vẫn có thể lấy
-                    lửa làm gốc. Lửa cho công việc có hay không thì chưa biết nhưng lửa cho gia đình qua cách nói chuyện
-                    có thể thấy rõ. Gia đình motif truyền thống, hướng nội, luôn hướng tới duy trì bữa cơm ấm cúng dù
-                    công việc bận rộn bên ngoài. Trong nhà luôn có lửa để giữ sự đầm ấm cho tất cả các thành viên đó là
-                    điều dễ dàng nhận thấy sau một lần tiếp xúc. Để căn hộ sẽ là nơi giữ gìn ngọn lửa âm ỉ cháy qua
-                    ngày, là nơi dẫu có ai đi xa cũng muốn quay về, thì ắt hẳn lửa phải đi tìm về chính cội nguồn của
-                    mình là hoa lá cỏ cây.
-                </div>
-                <br />
+            </div>
+            <div style="text-align: justify" class="vn hide">
+                HÀNH TRÌNH LỬA TÌM VỀ VỚI CÂY
+                <br>
+                <br>
+                Chủ nhà sinh năm Đinh Mão thuộc mạng Hỏa. Song không cứ gì bởi cái mệnh trong ngũ hành mà lấy
+                lửa để làm ý tưởng cho ngôi nhà của anh. Bản thân trong con người có lửa thì dù là mệnh Thủy vẫn
+                có thể lấy lửa làm gốc. Lửa cho công việc có hay không thì chưa biết nhưng lửa cho gia đình qua
+                cách nói chuyện có thể thấy rõ. Gia đình motif truyền thống, hướng nội, luôn hướng tới duy trì
+                bữa cơm ấm cúng dù công việc bận rộn bên ngoài. Trong nhà luôn có lửa để giữ sự đầm ấm cho tất
+                cả các thành viên đó là điều dễ dàng nhận thấy sau một lần tiếp xúc. Để căn hộ sẽ là nơi giữ gìn
+                ngọn lửa âm ỉ cháy qua ngày, là nơi dẫu có ai đi xa cũng muốn quay về, thì ắt hẳn lửa phải đi
+                tìm về chính cội nguồn của mình là hoa lá cỏ cây.
+            </div>
+            <div style="text-align: justify" class="en hide">
+                THE JOURNEY OF FIRE TO THE TREE.
+                <br>
+                <br>
+                The owner was born in the year of Cat (Dinh Mao), belonging to the Fire in Feng-Shui. The
+                character of owner is the same. He has fire in himself. The fire for work, the fire for the
+                family. Traditional, Vietnamese family motif, always aiming to have meal together despite busy
+                work outside. There is always a fire in the house to keep all members warm. We can see this in
+                this person in only one conversation. In fore apartment to be a place to keep the smoldering
+                fire burning through the day, where even if anyone goes far away and wants to return, the fire
+                must go back to its own source. In Feng-shui, it is Tree.
             </div>
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-phong khach 01.jpg" alt="">
@@ -291,24 +317,38 @@
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-phong khach 02.jpg" alt="">
             </div>
-            <div class="col-12">
-                <div style="text-align: justify">
-                    Mộc sinh Hỏa bởi lẻ củi đốt cho ra lửa, quy luật ngũ hành này được khá nhiều người biết tới. Song
-                    cũng chính cái quy luật khắc nghiệt đó làm cây sống không được bền lâu. Ví như Thủy sinh Mộc thì
-                    cây
-                    cũng tự khắc hút hết nước để vun vén sự sống cho mình, khi Mộc sinh Hỏa lửa cháy cũng làm cây
-                    nên
-                    một đống tro tàn. Cái quy luật tương sinh tương khắc vốn dĩ làm vạn vật vô thường không mấy khi
-                    mà
-                    bền vững được. Để trường tồn ắt hẳn loài cây đó phải sinh ra từ đất lửa. Xương rồng- một loài
-                    cây sa
-                    mạc, chịu cái nóng, khô hạn và nắng cháy mà vẫn đứng yên. Không cộc cằn như những cây cổ thụ,
-                    xương
-                    rồng vẫn giữ cho mình cái màu xanh cỏ dại, để dịu lại ngọn lửa của gia đình. Loài cây chỉ làm
-                    cho
-                    ngọn lửa ấm cúng đó âm ỉ mãi theo thời gian chứ không cháy bùng lên rồi chợt tắt.
-                </div>
-                <br />
+            <div style="text-align: justify" class="vn hide">
+                Mộc sinh Hỏa bởi lẻ củi đốt cho ra lửa, quy luật ngũ hành này được khá nhiều người biết tới.
+                Song cũng chính cái quy luật khắc nghiệt đó làm cây sống không được bền lâu. Ví như Thủy
+                sinh
+                Mộc thì cây cũng tự khắc hút hết nước để vun vén sự sống cho mình, khi Mộc sinh Hỏa lửa cháy
+                cũng làm cây nên một đống tro tàn. Cái quy luật tương sinh tương khắc vốn dĩ làm vạn vật vô
+                thường không mấy khi mà bền vững được. Để trường tồn ắt hẳn loài cây đó phải sinh ra từ đất
+                lửa.
+                Xương rồng- một loài cây sa mạc, chịu cái nóng, khô hạn và nắng cháy mà vẫn đứng yên. Không
+                cộc
+                cằn như những cây cổ thụ, xương rồng vẫn giữ cho mình cái màu xanh cỏ dại, để dịu lại ngọn
+                lửa
+                của gia đình. Loài cây chỉ làm cho ngọn lửa ấm cúng đó âm ỉ mãi theo thời gian chứ không
+                cháy
+                bùng lên rồi chợt tắt.
+            </div>
+            <div style="text-align: justify" class="en hide">
+                Wood gives rise to Fire by oddly burning firewood, this rule of the five elements in
+                Feng-Shui
+                is well known by many Asian people. But it is the same harsh rule that makes the tree not
+                live
+                long. For example, Water create Wood, the tree also automatically absorbs all the water to
+                nourish its life, when the Wood create Fire, the fire burns the tree, making it a pile of
+                ashes.
+                The Feng-Shui rule makes connection between 2 things become unsustainable. In order to
+                survive,
+                that plant must deeply connect to fire. Cactus - a desert plant, withstands heat, drought
+                and
+                scorching sun, but still alive. Not as grumpy as the old trees, cactus still keep their weed
+                green color, to calm the fire. The tree only makes that cozy fire smolder over time, not
+                burn up
+                and then suddenly die.
             </div>
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-bếp.jpg" alt="">
@@ -319,19 +359,25 @@
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-relax 02.jpg" alt="">
             </div>
-            <div class="col-12">
-                <div style="text-align: justify">
-                    Chính vì thế bố trí xương rồng nằm giữa những không gian cốt lõi sẽ được xem xét làm ý tưởng
-                    chính
-                    cho thiết kế căn hộ. Một sự bố trí độc đáo nhưng lại dễ hơn những loại cây khác bởi lẽ xương
-                    rồng
-                    vốn dĩ rất ít tốn công chăm sóc. Hơi phô trương chút xíu thì Xương rồng được bọc trong lồng kính
-                    để
-                    an toàn cũng nhưng cây thì không nên đưa vào lửa cháy trực tiếp mà chỉ nên lấy lửa từ mặt trời
-                    phía
-                    xa. Từ đó cây nhờ lửa mà sống, lửa nhờ cây mà cháy qua ngày.
-                </div>
-                <br />
+            <div style="text-align: justify" class="vn hide">
+                Chính vì thế bố trí xương rồng nằm giữa những không gian cốt lõi sẽ được xem xét làm ý tưởng
+                chính cho thiết kế căn hộ. Một sự bố trí độc đáo nhưng lại dễ hơn những loại cây khác bởi lẽ
+                xương rồng vốn dĩ rất ít tốn công chăm sóc. Hơi phô trương chút xíu thì Xương rồng được bọc
+                trong lồng kính để an toàn cũng nhưng cây thì không nên đưa vào lửa cháy trực tiếp mà chỉ
+                nên
+                lấy lửa từ mặt trời phía xa. Từ đó cây nhờ lửa mà sống, lửa nhờ cây mà cháy qua ngày.
+            </div>
+            <div style="text-align: justify" class="en hide">
+                Therefore, the layout of the cactus located between the core spaces will be considered as
+                the
+                main idea for the apartment design. A unique arrangement but easier than other plants
+                because
+                cactus are inherently very low maintenance. A little bit ostentatious, the Cactus is wrapped
+                in
+                a glass box for safety, like the way the plant should not be put on fire directly but should
+                only get heat from the sun in the distance. From then on, the tree lived by fire, and the
+                fire
+                burned through the tree through the day.
             </div>
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-master 01.jpg" alt="">
@@ -342,23 +388,34 @@
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-master 03.jpg" alt="">
             </div>
-            <div class="col-12">
-                <div style="text-align: justify">
-                    Sàn trần bê tông được sử dụng thô mộc như cái sự cằn cỗi nơi mà xương rồng sinh ra tạo nên sự
-                    nhất
-                    quán trong thiết kế. Màu gỗ sậm không những làm căn hộ sang trọng mà không gian còn trở nên ấm
-                    cúng
-                    hơn đồng thời cũng vừa hay hành Mộc tương sinh với mạng Hỏa của chủ nhà.
-                    <br />
-                    <br />
-                    Tất cả những thành phần vừa nêu trên với một cơ may nào đó sẽ tạo ra một không gian đẹp hoặc
-                    không
-                    đẹp. Nhưng một điều chắc chắn rằng khi sở hữu những yếu tố như vậy, với tính cách một chủ nhà
-                    như
-                    vậy không gian căn hộ không chỉ đơn thuần là "nhà" mà còn hơn thế nữa đó hứa hẹn sẽ là một "mái
-                    ấm".
-                </div>
-                <br />
+            <div style="text-align: justify" class="vn hide">
+                Sàn trần bê tông được sử dụng thô mộc như cái sự cằn cỗi nơi mà xương rồng sinh ra tạo nên
+                sự
+                nhất quán trong thiết kế. Màu gỗ sậm không những làm căn hộ sang trọng mà không gian còn trở
+                nên
+                ấm cúng hơn đồng thời cũng vừa hay hành Mộc tương sinh với mạng Hỏa của chủ nhà.
+                <br>
+                <br>
+                Tất cả những thành phần vừa nêu trên với một cơ may nào đó sẽ tạo ra một không gian đẹp hoặc
+                không đẹp. Nhưng một điều chắc chắn rằng khi sở hữu những yếu tố như vậy, với tính cách một
+                chủ
+                nhà như vậy không gian căn hộ không chỉ đơn thuần là "nhà" mà còn hơn thế nữa đó hứa hẹn sẽ
+                là
+                một "mái ấm".
+            </div>
+            <div style="text-align: justify" class="en hide">
+                Raw material is used crudely as the barrenness where cactus is born creating consistency in
+                the
+                design. The dark wood color not only makes the apartment luxurious, but the space also
+                becomes
+                cozier and at the same time, the Wood element is compatible with the Fire connection of the
+                owner.
+                <br>
+                <br>
+                All of the above components with some chance will create a beautiful or not beautiful space.
+                But
+                one thing is for sure, when owning such elements, with such a homeowner's personality, the
+                apartment space is not merely "house" but more than that, it promises to be a "home".
             </div>
             <div class="col-12 p-0 img-1 pb-2">
                 <img src="./image/Project/Landmark Apartment/LM-kid.jpg" alt="">
@@ -367,28 +424,28 @@
     </div>
 
     <div class="hotline-phone-ring-wrap" style="display:none">
-		<div class="float-icon-hotline">
-			<ul class="left-icon hotline">
-				<li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
-						href="https://zalo.me/0972040448"><i
-							class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
-			</ul>
-		</div>
-		<div class="hotline-phone-ring">
-			<div class="hotline-phone-ring-circle"></div>
-			<div class="hotline-phone-ring-circle-fill"></div>
-			<div class="hotline-phone-ring-img-circle">
-				<a href="tel:0972040448" class="pps-btn-img">
-					<img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
-				</a>
-			</div>
-		</div>
-		<div class="hotline-bar">
-			<a href="tel:0972040448">
-				<span class="text-hotline">0972 040 448</span>
-			</a>
-		</div>
-	</div>
+        <div class="float-icon-hotline">
+            <ul class="left-icon hotline">
+                <li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
+                        href="https://zalo.me/0972040448"><i
+                            class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+            </ul>
+        </div>
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0972040448" class="pps-btn-img">
+                    <img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0972040448">
+                <span class="text-hotline">0972 040 448</span>
+            </a>
+        </div>
+    </div>
     <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>

@@ -209,7 +209,15 @@ header .header .menu a {
     font-weight: 900;
     font-family: m-b;
     line-height: 5.5rem;
+}
 
+@media only screen and (max-width: 992px) {
+    .h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        font-family: m-b;
+        line-height: 3.5rem;
+    }
 }
 
 .pt-150 {
@@ -232,7 +240,8 @@ header .header .menu a {
     justify-content: space-between;
 }
 
-#more, #them {
+#more,
+#them {
     display: none;
 }
 
@@ -572,10 +581,6 @@ header .header .menu a {
     transition: all .8s !important;
 }
 
-.fa-facebook:before {
-    font-size: 30px;
-}
-
 .fa-globe {
     font-size: 30px;
 }
@@ -763,7 +768,7 @@ header .header .menu a {
     z-index: 9;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px !important;
-    border : 1px dashed #000;
+    border: 1px dashed #000;
     /* width: 175px !important; */
     left: 33px;
     bottom: 37px;
@@ -866,7 +871,7 @@ header .header .menu a {
     left: 33px;
     z-index: 999999;
 }
-	
+
 
 .float-icon-hotline ul {
     display: block;
@@ -874,6 +879,7 @@ header .header .menu a {
     padding-left: 0;
     margin-bottom: 0;
 }
+
 .float-icon-hotline ul li {
     display: block;
     width: 100%;
@@ -881,20 +887,23 @@ header .header .menu a {
     margin-bottom: 10px;
     cursor: pointer;
 }
+
 .float-icon-hotline ul li a#messengerButton {
     padding: 0px !important;
     background: transparent !important;
     border: 0px !important;
 }
-@media only screen and (min-width: 960px)
-{
-	.float-icon-hotline ul li .fa {
-		background-size: contain !important;
-	}
+
+@media only screen and (min-width: 960px) {
+    .float-icon-hotline ul li .fa {
+        background-size: contain !important;
+    }
 }
+
 .float-icon-hotline ul li .fa-phone {
     background-color: #ed1c24;
 }
+
 .float-icon-hotline ul li .fa {
     background-color: #ed1c24;
     display: block;
@@ -912,16 +921,20 @@ header .header .menu a {
     z-index: 2;
     border: 2px solid #fff;
 }
+
 .animated.infinite {
     animation-iteration-count: infinite;
 }
+
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
+
 .tada {
     animation-name: tada;
 }
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -930,6 +943,7 @@ header .header .menu a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .float-icon-hotline ul li span {
     display: inline-block;
     padding: 0;
@@ -963,17 +977,23 @@ ul.left-icon.hotline {
 
 .float-icon-hotline ul li .fa-zalo {
     background: url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;
+    background-size: cover;
     filter: grayscale(100%);
 }
+
 .float-icon-hotline ul li .fa-zalo:hover {
-    background: #ef0303 url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;opacity:.5;
+    background: #ef0303 url(https://netweb.vn/img/hotline/zalo.png) center center no-repeat;
+    opacity: .5;
     filter: grayscale(100%);
 }
+
 .float-icon-hotline ul li .fa-messenger {
-    background:  url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;
+    background: url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;
 }
+
 .float-icon-hotline ul li .fa-messenger:hover {
-    background: #168efb url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;opacity:.5;
+    background: #168efb url(https://netweb.vn/img/hotline/fb.png) center center no-repeat;
+    opacity: .5;
 }
 
 .language {
@@ -982,7 +1002,26 @@ ul.left-icon.hotline {
     display: flex;
 }
 
-.youtube{
+.youtube {
     width: 710px;
     height: 398px;
+}
+
+#mobile-fun,
+#mobile-sad,
+.mobile-content-carousel {
+    display: none;
+}
+
+.mobile-top {
+    transform: translateY(-200%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 3s;
+    background-color: white;
+}
+
+#mobile-top {
+    transform: translateY(0) !important;
 }
