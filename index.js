@@ -140,7 +140,9 @@ function scrollFunction() {
     }
 }
 // When the user clicks on the button, scroll to the top of the document
-mybutton?.addEventListener("click", backToTop);
+if (mybutton) {
+    mybutton.addEventListener("click", backToTop);
+}
 
 function backToTop() {
     window.scroll({ top: 0, behavior: "smooth" })
