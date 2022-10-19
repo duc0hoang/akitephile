@@ -11,7 +11,6 @@ var changeLanguage = function (s) {
     var ens = $('.en');
     var vns = $('.vn');
     if ('EN' === s) {
-        console.log('ens');
         for (var i = 0; i < ens.length; i++) {
             var e = ens[i];
             e.classList.remove('hide');
@@ -20,8 +19,11 @@ var changeLanguage = function (s) {
             var e = vns[i];
             e.classList.add('hide');
         };
+        $('#language-en').hide();
+        $('#language-vn').show();
     } else {
-        console.log('vns');
+        $('#language-en').show();
+        $('#language-vn').hide();
         for (var i = 0; i < ens.length; i++) {
             var e = ens[i];
             e.classList.add('hide');
@@ -91,7 +93,9 @@ $(document).ready(function () {
             var e = ens[i];
             e.classList.remove('hide');
         };
+        $('#language-vn').show();
     } else {
+        $('#language-en').show();
         for (var i = 0; i < vns.length; i++) {
             var e = vns[i];
             e.classList.remove('hide');
@@ -198,7 +202,7 @@ function initMobile() {
     }, 150)
     setTimeout(function () {
         $('#mobile-fun').hide();
-        $('#mobile-sad').fadeIn('slow');
+        $('#mobile-sad').show();
     }, 2000)
     setTimeout(function () {
         var language = localStorage.getItem("language");
@@ -214,5 +218,9 @@ function initMobile() {
         $('.mobile-content').removeClass('d-flex');
         $('.mobile-content-carousel').fadeIn('slow');
         $('.mobile-top').attr('id', 'mobile-top');
-    }, 8000)
+    }, 6000)
+}
+
+function onChangeMobileMenu(){
+    $('#mobile-menu').toggleClass("open");
 }

@@ -304,7 +304,7 @@ header .header .menu a {
 }
 
 .text-home {
-    font-size: 23px;
+    font-size: 17px;
 }
 
 .number {
@@ -1024,4 +1024,48 @@ ul.left-icon.hotline {
 
 #mobile-top {
     transform: translateY(0) !important;
+}
+
+@media screen and (max-width: 992px) {
+
+    .mobile-top,
+    #top {
+        height: 70px !important;
+    }
+
+    .dropdown.d-flex.d-lg-none {
+        margin-right: 0 !important;
+    }
+
+}
+
+
+.mobile-content {
+    margin-top: 40%;
+}
+
+.mobile-content #logo {
+    margin-bottom: 40%;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    width: 150px;
+    height: 100vh;
+    z-index: 90;
+    padding-top: 100px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all .5s;
+}
+
+#mobile-menu.open{
+    right: 0;
+    transition: all .5s;
 }
