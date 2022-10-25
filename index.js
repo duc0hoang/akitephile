@@ -217,7 +217,7 @@ function initMobile() {
         $('#mobile-content-en, #mobile-content-vn, .mobile-content').addClass("d-none");
         $('.mobile-content').removeClass('d-flex');
         $('.mobile-content-carousel').fadeIn('slow');
-        $('.mobile-top').attr('id', 'mobile-top');
+        $('.mobile-top').show();
     }, 6000)
 }
 

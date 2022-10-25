@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css?ver=1.4">
+    <link rel="stylesheet" href="./index.css?ver=1.5">
 </head>
 
 <body id="body" class="d-none">
-    <header class="top" id="top"
+    <header class="top d-none d-lg-block" id="top"
         style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100; background-color:white">
         <div class="container-fluid header">
             <a href="/">
@@ -40,31 +40,39 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
-                            <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
+                            <p class="dropdown-item" onclick="changeLanguage('VN')" style="padding-bottom: 20px;">VI</p>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
-                            CHỦ</span> </a>
-                    <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span
-                            class="vn hide">DỰ ÁN</span> </a>
-                    <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span
-                            class="vn hide">THÀNH VIÊN</span></a>
-                    <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span
-                            class="vn hide">LIÊN HỆ</span></a>
-                    <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
-                    <p class="dropdown-item" onclick="changeLanguage('VN')">VI</p>
-                </div>
-            </div>
         </div>
     </header>
+
+    <header id="mobile-top" class="mobile-top d-lg-none"
+		style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100">
+		<div class="container-fluid header">
+			<a href="/">
+				<img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
+			</a>
+			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+				<p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+				<p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+				<button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu">
+		<a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
+				CHỦ</span> </a>
+		<a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ
+				ÁN</span> </a>
+		<a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH
+				VIÊN</span></a>
+		<a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN
+				HỆ</span></a>
+	</div>
 
     <div class="container-customer pt-150 d-none d-lg-block">
         <div class="row">
@@ -268,7 +276,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./index.js?ver=1.4"></script>
+    <script src="./index.js?ver=1.5"></script>
 </body>
 
 </html>

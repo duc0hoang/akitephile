@@ -128,7 +128,7 @@ header .header .menu a {
 }
 
 .carousel-indicators {
-    bottom: 25px;
+    bottom: 75px;
 }
 
 .carousel-indicators li {
@@ -213,7 +213,7 @@ header .header .menu a {
 
 @media only screen and (max-width: 992px) {
     .h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 900;
         font-family: m-b;
         line-height: 3.5rem;
@@ -611,7 +611,7 @@ header .header .menu a {
 }
 
 #mobile-carousel .carousel-caption {
-    bottom: 50px;
+    bottom: 100px;
     width: 100%;
 }
 
@@ -1037,6 +1037,15 @@ ul.left-icon.hotline {
         margin-right: 0 !important;
     }
 
+    .pt-150{
+        padding-top: 100px;
+    }
+
+    .project-info h3 {
+        font-weight: 900;
+        font-size: 35px;
+    }
+
 }
 
 
@@ -1045,7 +1054,7 @@ ul.left-icon.hotline {
 }
 
 .mobile-content #logo {
-    margin-bottom: 40%;
+    margin-bottom: 10%;
 }
 
 .btn:focus {
