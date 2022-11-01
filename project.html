@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css?ver=1.5">
+    <link rel="stylesheet" href="./index.css?ver=1.6">
 </head>
 
 <body id="body" class="d-none">
@@ -49,32 +49,38 @@
     </header>
 
     <header id="mobile-top" class="mobile-top d-lg-none"
-		style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100">
-		<div class="container-fluid header">
-			<a href="/">
-				<img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
-			</a>
-			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
-				<p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
-				<p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
-				<button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
-					<i class="fa fa-bars"></i>
-				</button>
-			</div>
-		</div>
-	</header>
-	<div id="mobile-menu">
-		<a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
-				CHỦ</span> </a>
-		<a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ
-				ÁN</span> </a>
-		<a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH
-				VIÊN</span></a>
-		<a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN
-				HỆ</span></a>
-	</div>
+        style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100">
+        <div class="container-fluid header">
+            <div>
+                <a href="/">
+                    <img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
+                </a>
+                <h1 class="h1"> <span
+                        class="en hide">Project</span><span class="vn hide">Dự án</span></h1>
+            </div>
 
-    <h1 style="margin-left: 6%" class="h1 pt-150 left move"> <span class="en hide">Project</span><span class="vn hide">Dự án</span></h1>
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+                <p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+                <button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu">
+        <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
+                CHỦ</span> </a>
+        <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ
+                ÁN</span> </a>
+        <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH
+                VIÊN</span></a>
+        <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN
+                HỆ</span></a>
+    </div>
+
+    <h1 style="margin-left: 6%" class="h1 pt-150 left move d-none d-lg-block"> <span class="en hide">Project</span><span
+            class="vn hide">Dự án</span></h1>
 
     <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
         <div class="col-lg-2"></div>
@@ -90,7 +96,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Falls</h3>
                     <h3 class="vn hide">Quận 11</h3>
-                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -103,16 +110,13 @@
                 <div class="col-7 h-100 p-0 m-0">
                     <div class="row h-100 w-100">
                         <div class="col-12 h-60 p-0">
-                            <img src="./image/Project/BINH THOI/DHS09622.jpg" alt=""
-                                class="h-100 w-100 pb-2">
+                            <img src="./image/Project/BINH THOI/DHS09622.jpg" alt="" class="h-100 w-100 pb-2">
                         </div>
                         <div class="col-6 h-40 p-0">
-                            <img src="./image/Project/BINH THOI/DHS09907.jpg" alt=""
-                                class="h-100 w-100 pr-2">
+                            <img src="./image/Project/BINH THOI/DHS09907.jpg" alt="" class="h-100 w-100 pr-2">
                         </div>
                         <div class="col-6 h-40 p-0">
-                            <img src="./image/Project/BINH THOI/DHS09657-Edit.jpg" alt=""
-                                class="h-100 w-100">
+                            <img src="./image/Project/BINH THOI/DHS09657-Edit.jpg" alt="" class="h-100 w-100">
                         </div>
                     </div>
                 </div>
@@ -133,7 +137,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Basalt</h3>
                     <h3 class="vn hide">Quận Bình Thạnh</h3>
-                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -154,8 +159,7 @@
                                 class="h-100 w-100 pr-2">
                         </div>
                         <div class="col-6 h-40 p-0">
-                            <img src="./image/Project/basalt/Tan Cang house_View 4 copy.jpg" alt=""
-                                class="h-100 w-100">
+                            <img src="./image/Project/basalt/Tan Cang house_View 4 copy.jpg" alt="" class="h-100 w-100">
                         </div>
                     </div>
                 </div>
@@ -176,7 +180,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">Haushaus</h3>
                     <h3 class="vn hide">Đồng Nai</h3>
-                    <a class="border-bottom-black next" href="./haushaus.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./haushaus.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -184,22 +189,18 @@
             style="z-index: 200; background-color:white">
             <div class="row h-100">
                 <div class="col-5 h-100 pl-0 w-100">
-                    <img src="./image/Project/Haus House/DHS01175-Edit.jpg" alt=""
-                        class="h-100 w-100 pr-2">
+                    <img src="./image/Project/Haus House/DHS01175-Edit.jpg" alt="" class="h-100 w-100 pr-2">
                 </div>
                 <div class="col-7 h-100 p-0 m-0">
                     <div class="row h-100 w-100">
                         <div class="col-12 h-60 p-0">
-                            <img src="./image/Project/Haus House/DHS01542-Edit.jpg" alt=""
-                                class="h-100 w-100 pb-2">
+                            <img src="./image/Project/Haus House/DHS01542-Edit.jpg" alt="" class="h-100 w-100 pb-2">
                         </div>
                         <div class="col-6 h-40 p-0">
-                            <img src="./image/Project/Haus House/DHS01848-Edit.jpg" alt=""
-                                class="h-100 w-100 pr-2">
+                            <img src="./image/Project/Haus House/DHS01848-Edit.jpg" alt="" class="h-100 w-100 pr-2">
                         </div>
                         <div class="col-6 h-40 p-0">
-                            <img src="./image/Project/Haus House/DHS01743-Edit.jpg" alt=""
-                                class="h-100 w-100">
+                            <img src="./image/Project/Haus House/DHS01743-Edit.jpg" alt="" class="h-100 w-100">
                         </div>
                     </div>
                 </div>
@@ -222,7 +223,8 @@
                     <h3 class="vn hide">La Neo</h3>
                     <h3 class="vn hide">Chung cư</h3>
                     <h3 class="vn hide">Quận 9</h3>
-                    <a class="border-bottom-black next" href="./hausneo.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./hausneo.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -259,7 +261,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Home-Mark</h3>
                     <h3 class="vn hide">Landmark 81</h3>
-                    <a class="border-bottom-black next" href="./landmark.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./landmark.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -297,7 +300,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Art</h3>
                     <h3 class="vn hide">Quận 9</h3>
-                    <a class="border-bottom-black next" href="./theart.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./theart.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -327,7 +331,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Geomatric</h3>
                     <h3 class="vn hide">Khánh Hòa</h3>
-                    <a class="border-bottom-black next" href="./nhatrang.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./nhatrang.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -345,7 +350,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-2 d-flex d-lg-none mt-4" style="margin: 0 6%;">
+    <div class="row mb-2 d-flex d-lg-none pt-150" style="margin: 0 6%;">
         <div class="col-12">
             <div class="row h-60 w-100 project-info">
                 <div class="col-2 year border-bottom-black">
@@ -358,7 +363,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Falls</h3>
                     <h3 class="vn hide">Quận 11</h3>
-                    <a class="border-bottom-black next pl-2" href="./thefalls.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2" href="./thefalls.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -366,16 +372,13 @@
             <img src="./image/Project/BINH THOI/DHS09551.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-60 p-0" onclick="goToFalls()">
-            <img src="./image/Project/BINH THOI/DHS09622.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/BINH THOI/DHS09622.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToFalls()">
-            <img src="./image/Project/BINH THOI/DHS09907.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/BINH THOI/DHS09907.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToFalls()">
-            <img src="./image/Project/BINH THOI/DHS09657-Edit.jpg" alt=""
-                class="h-100 w-100">
+            <img src="./image/Project/BINH THOI/DHS09657-Edit.jpg" alt="" class="h-100 w-100">
         </div>
     </div>
     <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%;">
@@ -391,7 +394,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Basalt</h3>
                     <h3 class="vn hide">Quận Bình Thạnh</h3>
-                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next" href="./thefalls.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -403,12 +407,10 @@
                 class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToBasalt()">
-            <img src="./image/Project/basalt/living room floor plan copy.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/basalt/living room floor plan copy.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToBasalt()">
-            <img src="./image/Project/basalt/Tan Cang house_View 4 copy.jpg" alt=""
-                class="h-100 w-100">
+            <img src="./image/Project/basalt/Tan Cang house_View 4 copy.jpg" alt="" class="h-100 w-100">
         </div>
     </div>
     <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%;">
@@ -424,25 +426,22 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">Haushaus</h3>
                     <h3 class="vn hide">Đồng Nai</h3>
-                    <a class="border-bottom-black next pl-2" href="./haushaus.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2" href="./haushaus.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
         <div class="col-12 h-100 p-0 w-100" onclick="goToHaushaus()">
-            <img src="./image/Project/Haus House/DHS01175-Edit.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/Haus House/DHS01175-Edit.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-60 p-0" onclick="goToHaushaus()">
-            <img src="./image/Project/Haus House/DHS01542-Edit.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/Haus House/DHS01542-Edit.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToHaushaus()">
-            <img src="./image/Project/Haus House/DHS01848-Edit.jpg" alt=""
-                class="h-100 w-100 pb-2">
+            <img src="./image/Project/Haus House/DHS01848-Edit.jpg" alt="" class="h-100 w-100 pb-2">
         </div>
         <div class="col-12 h-40 p-0" onclick="goToHaushaus()">
-            <img src="./image/Project/Haus House/DHS01743-Edit.jpg" alt=""
-                class="h-100 w-100">
+            <img src="./image/Project/Haus House/DHS01743-Edit.jpg" alt="" class="h-100 w-100">
         </div>
     </div>
     <div class="row mb-2 d-flex d-lg-none" style="margin: 0 6%;">
@@ -460,7 +459,8 @@
                     <h3 class="vn hide">La Neo</h3>
                     <h3 class="vn hide">Chung cư</h3>
                     <h3 class="vn hide">Quận 9</h3>
-                    <a class="border-bottom-black next pl-2" href="./hausneo.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2" href="./hausneo.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -496,7 +496,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Home-Mark</h3>
                     <h3 class="vn hide">Landmark 81</h3>
-                    <a class="border-bottom-black next pl-2"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2"><span class="en hide">See project ></span><span
+                            class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -523,7 +524,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Art</h3>
                     <h3 class="vn hide">Quận 9</h3>
-                    <a class="border-bottom-black next pl-2" href="./theart.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2" href="./theart.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -552,7 +554,8 @@
                     <p class="vn hide">Nhà ở</p>
                     <h3 class="vn hide">The Geomatric</h3>
                     <h3 class="vn hide">Khánh Hòa</h3>
-                    <a class="border-bottom-black next pl-2" href="./nhatrang.html"><span class="en hide">See project ></span><span class="vn hide">Xem chi tiết ></span></a>
+                    <a class="border-bottom-black next pl-2" href="./nhatrang.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
                 </div>
             </div>
         </div>
@@ -569,41 +572,43 @@
         </div>
     </div>
     <div class="hotline-phone-ring-wrap" style="display:none">
-		<div class="float-icon-hotline">
-			<ul class="left-icon hotline">
-				<li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
-						href="https://zalo.me/0972040448"><i
-							class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
-			</ul>
-		</div>
-		<div class="hotline-phone-ring">
-			<div class="hotline-phone-ring-circle"></div>
-			<div class="hotline-phone-ring-circle-fill"></div>
-			<div class="hotline-phone-ring-img-circle">
-				<a href="tel:0972040448" class="pps-btn-img">
-					<img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
-				</a>
-			</div>
-		</div>
-		<div class="hotline-bar">
-			<a href="tel:0972040448">
-				<span class="text-hotline">0972 040 448</span>
-			</a>
-		</div>
-	</div>
+        <div class="float-icon-hotline">
+            <ul class="left-icon hotline">
+                <li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
+                        href="https://zalo.me/0972040448"><i
+                            class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+            </ul>
+        </div>
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0972040448" class="pps-btn-img">
+                    <img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0972040448">
+                <span class="text-hotline">0972 040 448</span>
+            </a>
+        </div>
+    </div>
     <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./index.js?ver=1.5"></script>
+    <script src="./index.js?ver=1.6"></script>
 </body>
 
 </html>

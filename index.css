@@ -1030,7 +1030,7 @@ ul.left-icon.hotline {
 
     .mobile-top,
     #top {
-        height: 70px !important;
+        height: 120px !important;
     }
 
     .dropdown.d-flex.d-lg-none {
@@ -1038,7 +1038,7 @@ ul.left-icon.hotline {
     }
 
     .pt-150{
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .project-info h3 {
@@ -1046,6 +1046,15 @@ ul.left-icon.hotline {
         font-size: 35px;
     }
 
+    .mobile-body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .mobile-top .h1{
+        font-size: 1.5rem !important;
+        margin-bottom:0
+    }
 }
 
 
@@ -1068,7 +1077,7 @@ ul.left-icon.hotline {
     width: 150px;
     height: 100vh;
     z-index: 90;
-    padding-top: 100px;
+    padding-top: 120px;
     text-align: right;
     background-color: rgba(255, 255, 255, 0.5);
     transition: all .5s;
