@@ -1030,14 +1030,14 @@ ul.left-icon.hotline {
 
     .mobile-top,
     #top {
-        height: 120px !important;
+        height: 70px !important;
     }
 
     .dropdown.d-flex.d-lg-none {
         margin-right: 0 !important;
     }
 
-    .pt-150{
+    .pt-150 {
         padding-top: 120px;
     }
 
@@ -1046,14 +1046,15 @@ ul.left-icon.hotline {
         font-size: 35px;
     }
 
-    .mobile-body{
+    .mobile-body {
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
     }
 
-    .mobile-top .h1{
+    .mobile-top .h1 {
         font-size: 1.5rem !important;
-        margin-bottom:0
+        margin-bottom: 0
     }
 }
 
@@ -1083,7 +1084,7 @@ ul.left-icon.hotline {
     transition: all .5s;
 }
 
-#mobile-menu.open{
+#mobile-menu.open {
     right: 0;
     transition: all .5s;
 }
