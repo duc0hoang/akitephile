@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css?ver=1.8">
+    <link rel="stylesheet" href="./index.css?ver=1.9">
 </head>
 
 <body id="body" class="d-none">
@@ -48,21 +48,24 @@
         </div>
     </header>
 
-    <header id="mobile-top" class="mobile-top d-lg-none"
-		style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100">
-		<div class="container-fluid header">
-			<a href="/">
-				<img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
-			</a>
-			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
-				<p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
-				<p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
-				<button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
-					<i class="fa fa-bars"></i>
-				</button>
-			</div>
-		</div>
-	</header>
+    <header id="mobile-top" class="mobile-top d-lg-none">
+        <div class="container-fluid header">
+            <div>
+                <a href="/">
+                    <img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
+                </a>
+                <h1 class="h1"> <span class="en hide">The Basalt</span><span class="vn hide">The Basalt</span></h1>
+            </div>
+
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+                <p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+                <button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 	<div id="mobile-menu">
 		<a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
 				CHỦ</span> </a>
@@ -352,9 +355,6 @@
     <!-- Phone -->
     <div class="container-customer d-block d-lg-none pt-150">
         <div class="row">
-            <div class="col-12 border-bottom-40 p-0">
-                <h1 class="h1">The Basalt</h1>
-            </div>
             <div class="col-12 p-0 vn hide">
                 <p class="house-info">Hạng mục: Thiết kế, thi công kiến trúc, nội thất, cảnh quan</p>
                 <p class="house-info">Địa điểm: 649/58/58 Điện Biên Phủ, phường 25, quận Bình Thạnh, TP HCM, Việt
@@ -603,7 +603,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./index.js?ver=1.8"></script>
+    <script src="./index.js?ver=1.9"></script>
 </body>
 
 </html>

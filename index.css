@@ -1038,7 +1038,7 @@ ul.left-icon.hotline {
     }
 
     .pt-150 {
-        padding-top: 120px;
+        padding-top: 105px;
     }
 
     .project-info h3 {
@@ -1055,6 +1055,19 @@ ul.left-icon.hotline {
     .mobile-top .h1 {
         font-size: 1.5rem !important;
         margin-bottom: 0
+    }
+
+    #mobile-top {
+        width: 100%;
+        height: 80px !important;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding-top: 15px;
+    }
+
+    .mobile-home{
+        padding-top: 0 !important;
     }
 }
 
