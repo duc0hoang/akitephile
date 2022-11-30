@@ -1066,8 +1066,9 @@ ul.left-icon.hotline {
         padding-top: 15px;
     }
 
-    .mobile-home{
+    #mobile-top.mobile-home{
         padding-top: 0 !important;
+        height: 45px !important;
     }
 }
 
