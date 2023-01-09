@@ -221,7 +221,7 @@ function initMobile() {
     }, 6000)
 }
 
-function onChangeMobileMenu(){
+function onChangeMobileMenu() {
     $('#mobile-menu').toggleClass("open");
 }
 
@@ -229,4 +229,13 @@ window.addEventListener('resize', () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+});
+
+if (location.href.endsWith('project.html')) {
+    $("#mobile-carousel").on('slide.bs.carousel', function () {
+        $('.mobile-content-carousel.d-lg-none.project-carousel').addClass('move')
+    });
+    $("#mobile-carousel").on('slid.bs.carousel', function () {
+        $('.mobile-content-carousel.d-lg-none.project-carousel').removeClass('move')
+    });
+}

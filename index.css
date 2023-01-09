@@ -657,6 +657,36 @@ header .header .menu a {
     .left.move {
         transform: none !important;
     }
+
+    .project-carousel {
+        display: block !important;
+    }
+
+    .project-carousel #mobile-carousel .carousel-caption {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.3);
+        bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 60px;
+        transition: all 0.5s;
+    }
+
+    .project-carousel.move #mobile-carousel .carousel-caption{
+        bottom: -200px;
+        transition: all 0.5s;
+
+    }
+
+    .project-carousel .carousel-indicators {
+        bottom: 20px;
+        transition: all 0.5s;
+    }
+
+    .project-carousel.move .carousel-indicators {
+        bottom: -180px;
+        transition: all 0.5s;
+    }
+
 }
 
 /* start phone */
@@ -1062,13 +1092,21 @@ ul.left-icon.hotline {
         height: 80px !important;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 10000;
         padding-top: 15px;
     }
 
-    #mobile-top.mobile-home{
+    #mobile-top.mobile-home {
         padding-top: 0 !important;
         height: 45px !important;
+    }
+
+    .hotline-phone-ring-wrap.project-page {
+        bottom: 40px;
+    }
+
+    .float-icon-hotline.project-page {
+        bottom: 125px;
     }
 }
 
@@ -1101,4 +1139,20 @@ ul.left-icon.hotline {
 #mobile-menu.open {
     right: 0;
     transition: all .5s;
+}
+
+
+.project-detail {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-left: 50px;
 }
