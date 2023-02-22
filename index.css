@@ -1108,6 +1108,21 @@ ul.left-icon.hotline {
     .float-icon-hotline.project-page {
         bottom: 125px;
     }
+
+    .mobile-team-carousel #mobile-carousel .carousel-indicators{
+        top: 400px;
+    }
+    .number{
+        padding-left: 20px;
+    }
+
+    .mobile-team-carousel{
+        padding-top: 85px !important;
+    }
+
+    .mobile-team-carousel .carousel-item{
+        height: 850px;
+    }
 }
 
 
