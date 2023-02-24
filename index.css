@@ -671,7 +671,7 @@ header .header .menu a {
         transition: all 0.5s;
     }
 
-    .project-carousel.move #mobile-carousel .carousel-caption{
+    .project-carousel.move #mobile-carousel .carousel-caption {
         bottom: -200px;
         transition: all 0.5s;
 
@@ -1056,6 +1056,16 @@ ul.left-icon.hotline {
     transform: translateY(0) !important;
 }
 
+.link a {
+    text-decoration: underline;
+    font-size: 12px;
+    display: block;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 992px) {
 
     .mobile-top,
@@ -1109,19 +1119,25 @@ ul.left-icon.hotline {
         bottom: 125px;
     }
 
-    .mobile-team-carousel #mobile-carousel .carousel-indicators{
+    .mobile-team-carousel #mobile-carousel .carousel-indicators {
         top: 400px;
     }
-    .number{
+
+    .number {
         padding-left: 20px;
     }
 
-    .mobile-team-carousel{
+    .mobile-team-carousel {
         padding-top: 85px !important;
     }
 
-    .mobile-team-carousel .carousel-item{
+    .mobile-team-carousel .carousel-item {
         height: 850px;
+    }
+
+    .youtube {
+        width: 360px;
+        height: 203px;
     }
 }
 
