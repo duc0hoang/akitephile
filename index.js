@@ -103,6 +103,9 @@ $(document).ready(function () {
     }
 });
 
+function goToSaree() {
+    window.location = "/saree.html";
+}
 function goToBasalt() {
     window.location = "/thebasalt.html";
 }
