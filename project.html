@@ -12,12 +12,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css?ver=2.6">
+    <link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="./font-awesome6.css">
+    <link rel="stylesheet" href="./index.css?ver=2.7">
 </head>
 
 <body id="body" class="d-none">
@@ -115,6 +112,47 @@
                         </div>
                         <div class="col-6 h-40 p-0">
                             <img src="./image/Project/Saree/04.jpg" alt="" class="h-100 w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2 d-none d-lg-flex" style="margin: 0 6%; height: 500px;">
+        <div class="col-lg-2"></div>
+        <div class="col-4 h-100 d-flex align-items-end left move" style="z-index: 200; background-color:white">
+            <div class="row h-60 w-100 project-info">
+                <div class="col-2 year border-bottom-black">
+                    <p>2023</p>
+                </div>
+                <div class="col-10 p-0 position-relative">
+                    <p class="en hide">Apartment</p>
+                    <h3 class="en hide">The Show Duplex</h3>
+                    <h3 class="en hide">in District 2</h3>
+                    <p class="vn hide">Căn hộ</p>
+                    <h3 class="vn hide">The Show Duplex</h3>
+                    <h3 class="vn hide">Quận 2</h3>
+                    <a class="border-bottom-black next" href="./theshowduplex.html"><span class="en hide">See project
+                            ></span><span class="vn hide">Xem chi tiết ></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 h-100 pr-0 cursor-pointer right move" onclick="goToTheShowDuplex()"
+            style="z-index: 200; background-color:white">
+            <div class="row h-100">
+                <div class="col-5 h-100 pl-0 w-100">
+                    <img src="./image/Project/The show duplex/main photo home.jpg" alt="" class="h-100 w-100 pr-2">
+                </div>
+                <div class="col-7 h-100 p-0 m-0">
+                    <div class="row h-100 w-100">
+                        <div class="col-12 h-60 p-0">
+                            <img src="./image/Project/The show duplex/001.jpg" alt="" class="h-100 w-100 pb-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/The show duplex/002.jpg" alt="" class="h-100 w-100 pr-2">
+                        </div>
+                        <div class="col-6 h-40 p-0">
+                            <img src="./image/Project/The show duplex/003.jpg" alt="" class="h-100 w-100">
                         </div>
                     </div>
                 </div>
@@ -403,8 +441,7 @@
             <div class="carousel-inner w-100 h-100">
                 <div class="carousel-item w-100 h-100 active">
                     <a href="./saree.html" class="d-block w-100 h-100">
-                        <img src="./image/Project/Saree/01 hình nền.jpg" alt="the basalt"
-                            class="d-block w-100 h-100">
+                        <img src="./image/Project/Saree/01 hình nền.jpg" alt="saree" class="d-block w-100 h-100">
                     </a>
                     <div class="carousel-caption d-block">
                         <div class="row">
@@ -417,6 +454,27 @@
                                 <h3 class="en hide">in District 2</h3>
                                 <p class="vn hide">Nhà hàng</p>
                                 <h3 class="vn hide">Saree</h3>
+                                <h3 class="vn hide">Quận 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item w-100 h-100">
+                    <a href="./theshowduplex.html" class="d-block w-100 h-100">
+                        <img src="./image/Project/The show duplex/main photo home.jpg" alt="saree"
+                            class="d-block w-100 h-100">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <div class="row">
+                            <div class="col-3 text-right pr-1">
+                                <p>2023</p>
+                            </div>
+                            <div class="col-9 text-left p-0">
+                                <p class="en hide">Apartment</p>
+                                <h3 class="en hide">The Show Duplex</h3>
+                                <h3 class="en hide">in District 2</h3>
+                                <p class="vn hide">Căn hộ</p>
+                                <h3 class="vn hide">The Show Duplex</h3>
                                 <h3 class="vn hide">Quận 2</h3>
                             </div>
                         </div>
@@ -600,16 +658,10 @@
     </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./index.js?ver=2.6"></script>
+    <script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./index.js?ver=2.7"></script>
 </body>
 
 </html>

@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>The Show Duplex</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="./font-awesome6.css">
+    <link rel="stylesheet" href="./index.css?ver=2.7">
+</head>
+
+<body id="body" class="d-none">
+    <header class="top d-none d-lg-block" id="top"
+        style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100; background-color:white">
+        <div class="container-fluid header">
+            <a href="/">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
+            </a>
+            <ul class="menu d-none d-lg-flex">
+                <a href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG CHỦ</span> </a>
+                <a href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ ÁN</span> </a>
+                <a href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH VIÊN</span></a>
+                <a href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN HỆ</span></a>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                            <p class="dropdown-item" onclick="changeLanguage('VN')" style="padding-bottom: 20px;">VI</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <header id="mobile-top" class="mobile-top d-lg-none">
+        <div class="container-fluid header">
+            <div>
+                <a href="/">
+                    <img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
+                </a>
+                <h1 class="h1"> <span class="en hide">Project</span><span class="vn hide">Dự án</span></h1>
+            </div>
+
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+                <p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+                <button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu">
+        <a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
+                CHỦ</span> </a>
+        <a class="dropdown-item" href="/project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ
+                ÁN</span> </a>
+        <a class="dropdown-item" href="/team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH
+                VIÊN</span></a>
+        <a class="dropdown-item" href="/contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN
+                HỆ</span></a>
+    </div>
+
+    <div class="container-customer pt-150 d-none d-lg-block">
+        <div class="row">
+            <div class="col-2 left move d-flex align-items-end justify-content-end">
+                <ul class="ul-right">
+                    <li class="en hide">Concept</li>
+                    <li class="en hide">Drawing</li>
+                    <li class="en hide">Construction Diary</li>
+                    <li class="vn hide">Thiết kế ý tưởng</li>
+                    <li class="vn hide">Triển khai hồ sơ bản vẽ</li>
+                    <li class="vn hide">Giám sát công trường</li>
+                </ul>
+            </div>
+            <div class="col-5 border-bottom-40 left move">
+                <h1 class="h1">The Show Duplex</h1>
+            </div>
+            <div class="col-5 border-bottom-40-3rem right move"></div>
+            <div class="col-2"></div>
+            <div class="col-5 left move" style="z-index: 200; background-color:white">
+                <div class="row mt-5">
+                    <div class="col-12 p-0 pt-2 img-1 pb-2">
+                        <a href="./theshowduplex-main.html?active=0">
+                            <img src="./image/Project/The show duplex/main photo home.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-5 p-0 h_600">
+                        <a href="./theshowduplex-main.html?active=1">
+                            <img src="./image/Project/The show duplex/001.jpg" alt="" class="h-66 w-100 pb-2">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=2">
+                            <img src="./image/Project/The show duplex/002.jpg" alt="" class="h-33 w-100">
+                        </a>
+                    </div>
+                    <div class="col-7 p-0 h_600 img-1 pl-2 position-relative">
+                        <a href="./theshowduplex-main.html?active=3">
+                            <img src="./image/Project/The show duplex/003.jpg" alt="">
+                        </a>
+                        <div class="common">
+                            <span>tầng 1</span>
+                            <span>level 1</span>
+                        </div>
+                    </div>
+                    <div class="col-12 img-8 p-0 w-100 pt-2 h_100 p-0 w-100 pt-2 h_100">
+                        <a href="./theshowduplex-main.html?active=4">
+                            <img src="./image/Project/The show duplex/001 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=5">
+                            <img src="./image/Project/The show duplex/002 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=6">
+                            <img src="./image/Project/The show duplex/003 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=7">
+                            <img src="./image/Project/The show duplex/004 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=8">
+                            <img src="./image/Project/The show duplex/005 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=9">
+                            <img src="./image/Project/The show duplex/006 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=10">
+                            <img src="./image/Project/The show duplex/007 1.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-main.html?active=11">
+                            <img src="./image/Project/The show duplex/008 1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 p-0 h_450 img-1 pt-2">
+                        <a href="./theshowduplex-l2.html?active=0">
+                            <img src="./image/Project/The show duplex/001 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-8 p-0 h_450 img-1 pl-2 pt-2 position-relative">
+                        <a href="./theshowduplex-l2.html?active=1">
+                            <img src="./image/Project/The show duplex/002 2.jpg" alt="">
+                        </a>
+                        <div class="mezzanine">
+                            <span>tầng 2</span>
+                            <span>level 2</span>
+                        </div>
+                    </div>
+                    <div class="col-12 img-8 p-0 w-100 pt-2 h_100 p-0 w-100 pt-2 h_100">
+                        <a href="./theshowduplex-l2.html?active=2">
+                            <img src="./image/Project/The show duplex/003 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=3">
+                            <img src="./image/Project/The show duplex/004 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=4">
+                            <img src="./image/Project/The show duplex/005 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=5">
+                            <img src="./image/Project/The show duplex/006 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=6">
+                            <img src="./image/Project/The show duplex/007 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=7">
+                            <img src="./image/Project/The show duplex/008 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=8">
+                            <img src="./image/Project/The show duplex/001 2.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l2.html?active=9">
+                            <img src="./image/Project/The show duplex/002 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-8 p-0 h_450 img-1 pt-2 position-relative">
+                        <a href="./theshowduplex-l3.html?active=0">
+                            <img src="./image/Project/The show duplex/001 3.jpg" alt="">
+                        </a>
+                        <div class="common">
+                            <span>tầng 3</span>
+                            <span>level 3</span>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0 h_450 img-1 pt-2 pl-2">
+                        <a href="./theshowduplex-l3.html?active=1">
+                            <img src="./image/Project/The show duplex/002 3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 img-8 p-0 w-100 pt-2 h_100">
+                        <a href="./theshowduplex-l3.html?active=2">
+                            <img src="./image/Project/The show duplex/003 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=3">
+                            <img src="./image/Project/The show duplex/004 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=4">
+                            <img src="./image/Project/The show duplex/005 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=5">
+                            <img src="./image/Project/The show duplex/006 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=6">
+                            <img src="./image/Project/The show duplex/007 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=7">
+                            <img src="./image/Project/The show duplex/001 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=8">
+                            <img src="./image/Project/The show duplex/002 3.jpg" alt="">
+                        </a>
+                        <a href="./theshowduplex-l3.html?active=9">
+                            <img src="./image/Project/The show duplex/003 3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 pt-5 pl-5 right move" style="z-index: 200; background-color:white">
+                <div class="vn hide">
+                    <p class="text-center">“Phong cách Đông Dương đương đại”</p>
+                    <p class="house-info">Hạng mục: Thiết kế nội thất giám sát công trường</p>
+                    <p class="house-info">Địa điểm: S105 Chung cư the River, TP23 Trần Bạch Đằng, Thủ Thiêm, Quận 2, TP
+                        Thủ Đức, TP HCM</p>
+                    <p class="house-info">Diện tích: 190m2</p>
+                    <p class="house-info">Năm: 2023</p>
+                    <p class="house-info">Khách hàng: Chú Thành - Cô Lệ</p>
+                    <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc, Nguyễn Ngọc Hân, Nguyễn Quang
+                        Kiên, Vương Đình Lưu</p>
+                    <p class="house-info">Nhà thầu: Công ty xây dựng Full house</p>
+                    <div style="text-align: justify">
+                        <p class="text-center">“Không gian mới đến từ những hoài niệm cũ”</p>
+                        Trong mỗi con người luôn mang trong mình những ký ức và hoài niệm nơi đó những hình ảnh đôi lúc
+                        trở nên lỗi thời song lại chất chứa một mong ước thuở thiếu thời. Những ký ức thường rất tươi
+                        đẹp trong thời hoàn kim của nó song do lặp đi lặp lại nhiều lần quá trình lạm phát diễn ra và
+                        làm cho những ký ức đó trở nên nhàm chán. Ví như một bài hát dẫn đầu xu hướng trong một thời
+                        điểm, dù có hay cách mấy thì thời gian trôi đi cũng làm cho những giai điệu trở nên lỗi thời.
+                        Bằng cách hòa âm phối khí lại những bài hát cũ, người nghe có được những trải nghiệm hoàn toàn
+                        mới với ca khúc đó nhưng vẫn vẹn nguyên những giá trị gốc mà bài hát mang lại từ những ngày xa
+                        xưa.
+                        <span id="cham">...</span><span id="them">
+                            <br>
+                            <br>
+                            Kiến trúc và nội thất cũng vậy. Trong lịch sử không ít lần các phong cách kiến trúc được lặp
+                            lại theo một cách rất riêng hợp thời hơn. Phong cách Romanesque nhắc lại kiến trúc Cổ đại
+                            vốn dĩ đã mai một, phong cách Art-Deco nhắc lại kiến trúc Cổ điển phục hưng nhưng kết hợp
+                            với công nghệ đương thời để tạo ra một màu sắc rất đặc trưng…
+                            <br>
+                            <br>
+                            Công thức để tạo nên các phong cách kiến trúc biến thể thường sẽ là:
+                            <br>
+                            <span class="font-weight-bold">
+                                Dựa trên phong cách kiến trúc nguyên bản trong quá khứ + giản lược lại các chi tiết
+                                không
+                                cần thiết + áp dụng hệ vật liệu và công nghệ xây dựng mới + Phối hợp với các tổ hợp hình
+                                khối đang là xu hướng thời đại => Phong cách kiến trúc mới
+                            </span>
+                            <br>
+                            <br>
+                            <p class="text-center">“Hành trình tái tạo cảm xúc”</p>
+                            <br>
+                            Ở Việt Nam, phong cách kiến trúc Đông Dương được xem như là một chuẩn mực của sự sang trọng
+                            vào thế kỷ 19. Phong cách kiến trúc và nội thất dựa trên phong cách nguyên bản kiến trúc
+                            Pháp, được người Pháp đưa vào thuộc địa của mình ở khu vực Đông Dương. Họ kết hợp kiến trúc
+                            cổ điển của người Pháp, kết hợp với các yếu tố vi khí hậu của Việt Nam và các chi tiết trang
+                            trí mang màu sắc tôn giáo và văn hóa của 3 nước Việt Nam, Lào, Campuchia.
+                            <br>
+                            <br>
+                            Vào thế kỷ 19-20 chỉ có những gia đình quý tộc mới có thể xây cho mình một công trình kiến
+                            trúc mang màu sắc phong cách Đông Dương ở Việt Nam. Đó là lý do vì sao trong hồi ức của
+                            những người Việt thì kiến trúc Đông Dương luôn có một vị trí nhất định trong tất cả các xu
+                            hướng thiết kế.
+                            <br>
+                            <br>
+                            Phong cách Đông Dương phù hợp với những người thích hoài cổ, thích sự cầu kỳ trong chi tiết
+                            trang trí cũng như sự lãng mạn trong tổng thể kiến trúc và nội thất.
+                            <br>
+                            <br>
+                            Chủ nhân của căn duplex là 2 vợ chồng người Việt lớn tuổi, đã sinh sống và làm việc ở Đức
+                            lâu năm. Người vợ vốn thích sự lãng mạn của kiến trúc Đông Dương với gạch bông và những chi
+                            tiết hoài cổ với nhiều hoa văn mô phỏng tự nhiên. Người chồng lại chọn riêng cho mình sự
+                            khúc chiết của kiến trúc Đức, một nền kiến trúc tối giản và thiên về xử lý chi tiết. Bên
+                            cạnh đó chú cũng rất thích âm thanh và ánh sáng, những sản phẩm hi-end đến từ các thương
+                            hiệu của Đức. 2 sở thích tưởng như trái ngược nhau nhưng lại có chung một đích đến. Một chút
+                            hoài cổ của kiến trúc Đông Dương cộng hưởng với âm thanh và ánh sáng, hình ảnh của một nhà
+                            hát Opera với những ban công đặc trưng dần hiện ra. Ở đó là nơi diễn ra những buổi hòa nhạc
+                            những buổi trình diễn hoành tráng. Bất cứ ai sống trong không gian này cũng có thể cảm nhật
+                            được một không gian tràn ngập nghệ thuật để rồi kiến trúc sư mạo muội đặt cho thiết kế này
+                            một cái tên “THE SHOW DUPLEX”.
+                            <br>
+                            <br>
+                            Để thiết kế trở nên mới mẻ và tươi trẻ hơn đồng thời cũng phù hợp với sở thích về một công
+                            trình tối giản khúc chiết theo chuẩn Đức, kiến trúc sư đã chủ động loại bỏ đi những chi tiết
+                            thừa,nhưng vẫn chủ động giữ lại tinh thần chính của phong cách Đông Dương với những ban cong
+                            bo tròn như được lấy ra từ một nhà hát thính phòng nào đó. Một phong cách thiết kế mới ra
+                            đời mang trong mình âm hưởng của một ngôn ngữ chiết trung: “ Phong cách Đông Dương đương
+                            đại”
+                            <br>
+                            <br>
+                            <p class="text-center">“Biến không gian giao thông trở thành điểm nhấn chính trong công
+                                trình”</p>
+                            <br>
+                            “Biến không gian giao thông trở thành điểm nhấn chính trong công trình”
+                            Lợi thế của một duplex đó chính là một khoảng thông tầng cao, kết nối tất cả các không gian
+                            theo chiều thẳng đứng lại với nhau, tạo ra một không gian hào nhoáng, sang trọng. Để làm nổi
+                            bật tính chất này, kiến trúc sư đã bố trí thang bộ trở thành vị trí trung tâm của công
+                            trình. Với hình ảnh mô phỏng những ban công trong nhà hát thính phòng, các bản thang như nêu
+                            bật lên được chủ đề chính của toàn bộ thiết kế.
+                            <br>
+                            <br>
+                            Hơn thế nữa, gia đình vốn ít người nên việc đưa không gian giao thông trục đứng là khu vực
+                            thang trở thành yếu tố chính làm cho công trình trở nên sinh động và có sức sống hơn. Khi
+                            một công trình kiến trúc được xem là một tác phẩm nghệ thuật thì những người di chuyển bên
+                            trong công trình cũng là một nét chấm phá không thể thiếu trong tác phẩm đó.
+                            <br>
+                            <br>
+                            Hoài niệm là thứ luôn đáng được trân trọng. Bản thân kiến trúc cũng mang trong mình dòng máu
+                            của một bộ môn nghệ thuật nên việc tôn trọng những cảm xúc đến từ hoài niệm là điều vô cùng
+                            cần thiết. Việc của người kiến trúc sư là làm sao biến những hoài niệm đó trở nên mới mẻ và
+                            hợp thời hơn. Để những cảm xúc bị bão hòa từ phong cách kiến trúc cũ sẽ không diễn ra từ đó
+                            làm cơ sở để tạo nên một phong cách kiến trúc hoàn toàn mới kế thừa từ những ký ức lâu đời.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtnVn"
+                            class="btn btn-outline-secondary font-italic">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="en hide">
+                    <p class="text-center">“Contemporary Indochine architecture style”</p>
+                    <p class="house-info">Category: Interior design, construction supervision </p>
+                    <p class="house-info">Location: S105 The River Apartment, 23 Tran Bach Dang, Thu Thiem, District
+                        2, Thu Duc City, Ho Chi Minh City</p>
+                    <p class="house-info">Area: 190m2</p>
+                    <p class="house-info">Year: 2023</p>
+                    <p class="house-info">Client: Mr Thanh - Mrs Le </p>
+                    <p class="house-info">Design team: Luu Quoc Thinh, Nguyen Hong Ngoc, Nguyen Ngoc Han, Nguyen Quang
+                        Kien, Vuong Dinh Luu </p>
+                    <p class="house-info">Constructor: Full house construction company</p>
+                    <div class="pt-4" style="text-align: justify">
+                        <p class="text-center">“New space comes from old memories”</p>
+                        In each person, there are always memories and nostalgia where the images sometimes become
+                        outdated but contain a childhood wish. Memories are often very beautiful in their heyday, but
+                        repeatedly the process of inflation takes place and makes those memories boring. For example, if
+                        a song is trending for a while, no matter how good it is, the passage of time makes the tunes
+                        obsolete. By remixing old songs, listeners get a completely new experience with that song but
+                        still retain the original values that the song brings from the old days. The same goes for
+                        architecture and interiors. Historically, architectural styles have been repeated many times in
+                        a unique and more trendy way. The Romanesque style recalls the ancient architecture that has
+                        been lost, the Art-Deco style recalls the Renaissance Classical architecture but combines with
+                        contemporary technology to create a very distinctive color…
+                        <span id="dots">...</span><span id="more">
+                            <br>
+                            <br>
+                            The formula for creating variant architectural styles will often be:
+                            <br>
+                            <span class="font-weight-bold">
+                                Based on the original architectural style in the past + reducing unnecessary details +
+                                applying new construction materials and technologies + Coordination with block
+                                combinations
+                                is the trend of the times => New architectural style
+                            </span>
+                            <br>
+                            <p class="text-center">
+                                “The journey of emotional regeneration”
+                            </p>
+                            <br>
+                            <br>
+                            In Vietnam, the Indochinese architectural style was seen as a standard of luxury in the 19th
+                            century. The architectural style and interior are based on the original French architectural
+                            style, introduced by the French in the colonial period. in the Indochina region. They
+                            combine classical French architecture, combined with Vietnamese microclimate elements and
+                            decorative details with religious and cultural colors of Vietnam, Laos, and Cambodia.
+                            <br>
+                            <br>
+                            In the 19th and 20th centuries, only aristocratic families could build their own
+                            architectural works of Indochinese style in Vietnam. That is why in the memory of Vietnamese
+                            people, Indochine architecture always has a certain position in all design trends.
+                            <br>
+                            <br>
+                            Indochinese style is suitable for those who like nostalgia, like the sophistication in
+                            decorative details as well as the romance in the overall architecture and interior.
+                            <br>
+                            <br>
+                            The owners of the duplex are two elderly Vietnamese couples who have lived and worked in
+                            Germany for a long time. The wife loves the romance of Indochinese architecture with
+                            Indochine pattern tiles and nostalgic details with many natural patterns. The husband chose
+                            for himself the cleavage of German architecture, a minimalist architecture and focus more on
+                            architecture detail. Besides, he is also very deep inside lighting and sound, hi-end
+                            products from German brands. 2 seemingly opposite interests but have the same destination. A
+                            bit of nostalgia of Indochina architecture resonates with sound and light, the image of an
+                            Opera house with characteristic balconies gradually emerges. It is where concerts and grand
+                            shows take place. Anyone living in this space can feel a space filled with art, so the
+                            architect ventured to give this design the name "THE SHOW DUPLEX".
+                            <br>
+                            <br>
+                            In order for the design to become new and fresher and also in line with the preference for a
+                            concise minimalist project according to German standards, the architect actively removed
+                            redundant details, but still actively kept the design. The main spirit of the Indochinese
+                            style with rounded curves as if taken from a certain Opera house. A new design style was
+                            born with the mood of an eclectic language: "Contemporary Indochinese style"
+                            <br>
+                            <br>
+                            <p class="text-center">
+                                “Turn traffic core into the main highlight of the project.”
+                            </p>
+                            <br>
+                            <br>
+                            The advantage of a duplex is that it has a high atrium, connecting all vertical spaces
+                            together, creating a flashy, luxurious space. To highlight this feature, the architect
+                            arranged the stairs to become the central position of the building. With images simulating
+                            the balconies in the auditorium, the ladders seem to highlight the main theme of the entire
+                            design.
+                            <br>
+                            <br>
+                            Moreover, the family is small, so the vertical traffic space as the ladder area becomes the
+                            main factor to make the building more lively and lively. When an architectural work is
+                            considered a work of art, the people moving inside the building are also an indispensable
+                            feature in that work.
+                            <br>
+                            <br>
+                            Memories are always something to be cherished. Architecture itself also carries the blood of
+                            an art, so it is extremely necessary to respect the emotions that come from nostalgia. The
+                            architect's job is to make those nostalgia new and more trendy. Let the emotions that are
+                            saturated from the old architectural style will not take place from there as the basis to
+                            create a completely new architectural style inherited from long-standing memories.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtn" class="btn btn-outline-secondary font-italic">Read
+                            more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phone -->
+    <div class="container-customer d-block d-lg-none pt-150">
+        <div class="row">
+            <div class="col-12 p-0 vn hide">
+                <p class="text-center">“Phong cách Đông Dương đương đại”</p>
+                <p class="house-info">Hạng mục: Thiết kế nội thất giám sát công trường</p>
+                <p class="house-info">Địa điểm: S105 Chung cư the River, TP23 Trần Bạch Đằng, Thủ Thiêm, Quận 2, TP
+                    Thủ Đức, TP HCM</p>
+                <p class="house-info">Diện tích: 190m2</p>
+                <p class="house-info">Năm: 2023</p>
+                <p class="house-info">Khách hàng: Chú Thành - Cô Lệ</p>
+                <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc, Nguyễn Ngọc Hân, Nguyễn Quang
+                    Kiên, Vương Đình Lưu</p>
+                <p class="house-info">Nhà thầu: Công ty xây dựng Full house</p>
+            </div>
+            <div class="col-12 p-0 en hide">
+                <p class="text-center">“Contemporary Indochine architecture style”</p>
+                <p class="house-info">Category: Interior design, construction supervision </p>
+                <p class="house-info">Location: S105 The River Apartment, 23 Tran Bach Dang, Thu Thiem, District
+                    2, Thu Duc City, Ho Chi Minh City</p>
+                <p class="house-info">Area: 190m2</p>
+                <p class="house-info">Year: 2023</p>
+                <p class="house-info">Client: Mr Thanh - Mrs Le </p>
+                <p class="house-info">Design team: Luu Quoc Thinh, Nguyen Hong Ngoc, Nguyen Ngoc Han, Nguyen Quang
+                    Kien, Vuong Dinh Luu </p>
+                <p class="house-info">Constructor: Full house construction company</p>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/main photo home.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/001.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/002.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/003.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/The show duplex/001 1.jpg" alt="">
+                </div>
+                <div class="common">
+                    <span>tầng 1</span>
+                    <span>level 1</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/002 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/003 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/004 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/005 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/006 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/007 1.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/008 1.jpg" alt="">
+            </div>
+            <div style="text-align: justify" class="vn hide">
+                <p class="text-center">“Không gian mới đến từ những hoài niệm cũ”</p>
+                Trong mỗi con người luôn mang trong mình những ký ức và hoài niệm nơi đó những hình ảnh đôi lúc trở nên
+                lỗi thời song lại chất chứa một mong ước thuở thiếu thời. Những ký ức thường rất tươi đẹp trong thời
+                hoàn kim của nó song do lặp đi lặp lại nhiều lần quá trình lạm phát diễn ra và làm cho những ký ức đó
+                trở nên nhàm chán. Ví như một bài hát dẫn đầu xu hướng trong một thời điểm, dù có hay cách mấy thì thời
+                gian trôi đi cũng làm cho những giai điệu trở nên lỗi thời. Bằng cách hòa âm phối khí lại những bài hát
+                cũ, người nghe có được những trải nghiệm hoàn toàn mới với ca khúc đó nhưng vẫn vẹn nguyên những giá trị
+                gốc mà bài hát mang lại từ những ngày xa xưa.
+                <br>
+                Kiến trúc và nội thất cũng vậy. Trong lịch sử không ít lần các phong cách kiến trúc được lặp lại theo
+                một cách rất riêng hợp thời hơn. Phong cách Romanesque nhắc lại kiến trúc Cổ đại vốn dĩ đã mai một,
+                phong cách Art-Deco nhắc lại kiến trúc Cổ điển phục hưng nhưng kết hợp với công nghệ đương thời để tạo
+                ra một màu sắc rất đặc trưng…
+                <br>
+                Công thức để tạo nên các phong cách kiến trúc biến thể thường sẽ là:
+                <br>
+                <span class="font-weight-bold">
+                    Dựa trên phong cách kiến trúc nguyên bản trong quá khứ + giản lược lại các chi tiết không cần thiết
+                    + áp
+                    dụng hệ vật liệu và công nghệ xây dựng mới + Phối hợp với các tổ hợp hình khối đang là xu hướng thời
+                    đại
+                    => Phong cách kiến trúc mới
+                </span>
+            </div>
+            <div style="text-align: justify" class="en hide">
+                <p class="text-center">“New space comes from old memories”</p>
+                In each person, there are always memories and nostalgia where the images sometimes become outdated but
+                contain a childhood wish. Memories are often very beautiful in their heyday, but repeatedly the process
+                of inflation takes place and makes those memories boring. For example, if a song is trending for a
+                while, no matter how good it is, the passage of time makes the tunes obsolete. By remixing old songs,
+                listeners get a completely new experience with that song but still retain the original values that the
+                song brings from the old days. The same goes for architecture and interiors. Historically, architectural
+                styles have been repeated many times in a unique and more trendy way. The Romanesque style recalls the
+                ancient architecture that has been lost, the Art-Deco style recalls the Renaissance Classical
+                architecture but combines with contemporary technology to create a very distinctive color…
+                <br>
+                The formula for creating variant architectural styles will often be:
+                <br>
+                <span class="font-weight-bold">
+                    Based on the original architectural style in the past + reducing unnecessary details + applying new
+                    construction materials and technologies + Coordination with block combinations is the trend of the
+                    times
+                    => New architectural style
+                </span>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/The show duplex/001 2.jpg" alt="">
+                </div>
+                <div class="common">
+                    <span>tầng 2</span>
+                    <span>level 2</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/002 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/003 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/004 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/005 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/006 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/007 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/008 2.jpg" alt="">
+            </div>
+            <div style="text-align: justify" class="vn hide">
+                <p class="text-center">“Hành trình tái tạo cảm xúc”</p>
+                Ở Việt Nam, phong cách kiến trúc Đông Dương được xem như là một chuẩn mực của sự sang trọng vào thế kỷ
+                19. Phong cách kiến trúc và nội thất dựa trên phong cách nguyên bản kiến trúc Pháp, được người Pháp đưa
+                vào thuộc địa của mình ở khu vực Đông Dương. Họ kết hợp kiến trúc cổ điển của người Pháp, kết hợp với
+                các yếu tố vi khí hậu của Việt Nam và các chi tiết trang trí mang màu sắc tôn giáo và văn hóa của 3 nước
+                Việt Nam, Lào, Campuchia.
+                <br>
+                Vào thế kỷ 19-20 chỉ có những gia đình quý tộc mới có thể xây cho mình một công trình kiến trúc mang màu
+                sắc phong cách Đông Dương ở Việt Nam. Đó là lý do vì sao trong hồi ức của những người Việt thì kiến trúc
+                Đông Dương luôn có một vị trí nhất định trong tất cả các xu hướng thiết kế.
+                <br>
+                Phong cách Đông Dương phù hợp với những người thích hoài cổ, thích sự cầu kỳ trong chi tiết trang trí
+                cũng như sự lãng mạn trong tổng thể kiến trúc và nội thất.
+                <br>
+                Chủ nhân của căn duplex là 2 vợ chồng người Việt lớn tuổi, đã sinh sống và làm việc ở Đức lâu năm. Người
+                vợ vốn thích sự lãng mạn của kiến trúc Đông Dương với gạch bông và những chi tiết hoài cổ với nhiều hoa
+                văn mô phỏng tự nhiên. Người chồng lại chọn riêng cho mình sự khúc chiết của kiến trúc Đức, một nền kiến
+                trúc tối giản và thiên về xử lý chi tiết. Bên cạnh đó chú cũng rất thích âm thanh và ánh sáng, những sản
+                phẩm hi-end đến từ các thương hiệu của Đức. 2 sở thích tưởng như trái ngược nhau nhưng lại có chung một
+                đích đến. Một chút hoài cổ của kiến trúc Đông Dương cộng hưởng với âm thanh và ánh sáng, hình ảnh của
+                một nhà hát Opera với những ban công đặc trưng dần hiện ra. Ở đó là nơi diễn ra những buổi hòa nhạc
+                những buổi trình diễn hoành tráng. Bất cứ ai sống trong không gian này cũng có thể cảm nhật được một
+                không gian tràn ngập nghệ thuật để rồi kiến trúc sư mạo muội đặt cho thiết kế này một cái tên “THE SHOW
+                DUPLEX”.
+                <br>
+                Để thiết kế trở nên mới mẻ và tươi trẻ hơn đồng thời cũng phù hợp với sở thích về một công trình tối
+                giản khúc chiết theo chuẩn Đức, kiến trúc sư đã chủ động loại bỏ đi những chi tiết thừa,nhưng vẫn chủ
+                động giữ lại tinh thần chính của phong cách Đông Dương với những ban cong bo tròn như được lấy ra từ một
+                nhà hát thính phòng nào đó. Một phong cách thiết kế mới ra đời mang trong mình âm hưởng của một ngôn ngữ
+                chiết trung: “ Phong cách Đông Dương đương đại”
+            </div>
+            <div style="text-align: justify" class="en hide">
+                <p class="text-center">“The journey of emotional regeneration”</p>
+                In Vietnam, the Indochinese architectural style was seen as a standard of luxury in the 19th century.
+                The architectural style and interior are based on the original French architectural style, introduced by
+                the French in the colonial period. in the Indochina region. They combine classical French architecture,
+                combined with Vietnamese microclimate elements and decorative details with religious and cultural colors
+                of Vietnam, Laos, and Cambodia.
+                <br>
+                In the 19th and 20th centuries, only aristocratic families could build their own architectural works of
+                Indochinese style in Vietnam. That is why in the memory of Vietnamese people, Indochine architecture
+                always has a certain position in all design trends.
+                <br>
+                Indochinese style is suitable for those who like nostalgia, like the sophistication in decorative
+                details as well as the romance in the overall architecture and interior.
+                <br>
+                The owners of the duplex are two elderly Vietnamese couples who have lived and worked in Germany for a
+                long time. The wife loves the romance of Indochinese architecture with Indochine pattern tiles and
+                nostalgic details with many natural patterns. The husband chose for himself the cleavage of German
+                architecture, a minimalist architecture and focus more on architecture detail. Besides, he is also very
+                deep inside lighting and sound, hi-end products from German brands. 2 seemingly opposite interests but
+                have the same destination. A bit of nostalgia of Indochina architecture resonates with sound and light,
+                the image of an Opera house with characteristic balconies gradually emerges. It is where concerts and
+                grand shows take place. Anyone living in this space can feel a space filled with art, so the architect
+                ventured to give this design the name "THE SHOW DUPLEX".
+                <br>
+                In order for the design to become new and fresher and also in line with the preference for a concise
+                minimalist project according to German standards, the architect actively removed redundant details, but
+                still actively kept the design. The main spirit of the Indochinese style with rounded curves as if taken
+                from a certain Opera house. A new design style was born with the mood of an eclectic language:
+                "Contemporary Indochinese style"
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <div class="col-12 p-0 img-1 pb-2">
+                    <img src="./image/Project/The show duplex/001 3.jpg" alt="">
+                </div>
+                <div class="common">
+                    <span>tầng 3</span>
+                    <span>level 3</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/002 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/003 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/004 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/005 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/006 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/The show duplex/007 3.jpg" alt="">
+            </div>
+            <div style="text-align: justify" class="vn hide">
+                <p class="text-center">“Biến không gian giao thông trở thành điểm nhấn chính trong công trình”</p>
+                Lợi thế của một duplex đó chính là một khoảng thông tầng cao, kết nối tất cả các không gian theo chiều
+                thẳng đứng lại với nhau, tạo ra một không gian hào nhoáng, sang trọng. Để làm nổi bật tính chất này,
+                kiến trúc sư đã bố trí thang bộ trở thành vị trí trung tâm của công trình. Với hình ảnh mô phỏng những
+                ban công trong nhà hát thính phòng, các bản thang như nêu bật lên được chủ đề chính của toàn bộ thiết
+                kế.
+                <br>
+                Hơn thế nữa, gia đình vốn ít người nên việc đưa không gian giao thông trục đứng là khu vực thang trở
+                thành yếu tố chính làm cho công trình trở nên sinh động và có sức sống hơn. Khi một công trình kiến trúc
+                được xem là một tác phẩm nghệ thuật thì những người di chuyển bên trong công trình cũng là một nét chấm
+                phá không thể thiếu trong tác phẩm đó.
+                <br>
+                Hoài niệm là thứ luôn đáng được trân trọng. Bản thân kiến trúc cũng mang trong mình dòng máu của một bộ
+                môn nghệ thuật nên việc tôn trọng những cảm xúc đến từ hoài niệm là điều vô cùng cần thiết. Việc của
+                người kiến trúc sư là làm sao biến những hoài niệm đó trở nên mới mẻ và hợp thời hơn. Để những cảm xúc
+                bị bão hòa từ phong cách kiến trúc cũ sẽ không diễn ra từ đó làm cơ sở để tạo nên một phong cách kiến
+                trúc hoàn toàn mới kế thừa từ những ký ức lâu đời.
+            </div>
+            <div style="text-align: justify" class="en hide">
+                <p class="text-center">“Turn traffic core into the main highlight of the project”</p>
+                The advantage of a duplex is that it has a high atrium, connecting all vertical spaces together,
+                creating a flashy, luxurious space. To highlight this feature, the architect arranged the stairs to
+                become the central position of the building. With images simulating the balconies in the auditorium, the
+                ladders seem to highlight the main theme of the entire design.
+                <br>
+                Moreover, the family is small, so the vertical traffic space as the ladder area becomes the main factor
+                to make the building more lively and lively. When an architectural work is considered a work of art, the
+                people moving inside the building are also an indispensable feature in that work.
+                <br>
+                Memories are always something to be cherished. Architecture itself also carries the blood of an art, so
+                it is extremely necessary to respect the emotions that come from nostalgia. The architect's job is to
+                make those nostalgia new and more trendy. Let the emotions that are saturated from the old architectural
+                style will not take place from there as the basis to create a completely new architectural style
+                inherited from long-standing memories.
+            </div>
+        </div>
+    </div>
+
+    <div class="hotline-phone-ring-wrap project-page" style="display:none">
+        <div class="float-icon-hotline project-page">
+            <ul class="left-icon hotline">
+                <li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
+                        href="https://zalo.me/0972040448"><i
+                            class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+            </ul>
+        </div>
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0972040448" class="pps-btn-img">
+                    <img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0972040448">
+                <span class="text-hotline">0972 040 448</span>
+            </a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="project-detail d-lg-none" style="height: 100px;">
+        the show duplex
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./index.js?ver=2.7"></script>
+</body>
+
+</html>

@@ -11,12 +11,9 @@
 	<meta http-equiv="content-language" content="vi" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./index.css?ver=2.6">
+	<link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="./font-awesome6.css">
+	<link rel="stylesheet" href="./index.css?ver=2.7">
 </head>
 
 <body id="body" class="d-none mobile-body">
@@ -105,10 +102,18 @@
 					</div>
 					<div class="carousel-item">
 						<a href="./saree.html">
-							<img src="./image/Project/Saree/01 hình nền.jpg" alt="the falls">
+							<img src="./image/Project/Saree/01 hình nền.jpg" alt="saree">
 						</a>
 						<div class="carousel-caption d-block ">
 							<h5 class="text-uppercase">saree</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="./theshowduplex.html">
+							<img src="./image/Project/The show duplex/main photo home.jpg" alt="THE SHOW DUPLEX">
+						</a>
+						<div class="carousel-caption d-block ">
+							<h5 class="text-uppercase">THE SHOW DUPLEX</h5>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -165,22 +170,22 @@
 	</nav>
 	<!-- mobile -->
 	<header id="mobile-top" class="mobile-top d-lg-none mobile-home" style="display: none">
-        <div class="container-fluid header">
-            <div>
-                <a href="/">
-                    <img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
-                </a>
-            </div>
+		<div class="container-fluid header">
+			<div>
+				<a href="/">
+					<img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
+				</a>
+			</div>
 
-            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
-                <p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
-                <p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
-                <button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+			<div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+				<p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+				<p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+				<button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</div>
+	</header>
 	<div id="mobile-menu">
 		<a class="dropdown-item" href="/"><span class="en hide">HOME</span><span class="vn hide">TRANG
 				CHỦ</span> </a>
@@ -231,11 +236,19 @@
 				</div>
 				<div class="carousel-item w-100 h-100">
 					<a href="./saree.html" class="d-block w-100 h-100">
-						<img src="./image/Project/Saree/01 hình nền.jpg" alt="Binh Thoi"
-							class="d-block w-100 h-100">
+						<img src="./image/Project/Saree/01 hình nền.jpg" alt="saree" class="d-block w-100 h-100">
 					</a>
 					<div class="carousel-caption d-block ">
 						<h5 class="text-uppercase">saree</h5>
+					</div>
+				</div>
+				<div class="carousel-item w-100 h-100">
+					<a href="./theshowduplex.html" class="d-block w-100 h-100">
+						<img src="./image/Project/The show duplex/main photo home.jpg" alt="THE SHOW DUPLEX"
+							class="d-block w-100 h-100">
+					</a>
+					<div class="carousel-caption d-block ">
+						<h5 class="text-uppercase">THE SHOW DUPLEX</h5>
 					</div>
 				</div>
 				<div class="carousel-item w-100 h-100">
@@ -311,16 +324,10 @@
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-		integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<script src="./index.js?ver=2.6"></script>
+	<script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+	<script src="./index.js?ver=2.7"></script>
 </body>
 
 </html>
