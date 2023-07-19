@@ -110,28 +110,28 @@ function goToTheShowDuplex() {
     window.location = "/theshowduplex.html";
 }
 function goToSaree() {
-    window.location = "/saree.html";
+    window.location = "./saree.html";
 }
 function goToBasalt() {
-    window.location = "/thebasalt.html";
+    window.location = "./thebasalt.html";
 }
 function goToFalls() {
-    window.location = "/thefalls.html";
+    window.location = "./thefalls.html";
 }
 function goToHaushaus() {
-    window.location = "/haushaus.html";
+    window.location = "./haushaus.html";
 }
 function goToHausneo() {
-    window.location = "/hausneo.html";
+    window.location = "./hausneo.html";
 }
 function goToLandmark() {
-    window.location = "/landmark.html";
+    window.location = "./landmark.html";
 }
 function goToTheArt() {
-    window.location = "/theart.html";
+    window.location = "./theart.html";
 }
 function goToNhaTrang() {
-    window.location = "/nhatrang.html";
+    window.location = "./nhatrang.html";
 }
 
 //Get the button
