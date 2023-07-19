@@ -143,6 +143,9 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+    if (!mybutton) {
+        return;
+    }
     if (
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
