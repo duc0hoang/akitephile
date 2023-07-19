@@ -107,7 +107,7 @@ $(document).ready(function () {
 });
 
 function goToTheShowDuplex() {
-    window.location = "/theshowduplex.html";
+    window.location = "./theshowduplex.html";
 }
 function goToSaree() {
     window.location = "./saree.html";
