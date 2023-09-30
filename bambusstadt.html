@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bambusstadt</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./image/logo/Capture.PNG" type="image/x-icon">
+    <meta name="title" content="AkitePhile">
+    <meta http-equiv="content-language" content="vi" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="./font-awesome6.css?ver=3.0">
+    <link rel="stylesheet" href="./index.css?ver=3.0">
+</head>
+
+<body id="body" class="d-none">
+    <header class="top d-none d-lg-block" id="top"
+        style=" width: 100%; height: 150px;top: 0;left: 0; z-index: 100; background-color:white">
+        <div class="container-fluid header">
+            <a href="./index.html">
+                <img src="./image/logo.jpg" alt="logo" style="width:200px; height: auto;">
+            </a>
+            <ul class="menu d-none d-lg-flex">
+                <a href="./index.html"><span class="en hide">HOME</span><span class="vn hide">TRANG CHỦ</span> </a>
+                <a href="./project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ ÁN</span> </a>
+                <a href="./team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH VIÊN</span></a>
+                <a href="./contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN HỆ</span></a>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="dropdown-item" onclick="changeLanguage('EN')">EN</p>
+                            <p class="dropdown-item" onclick="changeLanguage('VN')" style="padding-bottom: 20px;">VI</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <header id="mobile-top" class="mobile-top d-lg-none">
+        <div class="container-fluid header">
+            <div>
+                <a href="./index.html">
+                    <img src="./image/logo.jpg" alt="logo" style="width:150px; height: auto;">
+                </a>
+                <h1 class="h1"> <span class="en hide">Project</span><span class="vn hide">Dự án</span></h1>
+            </div>
+
+            <div class="dropdown d-flex d-lg-none" style="background-color: white;margin-right: 40px;">
+                <p id="language-en" style="display: none; line-height: 45px" onclick="changeLanguage('EN')">EN</p>
+                <p id="language-vn" style="display: none; line-height: 45px" onclick="changeLanguage('VN')">VI</p>
+                <button class="btn dropdown-toggle" onclick="onChangeMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu">
+        <a class="dropdown-item" href="./index.html"><span class="en hide">HOME</span><span class="vn hide">TRANG
+                CHỦ</span> </a>
+        <a class="dropdown-item" href="./project.html"><span class="en hide">PROJECT</span><span class="vn hide">DỰ
+                ÁN</span> </a>
+        <a class="dropdown-item" href="./team.html"><span class="en hide">TEAM</span><span class="vn hide">THÀNH
+                VIÊN</span></a>
+        <a class="dropdown-item" href="./contact.html"><span class="en hide">CONTACT</span><span class="vn hide">LIÊN
+                HỆ</span></a>
+    </div>
+
+    <div class="container-customer pt-150 d-none d-lg-block">
+        <div class="row">
+            <div class="col-2 left move d-flex align-items-end justify-content-end">
+                <ul class="ul-right">
+                    <li class="en hide">Concept</li>
+                    <li class="en hide">Drawing</li>
+                    <li class="en hide">Construction Diary</li>
+                    <li class="vn hide">Thiết kế ý tưởng</li>
+                    <li class="vn hide">Triển khai hồ sơ bản vẽ</li>
+                    <li class="vn hide">Giám sát công trường</li>
+                </ul>
+            </div>
+            <div class="col-5 border-bottom-40 left move">
+                <h1 class="h1">Bambusstadt</h1>
+            </div>
+            <div class="col-5 border-bottom-40-3rem right move"></div>
+            <div class="col-2"></div>
+            <div class="col-5 left move" style="z-index: 200; background-color:white">
+                <div class="row mt-5">
+                    <div class="col-12 p-0 pt-2 img-1 pb-2">
+                        <a href="./bambusstadt-big.html?active=0">
+                            <img src="./image/Project/bambusstadt/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-big.html?active=1">
+                            <img src="./image/Project/bambusstadt/002.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-big.html?active=2">
+                            <img src="./image/Project/bambusstadt/003.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 position-relative">
+                        <a href="./bambusstadt-big.html?active=3">
+                            <img src="./image/Project/bambusstadt/001 2.jpg" alt="">
+                        </a>
+                        <div class="common">
+                            <span>phòng lớn</span>
+                            <span>big room</span>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-big.html?active=4">
+                            <img src="./image/Project/bambusstadt/002 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-big.html?active=5">
+                            <img src="./image/Project/bambusstadt/003 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-big.html?active=6">
+                            <img src="./image/Project/bambusstadt/004.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 img-8 p-0 w-100 pt-2 h_100 p-0 w-100 pt-2 h_100">
+                        <a href="./bambusstadt-big.html?active=7">
+                            <img src="./image/Project/bambusstadt/005.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=8">
+                            <img src="./image/Project/bambusstadt/006.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=9">
+                            <img src="./image/Project/bambusstadt/007.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=10">
+                            <img src="./image/Project/bambusstadt/008.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=11">
+                            <img src="./image/Project/bambusstadt/009.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=12">
+                            <img src="./image/Project/bambusstadt/010.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=13">
+                            <img src="./image/Project/bambusstadt/011.jpg" alt="">
+                        </a>
+                        <a href="./bambusstadt-big.html?active=14">
+                            <img src="./image/Project/bambusstadt/012.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 p-0 pt-2 img-1 pb-2 position-relative">
+                        <a href="./bambusstadt-small.html?active=0">
+                            <img src="./image/Project/bambusstadt/001 3.jpg" alt="">
+                        </a>
+                        <div class="mezzanine">
+                            <span>phòng nhỏ</span>
+                            <span>small room</span>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-small.html?active=1">
+                            <img src="./image/Project/bambusstadt/002 3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-small.html?active=2">
+                            <img src="./image/Project/bambusstadt/003 3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-small.html?active=3">
+                            <img src="./image/Project/bambusstadt/004 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-small.html?active=4">
+                            <img src="./image/Project/bambusstadt/005 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 p-0 pt-2 img-1 pb-2 position-relative">
+                        <a href="./bambusstadt-small.html?active=5">
+                            <img src="./image/Project/bambusstadt/001 4.jpg" alt="">
+                        </a>
+                        <div class="common">
+                            <span>phòng vệ sinh</span>
+                            <span>toilet</span>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-small.html?active=6">
+                            <img src="./image/Project/bambusstadt/002 4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-small.html?active=7">
+                            <img src="./image/Project/bambusstadt/003 4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1">
+                        <a href="./bambusstadt-small.html?active=8">
+                            <img src="./image/Project/bambusstadt/004 3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 p-0 pt-2 img-1 pl-2">
+                        <a href="./bambusstadt-small.html?active=9">
+                            <img src="./image/Project/bambusstadt/005 3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 p-0 pt-2 img-1 pb-2">
+                        <a href="./bambusstadt-small.html?active=10">
+                            <img src="./image/Project/bambusstadt/Nguyen Dynasty pattern.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 pt-5 pl-5 right move" style="z-index: 200; background-color:white">
+                <div class="vn hide">
+                    <p class="house-info">Hạng mục: Thiết kế nội thất nhà hàng Vietal</p>
+                    <p class="house-info">Địa điểm: Lister Meile 46, 30161 Hannover, CHLB Đức</p>
+                    <p class="house-info">Năm: 2023</p>
+                    <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc, Nguyễn Ngọc Hân, Huỳnh Xuân
+                        Trúc</p>
+                    <div style="text-align: justify">
+                        <p class="text-center">Hành trình xuất khẩu văn hóa</p>
+                        Đề bài đặt ra cho kiến trúc sư là thiết kế nội thất một nhà hàng Việt Nam tại Đức. Để phù hợp
+                        với phong cách ẩm thức cũng như cung cách phục vụ, nội thất cũng phải mang những nét đặc trưng
+                        của văn hóa Việt không thể lẫn vào đâu được. Ý tưởng về những giá trị truyền thống, những chi
+                        tiết thiết kế hay những hoa văn bản địa bắt đầu được hình thành. Tuy nhiên thử thách đặt ra là
+                        việc vận dụng những yếu tố đó vào thiết kế phải thật khéo léo, sao cho tổng thể hài hòa và không
+                        bị quá cũ kỹ. Đường nét thiết kế vừa mạnh mẽ vừa mềm mại nhằm đem lại cảm giác sang trọng cho
+                        thực khách đến dùng bữa. Phong cách thiết kế được lựa chọn là “Dân gian đương đại”
+                        <span id="cham">...</span><span id="them">
+                            <br>
+                            <br>
+                            HÌnh ảnh rừng tre với những nan tre ốp tường hiện lên như một biểu tưởng cho kiến trúc Việt
+                            Nam
+                            trên trường quốc tế từ hơn 1 thập kỷ. Một đặc điểm nhận diện của kiến trúc Việt Nam ở nước
+                            ngoài
+                            đó là dùng tre. Biểu tượng cây tre ngày xưa vốn dĩ là hình ảnh quen thuộc gắn liền với cuộc
+                            sống
+                            của người dân bản địa thì nay trở thành một biểu tượng cho nền kiến trúc nước nhà.
+                            <br>
+                            <br>
+                            Giữa một quốc gia đã phát triển lâu đời như Đức, tồn tại một thành phố vẫn mang được trong
+                            mình
+                            những nét cổ kính như Hannover. Giữa một không gian nhà hàng hiện đại vẫn có thể đưa vào
+                            những
+                            yếu tố truyển thống của dân tộc. Những yếu tố mới và cũ đan xen lẫn nhau tạo nên một chất
+                            liệu
+                            chiết trung có thể vận dụng vào trong ý tưởng thiết kế nội thất của nhà hàng. HÌnh ảnh một
+                            thành
+                            phố tre (bambusstadf) dần hiện lên để người chiêm ngưỡng có thể cảm nhận nó theo mỗi góc
+                            nhìn cá
+                            nhân. Là một rừng tre dày đặc hay một tổ hợp nhà cao tầng thành phố san sát nhau.
+                            <br>
+                            <br>
+                            Để thiết kế thêm phần ấn tượng, phàn tường mô phỏng rừng tre được thêm vào những hoa văn đặc
+                            trưng của dân tộc. Những hoa văn được mang ra từ văn hóa cung đình triều Nguyễn – triều đại
+                            cuối
+                            cùng của Việt Nam. Vật liệu sử dụng chủ yếu cho nội thất cũng là chất liệu mây tre nứa nhưng
+                            với
+                            một tạo hình hiện đại mang đến một cảm giác vừa mới lạ vừa thân quen.
+                            <br>
+                            <br>
+                            Ánh sáng sử dụng trong nhà hàng có độ sáng vừa phải, không quá chói, tạo nên điểm nhấn chính
+                            phụ
+                            cho khu vực bàn ăn. Ánh sáng kết hợp với hình thức đèn dân gian đương đại đã làm tôn nên
+                            chiều
+                            sâu cho toàn bộ thiết kế.
+                            <br>
+                            <br>
+                            Thành phố tre huyền ảo hiện lên như một bản tình ca nhỏ gửi đến một dự án nơi xứ người.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtnVn"
+                            class="btn btn-outline-secondary font-italic">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="en hide">
+                    <p class="house-info">Category: Vietal restaurant interior design</p>
+                    <p class="house-info">Location: Lister Meile 46, 30161 Hannover, Germany</p>
+                    <p class="house-info">Year: 2023</p>
+                    <p class="house-info">Design team: Luu Quoc Thinh, Nguyen Hong Ngoc, Nguyen Ngoc Han, Huynh Xuan
+                        Truc</p>
+                    <div class="pt-4" style="text-align: justify">
+                        <p class="text-center">Cultural export journey</p>
+                        The task given to the architect was to design the interior of a Vietnamese restaurant in
+                        Germany. To match the culinary style as well as service style, the interior must also have
+                        remarkable characteristics of Vietnamese culture. Ideas about traditional values, design details
+                        or indigenous patterns began to be formed. However, the challenge is that the application of
+                        those elements into the design must be skillful, so that the whole is harmonious and not too
+                        outdated. The design lines are both strong and soft to bring a luxurious feeling to diners. The
+                        chosen design style is "Contemporary Tradition"
+                        <span id="dots">...</span><span id="more">
+                            <br>
+                            <br>
+                            The image of a bamboo forest with bamboo slats covering the walls has appeared as a symbol
+                            of Vietnamese architecture in the international market for more than a decade. A
+                            recognizable feature of Vietnamese architecture abroad is the use of bamboo. The bamboo
+                            symbol in the past was originally a familiar image associated with the lives of indigenous
+                            people, but has now become a symbol of the country's architecture.
+                            <br>
+                            <br>
+                            In the midst of a long-developed country like Germany, there exists a city that still
+                            retains its ancient features like Hannover. In the midst of a modern restaurant space,
+                            traditional ethnic elements can still be included. New and old elements intertwine to create
+                            an eclectic material that can be applied to the restaurant's interior design ideas. The
+                            image of a bamboo city (bambusstadf) gradually appears so that viewers can experience it
+                            from each individual perspective. Is it a dense bamboo forest or a complex of high-rise city
+                            buildings close together.
+                            <br>
+                            <br>
+                            To make the design more impressive, the wall simulating a bamboo forest is added with
+                            typical ethnic patterns. The patterns were brought from the royal culture of the Nguyen
+                            Dynasty - the last dynasty of Vietnam. The main material used for the interior is also
+                            bamboo and rattan, but with a modern shape, bringing a feeling of both novelty and
+                            familiarity.
+                            <br>
+                            <br>
+                            The lighting used in the restaurant is moderately bright, creating a main highlight for the
+                            dining table area. Light combined with contemporary folk lamps enhances the depth of the
+                            entire design.
+                            <br>
+                            <br>
+                            The magical bamboo city appears like a small love symphony sent to a project in a foreign
+                            land.
+                        </span>
+                    </div>
+                    <div class="text-center mt-2">
+                        <button onclick="readMoreOrLess()" id="myBtn" class="btn btn-outline-secondary font-italic">Read
+                            more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phone -->
+    <div class="container-customer d-block d-lg-none pt-150">
+        <div class="row">
+            <div class="col-12 p-0 vn hide">
+                <p class="house-info">Hạng mục: Thiết kế nội thất nhà hàng Vietal</p>
+                <p class="house-info">Địa điểm: Lister Meile 46, 30161 Hannover, CHLB Đức</p>
+                <p class="house-info">Năm: 2023</p>
+                <p class="house-info">Nhóm thiết kế: Lưu Quốc Thịnh, Nguyễn Hồng Ngọc, Nguyễn Ngọc Hân, Huỳnh Xuân Trúc
+                </p>
+            </div>
+            <div class="col-12 p-0 en hide">
+                <p class="house-info">Category: Vietal restaurant interior design</p>
+                <p class="house-info">Location: Lister Meile 46, 30161 Hannover, Germany</p>
+                <p class="house-info">Year: 2023</p>
+                <p class="house-info">Design team: Luu Quoc Thinh, Nguyen Hong Ngoc, Nguyen Ngoc Han, Huynh Xuan Truc
+                </p>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/001.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/002.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/003.jpg" alt="">
+            </div>
+            <div style="text-align: justify" class="vn hide">
+                Đề bài đặt ra cho kiến trúc sư là thiết kế nội thất một nhà hàng Việt Nam tại Đức. Để phù hợp với phong
+                cách ẩm thức cũng như cung cách phục vụ, nội thất cũng phải mang những nét đặc trưng của văn hóa Việt
+                không thể lẫn vào đâu được. Ý tưởng về những giá trị truyền thống, những chi tiết thiết kế hay những hoa
+                văn bản địa bắt đầu được hình thành. Tuy nhiên thử thách đặt ra là việc vận dụng những yếu tố đó vào
+                thiết kế phải thật khéo léo, sao cho tổng thể hài hòa và không bị quá cũ kỹ. Đường nét thiết kế vừa mạnh
+                mẽ vừa mềm mại nhằm đem lại cảm giác sang trọng cho thực khách đến dùng bữa. Phong cách thiết kế được
+                lựa chọn là “Dân gian đương đại”.
+            </div>
+            <div style="text-align: justify" class="en hide">
+                <p class="text-center">Cultural export journey</p>
+                The task given to the architect was to design the interior of a Vietnamese restaurant in Germany. To
+                match the culinary style as well as service style, the interior must also have remarkable
+                characteristics of Vietnamese culture. Ideas about traditional values, design details or indigenous
+                patterns began to be formed. However, the challenge is that the application of those elements into the
+                design must be skillful, so that the whole is harmonious and not too outdated. The design lines are both
+                strong and soft to bring a luxurious feeling to diners. The chosen design style is "Contemporary
+                Tradition".
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/bambusstadt/001 2.jpg" alt="">
+                <div class="common">
+                    <span>phòng lớn</span>
+                    <span>big room</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/002 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/003 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/004.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/005.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/006.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/007.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/008.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/009.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/010.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/011.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/012.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/bambusstadt/001 3.jpg" alt="">
+                <div class="mezzanine">
+                    <span>phòng nhỏ</span>
+                    <span>small room</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/002 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/003 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/004 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/005 2.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2 position-relative">
+                <img src="./image/Project/bambusstadt/001 4.jpg" alt="">
+                <div class="common">
+                    <span>phòng vệ sinh</span>
+                    <span>toilet</span>
+                </div>
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/002 4.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/003 4.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/004 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/005 3.jpg" alt="">
+            </div>
+            <div class="col-12 p-0 img-1 pb-2">
+                <img src="./image/Project/bambusstadt/Nguyen Dynasty pattern.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="hotline-phone-ring-wrap project-page" style="display:none">
+        <div class="float-icon-hotline project-page">
+            <ul class="left-icon hotline">
+                <li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton"
+                        href="https://zalo.me/0972040448"><i
+                            class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+            </ul>
+        </div>
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0972040448" class="pps-btn-img">
+                    <img src="./image/black-phone-icon-8.jpg" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0972040448">
+                <span class="text-hotline">0972 040 448</span>
+            </a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="project-detail d-lg-none">
+        haushaus
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./index.js?ver=3.0"></script>
+</body>
+
+</html>
