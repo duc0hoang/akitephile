@@ -106,6 +106,9 @@ $(document).ready(function () {
     }
 });
 
+function goToBambusstadt() {
+    window.location = "./bambusstadt.html";
+}
 function goToTheShowDuplex() {
     window.location = "./theshowduplex.html";
 }
