@@ -492,6 +492,48 @@ header .header .menu a {
     letter-spacing: 5px;
 }
 
+.stair-top {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    color: white;
+    text-align: right;
+}
+
+.stair-top span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.stair-top span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.stair-left {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+    text-align: left;
+}
+
+.stair-left span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.stair-left span:last-child {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
 .common {
     position: absolute;
     text-transform: uppercase;
