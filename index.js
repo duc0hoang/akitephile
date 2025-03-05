@@ -137,6 +137,10 @@ function goToNhaTrang() {
     window.location = "./nhatrang.html";
 }
 
+function goToAttic(){
+    window.location = "./attic.html";
+}
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
