@@ -1,6 +1,39 @@
 function prev() {
     $('.carousel').carousel('prev')
 }
+// https://supabase.com/dashboard/project/jyhahedrkgcxgheyijkm
+// database akitephile
+// Anna@2023
+
+var SUPABASE_URL = 'https://jyhahedrkgcxgheyijkm.supabase.co';
+var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp5aGFoZWRya2djeGdoZXlpamttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwNzMxNTMsImV4cCI6MjA3MjY0OTE1M30.qXbG4UKf08GCnHnBN2VfkNzEYlsLhUwgddhihEFSrgQ';
+var TABLE = "product";
+
+
+async function fetchProducts() {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/${TABLE}?select=*`, {
+        headers: {
+            apikey: SUPABASE_KEY,
+            Authorization: `Bearer ${SUPABASE_KEY}`
+        }
+    });
+    const data = await res.json();
+    console.log(data);
+}
+
+async function createProduct(name, price) {
+    await fetch(`${SUPABASE_URL}/rest/v1/${TABLE}`, {
+        method: "POST",
+        headers: {
+            apikey: SUPABASE_KEY,
+            Authorization: `Bearer ${SUPABASE_KEY}`,
+            "Content-Type": "application/json",
+            Prefer: "return=minimal"
+        },
+        body: JSON.stringify({ name, price })
+    });
+    fetchProducts();
+}
 
 function next() {
     $('.carousel').carousel('next')
@@ -137,7 +170,7 @@ function goToNhaTrang() {
     window.location = "./nhatrang.html";
 }
 
-function goToAttic(){
+function goToAttic() {
     window.location = "./attic.html";
 }
 
