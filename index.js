@@ -142,6 +142,11 @@ $(document).ready(function () {
 function goToBambusstadt() {
     window.location = "./bambusstadt.html";
 }
+
+function goToSignora() {
+    window.location = "./signora.html";
+}
+
 function goToTheShowDuplex() {
     window.location = "./theshowduplex.html";
 }
