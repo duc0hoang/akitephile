@@ -179,6 +179,18 @@ function goToAttic() {
     window.location = "./attic.html";
 }
 
+function goToTheLowB() {
+    window.location = "./thelowb.html";
+}
+
+function goToLesCartes() {
+    window.location = "./lescartes.html";
+}
+
+function goToHoneyOffice() {
+    window.location = "./honey.html";
+}
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
