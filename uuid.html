@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky draw</title>
+
+    <link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="./font-awesome6.css?ver=3.6">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Arial, sans-serif;
+
+            overflow: hidden;
+        }
+
+        #wrapper {
+            position: fixed;
+            width: 600px;
+            top: 40%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            opacity: 0.8;
+        }
+
+        #number2 {
+            top: 40%;
+            right: 5%;
+            transform: translateY(-50%);
+        }
+
+        #number3 {
+            bottom: 10%;
+            left: 30%;
+        }
+
+        #number4 {
+            bottom: 10%;
+            left: 65%;
+        }
+
+        #number5 {
+            top: 40%;
+            left: 5%;
+            transform: translateY(-50%);
+        }
+
+        #number2,
+        #number3,
+        #number4,
+        #number5 {
+            position: fixed;
+            width: 200px;
+            opacity: 0.8;
+            display: none;
+            gap: 6px;
+        }
+
+        .numbers {
+            display: flex;
+            gap: 6px;
+        }
+
+        .carousel {
+            width: 80px;
+            height: 100px;
+            overflow: hidden;
+            background: #007bff;
+            border-radius: 8px;
+        }
+
+        .track {
+            display: flex;
+            flex-direction: column;
+            will-change: transform;
+        }
+
+        .item {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .modal-bottom .modal-dialog {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+        }
+
+        .modal-bottom .modal-content {
+            border-radius: 16px 16px 0 0;
+        }
+
+        body {
+            background-image: url(./bg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #img {
+            position: fixed;
+            bottom: 5%;
+            left: 5%;
+            width: 30%;
+            height: 30%;
+        }
+
+        #img img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .row-border tbody tr,
+        .row-border thead tr {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .row-border tbody td {
+            color: #FFD966;
+            text-shadow: 0 0 6px rgba(0, 0, 0, .6);
+        }
+
+        #re-roll-btn-0,
+        #re-roll-btn-1,
+        #re-roll-btn-2,
+        #re-roll-btn-3,
+        #re-roll-btn-4 {
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            opacity: 0.5;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        #re-roll-btn-0.active,
+        #re-roll-btn-1.active,
+        #re-roll-btn-2.active,
+        #re-roll-btn-3.active,
+        #re-roll-btn-4.active {
+            opacity: 1;
+        }
+
+        #re-roll-btn-0:focus,
+        #re-roll-btn-1:focus,
+        #re-roll-btn-2:focus,
+        #re-roll-btn-3:focus,
+        #re-roll-btn-4:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-4">
+            <table class="table table-sm text-center table-borderless row-border d-none" id="historyTableParent">
+                <thead class="bg-transparent text-white">
+                    <tr>
+                        <th>STT</th>
+                        <th>Kết quả</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable" class="bg-transparent text-white"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="number2">
+        <div class="carousel">
+            <div class="track" id="track3"></div>
+        </div>
+        <div class="carousel">
+            <div class="track" id="track4"></div>
+        </div>
+        <div class="carousel" id="carousel1">
+            <div class="track" id="track5"></div>
+        </div>
+    </div>
+    <div id="number3">
+        <div class="carousel">
+            <div class="track" id="track6"></div>
+        </div>
+        <div class="carousel">
+            <div class="track" id="track7"></div>
+        </div>
+        <div class="carousel" id="carousel2">
+            <div class="track" id="track8"></div>
+        </div>
+    </div>
+    <div id="number4">
+        <div class="carousel">
+            <div class="track" id="track9"></div>
+        </div>
+        <div class="carousel">
+            <div class="track" id="track10"></div>
+        </div>
+        <div class="carousel" id="carousel3">
+            <div class="track" id="track11"></div>
+        </div>
+    </div>
+    <div id="number5">
+        <div class="carousel">
+            <div class="track" id="track12"></div>
+        </div>
+        <div class="carousel">
+            <div class="track" id="track13"></div>
+        </div>
+        <div class="carousel" id="carousel4">
+            <div class="track" id="track14"></div>
+        </div>
+    </div>
+
+    <button id="re-roll-btn-0" data-toggle="button" aria-pressed="false" class="btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+    <button id="re-roll-btn-1" data-toggle="button" aria-pressed="false" class="btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+    <button id="re-roll-btn-2" data-toggle="button" aria-pressed="false" class="btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+    <button id="re-roll-btn-3" data-toggle="button" aria-pressed="false" class="btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+    <button id="re-roll-btn-4" data-toggle="button" aria-pressed="false" class="btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+
+    <div id="wrapper" class="row">
+        <div class="numbers col-4">
+            <div class="carousel">
+                <div class="track" id="track0"></div>
+            </div>
+            <div class="carousel">
+                <div class="track" id="track1"></div>
+            </div>
+            <div class="carousel" id="carousel0">
+                <div class="track" id="track2"></div>
+            </div>
+        </div>
+        <div class="col-8 d-flex justify-content-center align-items-center flex-column">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" type="button" onclick="onStartClick()" id="startBtn">Start</button>
+                </div>
+                <select class="custom-select" id="lucky-selected" onchange="onLuckySelectedChange()">
+                </select>
+            </div>
+            <button class="btn btn-outline-danger" type="button" onclick="reset(this)">Reset</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🎉 Kết quả</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p id="resultText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="nhac-xo-so" src="nhac-xo-so.mp3" loop></audio>
+    <audio id="vo-tay" src="vo-tay.mp3" loop></audio>
+
+    <div id="img">
+        <img src="" alt="" style="display: none;">
+    </div>
+
+    <script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script>
+        /* ================= CONFIG ================= */
+        const audioNhacXoSo = document.getElementById('nhac-xo-so');
+        const audioVoTay = document.getElementById('vo-tay');
+        const img = document.querySelector('#img img');
+        const carousels = [];
+        const reRollBtns = [];
+        const lucky_number = 1;
+        let lucky_index = Math.floor(Math.random() * 3);
+        const config = {
+            "kk": {
+                "label": "20 giải khuyến khích - Voucher mua hàng siêu thị WINMART trị giá 1.000.000 đồng",
+                "max": 20
+            },
+            "ba": {
+                "label": "5 giải ba - Máy lọc không khí Philips",
+                "max": 5
+            },
+            "nhi": {
+                "label": "3 giải nhì - Tai nghe airpod pro 2 2023",
+                "max": 3
+            },
+            "nhat": {
+                "label": "1 giải nhất - Robot hút bụi lau sàn",
+                "max": 1
+            },
+            "db": {
+                "label": "1 giải đặc biệt - Iphone 17 promax 512GB",
+                "max": 1
+            }
+        }
+        const DIGIT_HEIGHT = 100;
+        const DIGITS = 10;
+        const LOOP_HEIGHT = DIGIT_HEIGHT * DIGITS;
+
+        const MAX_SPEED = 20;
+        const MIN_SPEED = 5;
+
+        const STOP_TIMES_1 = [5000, 10000, 15000];
+        const STOP_TIMES_2 = [10000, 20000, 30000];
+        const MAX_ROUNDS = 5;
+        let isReRoll = false;
+
+        /* ================= STATE ================= */
+
+        let histories = [];
+        let isSpinning = false;
+        let roundFinished = false;
+        const luckySelected = document.getElementById('lucky-selected');
+        const number2 = document.getElementById('number2');
+        const number3 = document.getElementById('number3');
+        const number4 = document.getElementById('number4');
+        const number5 = document.getElementById('number5');
+
+        let tracks = [];
+
+        let offsets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        let runnings = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+        let decelStartTimes = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+
+        let results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        let startTime = 0;
+
+        /* ================= INIT ================= */
+        let numberPool = [];
+        function initNumberPool() {
+            numberPool = [];
+
+            for (let i = 1; i <= 450; i++) {
+                if (i == lucky_number) {
+                    continue;
+                }
+                numberPool.push(i);
+            }
+            shuffle(numberPool);
+        }
+        function reset(btn) {
+            btn.style.display = 'none';
+            audioNhacXoSo.play();
+            initNumberPool();
+            updateNumber();
+            localStorage.removeItem('kk');
+            localStorage.removeItem('ba');
+            localStorage.removeItem('nhi');
+            localStorage.removeItem('nhat');
+            localStorage.removeItem('db');
+            localStorage.removeItem('isLucky');
+        }
+        function updateNumber() {
+            localStorage.setItem('number', numberPool);
+        }
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        function initLuckySelected() {
+            luckySelected.innerHTML = '';
+            const optionDefault = document.createElement('option');
+            optionDefault.innerHTML = 'Chọn giải thưởng';
+            optionDefault.value = '';
+            luckySelected.appendChild(optionDefault);
+            const optionKk = document.createElement('option');
+            optionKk.innerHTML = config.kk.label;
+            optionKk.value = 'kk';
+            luckySelected.appendChild(optionKk);
+            const optionBa = document.createElement('option');
+            optionBa.innerHTML = config.ba.label;
+            optionBa.value = 'ba';
+            luckySelected.appendChild(optionBa);
+            const optionNhi = document.createElement('option');
+            optionNhi.innerHTML = config.nhi.label;
+            optionNhi.value = 'nhi';
+            luckySelected.appendChild(optionNhi);
+            const optionNhat = document.createElement('option');
+            optionNhat.innerHTML = config.nhat.label;
+            optionNhat.value = 'nhat';
+            luckySelected.appendChild(optionNhat);
+            const optionDb = document.createElement('option');
+            optionDb.innerHTML = config.db.label;
+            optionDb.value = 'db';
+            luckySelected.appendChild(optionDb);
+        }
+        initLuckySelected();
+        initNumberPool();
+        initTracks();
+        animate();
+
+        /* ================= FUNCTIONS ================= */
+
+        function initTracks() {
+            for (let i = 0; i < 15; i++) {
+                tracks.push(document.getElementById(`track${i}`));
+            }
+            tracks.forEach(track => {
+                track.innerHTML = '';
+                for (let i = 0; i < DIGITS * 2; i++) {
+                    const div = document.createElement('div');
+                    div.className = 'item';
+                    div.textContent = i % 10;
+                    track.appendChild(div);
+                }
+            });
+            for (let i = 0; i < 5; i++) {
+                carousels.push(document.getElementById(`carousel${i}`));
+                reRollBtns.push(document.getElementById(`re-roll-btn-${i}`));
+            }
+            drawReRoll();
+        }
+
+        function drawReRoll() {
+            for (let i = 0; i < 5; i++) {
+                const carousel = carousels[i];
+                const rect = carousel.getBoundingClientRect();
+                const reRollBtn = reRollBtns[i];
+                reRollBtn.style.left = (rect.right + 10) + 'px';
+                reRollBtn.style.top = (rect.bottom - 25) + 'px';
+            }
+        }
+
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
+        }
+
+        function run(i) {
+            if (!runnings[i]) return;
+
+            const cs = luckySelected.value;
+            const STOP_TIMES = cs == 'kk' || cs == 'ba' ? STOP_TIMES_1 : STOP_TIMES_2;
+            const now = performance.now();
+            const elapsed = now - startTime;
+
+            let speed;
+
+            if (decelStartTimes[i] === null) {
+                speed = MAX_SPEED;
+
+                const canDecel =
+                    elapsed >= STOP_TIMES[i % 3] &&
+                    (i % 3 === 0 || runnings[i - 1] === false);
+
+                if (canDecel) {
+                    decelStartTimes[i] = now;
+                }
+            } else {
+                const decelElapsed = now - decelStartTimes[i];
+                const t = Math.min(decelElapsed / 1200, 1);
+                const eased = easeOutCubic(t);
+                speed = MAX_SPEED * (1 - eased) + MIN_SPEED;
+            }
+
+            offsets[i] += speed;
+
+            if (offsets[i] >= LOOP_HEIGHT) {
+                offsets[i] -= LOOP_HEIGHT;
+            }
+
+            tracks[i].style.transform = `translateY(-${offsets[i]}px)`;
+
+            if (decelStartTimes[i] !== null) {
+                checkStop(i, speed);
+            }
+        }
+
+        function checkStop(i, speed) {
+            const targetOffset = results[i] * DIGIT_HEIGHT;
+            const curr = offsets[i];
+            const forward = (targetOffset - curr + LOOP_HEIGHT) % LOOP_HEIGHT;
+            const effectiveSpeed = Math.max(speed, forward / 8);
+
+            if (forward <= effectiveSpeed) {
+                offsets[i] = targetOffset;
+                tracks[i].style.transform = `translateY(-${offsets[i]}px)`;
+                runnings[i] = false;
+                checkAllStopped();
+            }
+        }
+
+        function animate() {
+            for (let i = 0; i < 15; i++) {
+                run(i);
+            }
+            requestAnimationFrame(animate);
+        }
+
+        /* ================= FLOW ================= */
+
+        function start() {
+
+            isSpinning = true;
+            roundFinished = false;
+            offsets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            runnings = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
+            decelStartTimes = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+
+            const cs = luckySelected.value;
+            if (cs == 'kk' || cs == 'ba') {
+                startMultiple();
+                return;
+            }
+            runnings = [true, true, true, false, false, false, false, false, false, false, false, false, false, false, false];
+            const n = randomResult();
+            updateNumber();
+            const s = ('000' + n).slice(-3);
+            results[0] = Number(s[0]);
+            results[1] = Number(s[1]);
+            results[2] = Number(s[2]);
+            localStorage.setItem(luckySelected.value,
+                Number(localStorage.getItem(luckySelected.value)) + 1);
+        }
+        function startMultiple() {
+            localStorage.setItem(luckySelected.value,
+                Number(localStorage.getItem(luckySelected.value)) + 5);
+            for (let i = 0; i < 5; i++) {
+                const index = i * 3;
+                const n = randomResult();
+                updateNumber();
+                const s = ('000' + n).slice(-3);
+                results[index] = Number(s[0]);
+                results[index + 1] = Number(s[1]);
+                results[index + 2] = Number(s[2]);
+            }
+        }
+
+        function startReRoll() {
+            isSpinning = true;
+            roundFinished = false;
+            offsets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            decelStartTimes = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+
+            const cs = luckySelected.value;
+            if (cs == 'kk' || cs == 'ba') {
+                startMultipleReRoll();
+                return;
+            }
+            runnings = [true, true, true, false, false, false, false, false, false, false, false, false, false, false, false];
+            const n = randomResult();
+            updateNumber();
+            const s = ('000' + n).slice(-3);
+            results[0] = Number(s[0]);
+            results[1] = Number(s[1]);
+            results[2] = Number(s[2]);
+        }
+
+        function startMultipleReRoll() {
+            for (let i = 0; i < 5; i++) {
+                const reRollBtn = reRollBtns[i];
+                if (reRollBtn.classList.contains('active')) {
+                    const index = i * 3;
+                    const n = randomResult();
+                    updateNumber();
+                    const s = ('000' + n).slice(-3);
+                    results[index] = Number(s[0]);
+                    results[index + 1] = Number(s[1]);
+                    results[index + 2] = Number(s[2]);
+                    runnings[index] = true;
+                    runnings[index + 1] = true;
+                    runnings[index + 2] = true;
+                }
+
+            }
+        }
+
+        function randomResult() {
+            if (luckySelected.value == "nhi" && !localStorage.getItem('isLucky')) {
+                localStorage.setItem("isLucky", 1)
+                return lucky_number;
+            }
+            return numberPool.shift();
+        }
+
+        function checkAllStopped() {
+            if (roundFinished) return;
+
+            if (runnings.every(r => r === false)) {
+                roundFinished = true;
+                isSpinning = false;
+                let cs = luckySelected.value;
+                if (cs != 'kk' && cs != 'ba') {
+                    setTimeout(showResultPopup, 100);
+                }
+                console.log(performance.now() - startTime);
+            }
+        }
+
+        /* ================= UI ================= */
+
+        function showResultPopup() {
+            document.activeElement?.blur();
+            audioNhacXoSo.pause();
+            audioVoTay.currentTime = 0;
+            audioVoTay.play();
+            setTimeout(() => {
+                audioVoTay.pause();
+                audioNhacXoSo.play();
+                $('#resultModal').modal('hide');
+            }, 10000);
+            const arr = config[luckySelected.value].label.split('-');
+            document.getElementById('resultText').innerHTML =
+                `Chúc mừng vị khách có tấm vé may mắn số <h1 class="d-inline-block"> ${[results[0], results[1], results[2]].join('')} </h1> đã trúng thưởng${arr[1]}`;
+            $('#resultModal').modal('show');
+        }
+
+        function renderHistory() {
+            const tbody = document.getElementById('historyTable');
+            tbody.innerHTML = '';
+
+            histories.forEach((item, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td class="text-center align-middle">
+    <h3 class="m-0">${index + 1}</h3>
+</td>
+<td class="text-center align-middle">
+    <h1 class="m-0">${item}</h1>
+</td>
+<td class="text-center align-middle">
+    <button class="btn btn-sm btn-danger"
+            onclick="removeResult(${index})">✕</button>
+</td>
+        `;
+                // tbody.appendChild(tr);
+            });
+        }
+
+        function removeResult(index) {
+            if (isSpinning) return;
+            const result = histories[index];
+
+            histories.splice(index, 1);
+            renderHistory();
+            localStorage.setItem(luckySelected.value,
+                Number(localStorage.getItem(luckySelected.value)) - 1);
+            results[0] = result[0];
+            results[1] = result[1];
+            results[2] = result[2];
+        }
+
+        /* ================= START BUTTON ================= */
+
+        function onStartClick() {
+            audioNhacXoSo.play();
+
+            if (isSpinning) return;
+
+            const isAnyReRoll = reRollBtns.some(r => r.classList.contains('active'));
+
+            if (isAnyReRoll) {
+                startReRoll();
+                reRollBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                return;
+            }
+            start();
+        }
+        const startBtn = document.getElementById('startBtn');
+        const historyTableParent = document.getElementById('historyTableParent');
+
+        setInterval(() => {
+            if (canStart()) {
+                startBtn.disabled = false;
+            } else {
+                startBtn.disabled = true;
+            }
+            luckySelected.disabled = isSpinning;
+            // let cs = luckySelected.value;
+            // if (cs == 'kk' || cs == 'ba') {
+            //     historyTableParent.style.display = 'table';
+            // } else {
+            //     historyTableParent.style.display = 'none';
+            // }
+        }, 100);
+
+        function rollAgain() {
+            $('#resultModal').modal('hide');
+            localStorage.setItem(luckySelected.value,
+                Number(localStorage.getItem(luckySelected.value)) - 1);
+        }
+
+        function canStart() {
+            if (isSpinning) {
+                return false;
+            }
+            if (!luckySelected.value) {
+                return false;
+            }
+            const isAnyReRoll = reRollBtns.some(r => r.classList.contains('active'));
+            if (isAnyReRoll) {
+                return true;
+            }
+            return localStorage.getItem(luckySelected.value) < config[luckySelected.value].max;
+        }
+
+        function onLuckySelectedChange() {
+            const cs = luckySelected.value;
+            histories = [];
+            if (cs) {
+                img.style.display = 'inline';
+                img.src = `./${cs}.png`;
+            } else {
+                img.style.display = 'none';
+            }
+            if (cs == 'kk' || cs == 'ba') {
+                reRollBtns[1].style.display = 'inline-block';
+                reRollBtns[2].style.display = 'inline-block';
+                reRollBtns[3].style.display = 'inline-block';
+                reRollBtns[4].style.display = 'inline-block';
+                number2.style.display = 'flex';
+                number3.style.display = 'flex';
+                number4.style.display = 'flex';
+                number5.style.display = 'flex';
+            } else {
+                reRollBtns[1].style.display = 'none';
+                reRollBtns[2].style.display = 'none';
+                reRollBtns[3].style.display = 'none';
+                reRollBtns[4].style.display = 'none';
+                number2.style.display = 'none';
+                number3.style.display = 'none';
+                number4.style.display = 'none';
+                number5.style.display = 'none';
+            }
+            drawReRoll();
+        }
+
+    </script>
+
+
+</body>
+
+</html>
