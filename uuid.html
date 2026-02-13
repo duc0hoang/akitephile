@@ -17,7 +17,7 @@
 
         #wrapper {
             position: fixed;
-            width: 600px;
+            width: 720px;
             top: 40%;
             left: 60%;
             transform: translate(-50%, -50%);
@@ -26,7 +26,7 @@
 
         #number2 {
             top: 40%;
-            right: 5%;
+            right: 1%;
             transform: translateY(-50%);
         }
 
@@ -51,7 +51,7 @@
         #number4,
         #number5 {
             position: fixed;
-            width: 200px;
+            width: 400px;
             opacity: 0.8;
             display: none;
             gap: 6px;
@@ -63,8 +63,10 @@
         }
 
         .carousel {
-            width: 80px;
-            height: 100px;
+            width: 120px;
+            min-width: 120px;
+            flex-shrink: 0;
+            height: 150px;
             overflow: hidden;
             background: #007bff;
             border-radius: 8px;
@@ -77,13 +79,16 @@
         }
 
         .item {
-            height: 100px;
+            height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 72px;
+            font-size: 180px;
             font-weight: bold;
             color: #fff;
+            box-sizing: border-box;
+            line-height: 150px;
+            padding-bottom: 15%;
         }
 
         .modal-bottom .modal-dialog {
@@ -236,7 +241,7 @@
     </button>
 
     <div id="wrapper" class="row">
-        <div class="numbers col-4">
+        <div class="numbers col-7">
             <div class="carousel">
                 <div class="track" id="track0"></div>
             </div>
@@ -247,7 +252,7 @@
                 <div class="track" id="track2"></div>
             </div>
         </div>
-        <div class="col-8 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-5 d-flex justify-content-center align-items-center flex-column">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <button class="btn btn-primary" type="button" onclick="onStartClick()" id="startBtn">Start</button>
@@ -291,8 +296,6 @@
         const img = document.querySelector('#img img');
         const carousels = [];
         const reRollBtns = [];
-        const lucky_number = 1;
-        let lucky_index = Math.floor(Math.random() * 3);
         const config = {
             "kk": {
                 "label": "20 giải khuyến khích - Voucher mua hàng siêu thị WINMART trị giá 1.000.000 đồng",
@@ -315,7 +318,7 @@
                 "max": 1
             }
         }
-        const DIGIT_HEIGHT = 100;
+        const DIGIT_HEIGHT = 150;
         const DIGITS = 10;
         const LOOP_HEIGHT = DIGIT_HEIGHT * DIGITS;
 
@@ -353,24 +356,27 @@
             numberPool = [];
 
             for (let i = 1; i <= 450; i++) {
-                if (i == lucky_number) {
-                    continue;
-                }
                 numberPool.push(i);
             }
             shuffle(numberPool);
         }
         function reset(btn) {
             btn.style.display = 'none';
-            audioNhacXoSo.play();
-            initNumberPool();
-            updateNumber();
-            localStorage.removeItem('kk');
-            localStorage.removeItem('ba');
-            localStorage.removeItem('nhi');
-            localStorage.removeItem('nhat');
-            localStorage.removeItem('db');
-            localStorage.removeItem('isLucky');
+            try {
+                audioNhacXoSo.play();
+                initNumberPool();
+                updateNumber();
+                localStorage.removeItem('kk');
+                localStorage.removeItem('ba');
+                localStorage.removeItem('nhi');
+                localStorage.removeItem('nhat');
+                localStorage.removeItem('db');
+                localStorage.removeItem('isLucky');
+                window._resetLuckyRoll();
+            } catch (e) {
+
+            }
+
         }
         function updateNumber() {
             localStorage.setItem('number', numberPool);
@@ -389,23 +395,23 @@
             optionDefault.value = '';
             luckySelected.appendChild(optionDefault);
             const optionKk = document.createElement('option');
-            optionKk.innerHTML = config.kk.label;
+            optionKk.innerHTML = config.kk.label.split('-')[0];
             optionKk.value = 'kk';
             luckySelected.appendChild(optionKk);
             const optionBa = document.createElement('option');
-            optionBa.innerHTML = config.ba.label;
+            optionBa.innerHTML = config.ba.label.split('-')[0];
             optionBa.value = 'ba';
             luckySelected.appendChild(optionBa);
             const optionNhi = document.createElement('option');
-            optionNhi.innerHTML = config.nhi.label;
+            optionNhi.innerHTML = config.nhi.label.split('-')[0];
             optionNhi.value = 'nhi';
             luckySelected.appendChild(optionNhi);
             const optionNhat = document.createElement('option');
-            optionNhat.innerHTML = config.nhat.label;
+            optionNhat.innerHTML = config.nhat.label.split('-')[0];
             optionNhat.value = 'nhat';
             luckySelected.appendChild(optionNhat);
             const optionDb = document.createElement('option');
-            optionDb.innerHTML = config.db.label;
+            optionDb.innerHTML = config.db.label.split('-')[0];
             optionDb.value = 'db';
             luckySelected.appendChild(optionDb);
         }
@@ -589,14 +595,6 @@
             }
         }
 
-        function randomResult() {
-            if (luckySelected.value == "nhi" && !localStorage.getItem('isLucky')) {
-                localStorage.setItem("isLucky", 1)
-                return lucky_number;
-            }
-            return numberPool.shift();
-        }
-
         function checkAllStopped() {
             if (roundFinished) return;
 
@@ -665,23 +663,32 @@
         }
 
         /* ================= START BUTTON ================= */
+        function randomResult() {
+            return window._validateSystemTicket();
+        }
 
-        function onStartClick() {
+        async function onStartClick() {
             audioNhacXoSo.play();
-
             if (isSpinning) return;
 
+            await new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = `./bootstrap-table-plugin.js?t=${Date.now()}`;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+            startTime = performance.now();
             const isAnyReRoll = reRollBtns.some(r => r.classList.contains('active'));
-
             if (isAnyReRoll) {
                 startReRoll();
                 reRollBtns.forEach(btn => {
                     btn.classList.remove('active');
                     btn.setAttribute('aria-pressed', 'false');
                 });
-                return;
+            } else {
+                start();
             }
-            start();
         }
         const startBtn = document.getElementById('startBtn');
         const historyTableParent = document.getElementById('historyTableParent');
