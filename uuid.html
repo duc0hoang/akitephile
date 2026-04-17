@@ -18,15 +18,15 @@
         #wrapper {
             position: fixed;
             width: 720px;
-            top: 40%;
-            left: 60%;
-            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 53%;
+            transform: translateY(-50%);
             opacity: 0.8;
         }
 
         #number2 {
-            top: 40%;
-            right: 1%;
+            top: 50%;
+            right: 53%;
             transform: translateY(-50%);
         }
 
@@ -55,6 +55,10 @@
             opacity: 0.8;
             display: none;
             gap: 6px;
+        }
+
+        #number2 {
+            display: flex !important;
         }
 
         .numbers {
@@ -104,7 +108,7 @@
         }
 
         body {
-            background-image: url(./bg1.jpg);
+            background-image: url(./bg3.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -253,19 +257,22 @@
             </div>
         </div>
         <div class="col-5 d-flex justify-content-center align-items-center flex-column">
-            <div class="input-group mb-3">
+            <!-- <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <button class="btn btn-primary" type="button" onclick="onStartClick()" id="startBtn">Start</button>
                 </div>
                 <select class="custom-select" id="lucky-selected" onchange="onLuckySelectedChange()">
                 </select>
+            </div> -->
+            <div class="input-group-prepend mb-3">
+                <button class="btn btn-primary" type="button" onclick="onStartClick()" id="startBtn">Start</button>
             </div>
             <button class="btn btn-outline-danger" type="button" onclick="reset(this)">Reset</button>
         </div>
     </div>
 
     <div class="modal fade" id="resultModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">🎉 Kết quả</h5>
@@ -299,7 +306,7 @@
         const config = {
             "kk": {
                 "label": "20 giải khuyến khích - Voucher mua hàng siêu thị WINMART trị giá 1.000.000 đồng",
-                "max": 20
+                "max": 10
             },
             "ba": {
                 "label": "5 giải ba - Máy lọc không khí Philips",
@@ -335,7 +342,8 @@
         let histories = [];
         let isSpinning = false;
         let roundFinished = false;
-        const luckySelected = document.getElementById('lucky-selected');
+        // const luckySelected = document.getElementById('lucky-selected');
+        const luckySelected = { "value": "kk" };
         const number2 = document.getElementById('number2');
         const number3 = document.getElementById('number3');
         const number4 = document.getElementById('number4');
@@ -352,19 +360,23 @@
 
         /* ================= INIT ================= */
         let numberPool = [];
-        function initNumberPool() {
+        async function initNumberPool() {
+            await initData();
+
             numberPool = [];
 
             for (let i = 1; i <= 450; i++) {
-                numberPool.push(i);
+                if (staffMap[i]) {
+                    numberPool.push(i);
+                }
             }
             shuffle(numberPool);
         }
-        function reset(btn) {
+        async function reset(btn) {
             btn.style.display = 'none';
             try {
                 audioNhacXoSo.play();
-                initNumberPool();
+                await initNumberPool();
                 updateNumber();
                 localStorage.removeItem('kk');
                 localStorage.removeItem('ba');
@@ -415,10 +427,34 @@
             optionDb.value = 'db';
             luckySelected.appendChild(optionDb);
         }
-        initLuckySelected();
-        initNumberPool();
+        // initLuckySelected();
         initTracks();
         animate();
+        let staffMap = {};
+        async function initData() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch(`./cbnv.json?t=${timestamp}`);
+
+                if (!response.ok) {
+                    throw new Error("Không tìm thấy file JSON hoặc lỗi server");
+                }
+
+                const dataArray = await response.json();
+                staffMap = dataArray.reduce((acc, item) => {
+                    if (item.id) {
+                        acc[item.id] = { ...item };
+                    }
+                    return acc;
+                }, {});
+
+                // console.log(staffMap);
+
+            } catch (error) {
+                console.error("Lỗi khi load data:", error);
+            }
+        }
+        initNumberPool();
 
         /* ================= FUNCTIONS ================= */
 
@@ -435,7 +471,7 @@
                     track.appendChild(div);
                 }
             });
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 2; i++) {
                 carousels.push(document.getElementById(`carousel${i}`));
                 reRollBtns.push(document.getElementById(`re-roll-btn-${i}`));
             }
@@ -443,7 +479,7 @@
         }
 
         function drawReRoll() {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 2; i++) {
                 const carousel = carousels[i];
                 const rect = carousel.getBoundingClientRect();
                 const reRollBtn = reRollBtns[i];
@@ -524,7 +560,7 @@
             isSpinning = true;
             roundFinished = false;
             offsets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-            runnings = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
+            runnings = [true, true, true, true, true, true, false, false, false, false, false, false, false, false, false];
             decelStartTimes = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
 
             const cs = luckySelected.value;
@@ -544,8 +580,8 @@
         }
         function startMultiple() {
             localStorage.setItem(luckySelected.value,
-                Number(localStorage.getItem(luckySelected.value)) + 5);
-            for (let i = 0; i < 5; i++) {
+                Number(localStorage.getItem(luckySelected.value)) + 2);
+            for (let i = 0; i < 2; i++) {
                 const index = i * 3;
                 const n = randomResult();
                 updateNumber();
@@ -577,7 +613,7 @@
         }
 
         function startMultipleReRoll() {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 2; i++) {
                 const reRollBtn = reRollBtns[i];
                 if (reRollBtn.classList.contains('active')) {
                     const index = i * 3;
@@ -601,11 +637,11 @@
             if (runnings.every(r => r === false)) {
                 roundFinished = true;
                 isSpinning = false;
-                let cs = luckySelected.value;
-                if (cs != 'kk' && cs != 'ba') {
-                    setTimeout(showResultPopup, 100);
-                }
-                console.log(performance.now() - startTime);
+                // let cs = luckySelected.value;
+                // if (cs != 'kk' && cs != 'ba') {
+                setTimeout(showResultPopup, 100);
+                // }
+                // console.log(performance.now() - startTime);
             }
         }
 
@@ -619,11 +655,16 @@
             setTimeout(() => {
                 audioVoTay.pause();
                 audioNhacXoSo.play();
-                $('#resultModal').modal('hide');
+                // $('#resultModal').modal('hide');
             }, 10000);
-            const arr = config[luckySelected.value].label.split('-');
+            // const arr = config[luckySelected.value].label.split('-');
+            const id1 = Number([results[0], results[1], results[2]].join(''));
+            const id2 = Number([results[3], results[4], results[5]].join(''));
+            const nv1 = staffMap[id1];
+            const nv2 = staffMap[id2];
             document.getElementById('resultText').innerHTML =
-                `Chúc mừng vị khách có tấm vé may mắn số <h1 class="d-inline-block"> ${[results[0], results[1], results[2]].join('')} </h1> đã trúng thưởng${arr[1]}`;
+                `Chúc mừng vị khách <h1 class="d-inline-block"> ${nv2.name} - ${nv2.title}</h1>
+                 và <h1 class="d-inline-block"> ${nv1.name} - ${nv1.title}</h1> đã trúng thưởng.`;
             $('#resultModal').modal('show');
         }
 
@@ -699,7 +740,7 @@
             } else {
                 startBtn.disabled = true;
             }
-            luckySelected.disabled = isSpinning;
+            // luckySelected.disabled = isSpinning;
             // let cs = luckySelected.value;
             // if (cs == 'kk' || cs == 'ba') {
             //     historyTableParent.style.display = 'table';
