@@ -191,6 +191,10 @@ function goToHoneyOffice() {
     window.location = "./honey.html";
 }
 
+function goToTheHeritage() {
+    window.location = "./theheritage.html";
+}
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
