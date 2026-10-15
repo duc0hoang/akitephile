@@ -294,6 +294,10 @@ header .header .menu a {
     transform: translateX(300%) !important;
 }
 
+.right.later {
+    transition: transform 2s ease 2s;
+}
+
 .right {
     transform: translateX(0);
     transition: all 1.2s;
@@ -1189,7 +1193,7 @@ ul.left-icon.hotline {
 
 
 .mobile-content {
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .mobile-content #logo {
@@ -1243,4 +1247,17 @@ ul.left-icon.hotline {
     .project-info h3 {
         font-size: 40px;
     }
+}
+
+#cup-mobi {
+    opacity: 1;
+}
+
+#cup-mobi {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.opacity-0 {
+  opacity: 0 !important;
 }

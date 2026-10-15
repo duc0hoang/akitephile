@@ -137,6 +137,12 @@ $(document).ready(function () {
             e.classList.remove('hide');
         };
     }
+
+    setTimeout(function () {
+        $(".right.cup").css("display", "none");
+        $(".right.later").css("z-index", "1");
+    }, 5000);
+
 });
 
 function goToBambusstadt() {
@@ -276,22 +282,24 @@ function initMobile() {
     setTimeout(function () {
         $('#mobile-fun').hide();
         $('#mobile-sad').show();
+        $('#cup-mobi').addClass("opacity-0");
     }, 2000)
     setTimeout(function () {
         var language = localStorage.getItem("language");
+        $('#cup-mobi').addClass("d-none");
         if ('EN' === language) {
             $('#mobile-content-en').removeClass("d-none");
         } else {
             $('#mobile-content-vn').removeClass("d-none");
         }
-    }, 4000)
+    }, 3000)
     setTimeout(function () {
         $('#mobile-sad').hide();
         $('#mobile-content-en, #mobile-content-vn, .mobile-content').addClass("d-none");
         $('.mobile-content').removeClass('d-flex');
         $('.mobile-content-carousel').fadeIn('slow');
         $('.mobile-top').show();
-    }, 6000)
+    }, 5000)
 }
 
 function onChangeMobileMenu() {
