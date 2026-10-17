@@ -520,7 +520,7 @@ header .header .menu a {
 .stair-left {
     position: absolute;
     text-transform: uppercase;
-    top: 20px;
+    bottom: 200px;
     left: 20px;
     z-index: 10;
     color: white;
