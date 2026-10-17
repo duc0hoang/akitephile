@@ -234,7 +234,8 @@ header .header .menu a {
     margin: 0 6%;
 }
 
-.img-8 {
+.img-8,
+.img-5 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -405,7 +406,13 @@ header .header .menu a {
     max-width: 11.5% !important;
 }
 
-.img-8 img {
+.img-5 a {
+    flex: 0 0 19%;
+    max-width: 19% !important;
+}
+
+.img-8 img,
+.img-5 img {
     height: 100%;
     width: 100%;
     display: block;
@@ -1085,6 +1092,7 @@ ul.left-icon.hotline {
 .youtube {
     width: 710px;
     height: 398px;
+    max-width: 100%;
 }
 
 #mobile-fun,
@@ -1186,14 +1194,32 @@ ul.left-icon.hotline {
     }
 
     .youtube {
-        width: 360px;
-        height: 203px;
+        width: 100%;
     }
+
+    #cup-mobi.show {
+        opacity: 1;
+    }
+
+    #cup-mobi {
+        opacity: 0;
+        transition: all 3s ease 0s;
+        position: fixed;
+        width: 100vw;
+        height: 60vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
 .mobile-content {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .mobile-content #logo {
@@ -1239,8 +1265,9 @@ ul.left-icon.hotline {
 }
 
 @media (max-width: 1300px) {
+
     .project-info p,
-    .project-info a{
+    .project-info a {
         font-size: 16px;
     }
 
@@ -1249,15 +1276,25 @@ ul.left-icon.hotline {
     }
 }
 
-#cup-mobi {
-    opacity: 1;
-}
-
-#cup-mobi {
-    opacity: 1;
-    transition: all 0.5s;
-}
-
 .opacity-0 {
-  opacity: 0 !important;
+    opacity: 0 !important;
+}
+
+#cup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 45%;
+    opacity: 0;
+    transition: all 2s ease 2s;
+    z-index: 1;
+}
+
+#cup.show {
+    opacity: 1;
 }
