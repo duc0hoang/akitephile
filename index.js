@@ -204,6 +204,9 @@ function goToTheHeritage() {
 function goToHokusai() {
     window.location = "./hokusai.html";
 }
+function goToKosmos() {
+    window.location = "./kosmos.html";
+}
 
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
