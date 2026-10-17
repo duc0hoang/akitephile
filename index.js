@@ -201,6 +201,9 @@ function goToTheHeritage() {
     window.location = "./theheritage.html";
 }
 
+function goToHokusai() {
+    window.location = "./hokusai.html";
+}
 function goToKosmos() {
     window.location = "./kosmos.html";
 }
