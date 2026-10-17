@@ -142,7 +142,7 @@ $(document).ready(function () {
         $("#cup-mobi").addClass("show");
     }, 100);
     setTimeout(function () {
-        $(".right.cup").css("display", "none");
+        $("#cup").addClass("d-none");
         $(".right.later").css("z-index", "1");
     }, 5000);
 
