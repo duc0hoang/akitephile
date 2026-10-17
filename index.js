@@ -201,6 +201,10 @@ function goToTheHeritage() {
     window.location = "./theheritage.html";
 }
 
+function goToKosmos() {
+    window.location = "./kosmos.html";
+}
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
